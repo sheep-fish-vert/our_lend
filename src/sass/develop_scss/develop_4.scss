@@ -1,11 +1,11 @@
 /*portfolio*/
-.portfolio{text-align: center;
-    .title-text{
-        .title{font-family: "FuturaPT";font-size: 30px;display: inline-block;position: relative;
-            span{height: 5px;max-width: 200px;width: 100%;position: absolute;left: 50%;transform: translateX(-50%);bottom:-5px;}
-        }
-        .title-subtitle{padding-top: 18px;max-width: 340px;width: 100%;margin:0 auto;font-weight: bold;font-size: 18px;}
+.title-text{
+    .title{font-family: "FuturaPT";font-size: 30px;display: inline-block;position: relative;
+        span{height: 5px;max-width: 200px;width: 100%;position: absolute;left: 50%;transform: translateX(-50%);bottom:-5px;}
     }
+    .title-subtitle{padding-top: 18px;max-width: 340px;width: 100%;margin:0 auto;font-weight: bold;font-size: 18px;}
+}
+.portfolio{text-align: center;
     .portfolio-wrap{display: flex;flex-direction:row;justify-content:flex-start;align-items:center;flex-wrap: wrap;padding-top: 70px;
         .item{width: 25%;overflow: hidden;position: relative;
             &>a{display: block;color: inherit;}
@@ -28,7 +28,7 @@
             .item-type{position: absolute;top:20px;width: 100%;transition: transform 0.3s ease-in-out 0.1s,opacity 0.3s ease-in-out 0.1s;transform: translateY(-100px);opacity: 0;left: 0;}
             .item-desc{}
         }
-        .button-show-more{width: 100%;display: flex;flex-direction:column;justify-content:flex-start;align-items:center;
+        .button-show-more{width: 100%;display: flex;flex-direction:column;justify-content:flex-start;align-items:center;margin-bottom: 10px;
             .button-show-text{padding-bottom: 20px;padding-bottom: 20px;position: relative;margin-bottom: 25px;
                 p{font-family: "FuturaPT";font-weight: bold;font-size: 36px;}
                 ul{display: flex;flex-direction:row;justify-content:flex-start;align-items:center;max-width: 480px;position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);
@@ -37,10 +37,68 @@
                     }
                 }
             }
-            button{height: 60px;max-width: 300px;width: 100%;border:3px solid transparent;background-color: transparent;
-
+            button{height: 60px;max-width: 300px;width: 100%;border:3px solid transparent;background-color: transparent;border-radius: 35px;transition:background-color ease-out .3s;cursor: pointer;position: relative;
+                &:hover{
+                    strong{animation-name: rotatePlus;}
+                    span.background-spec{background-color: #fff !important;}
+                    b{color: white;}
+                }
+                &:active{
+                    b{position: relative;top: 2px;}
+                    strong{animation-play-state: paused;top: calc(50% - 7px)}
+                }
+                b{font-weight: bold;font-size: 18px;margin-left: -10px;transition:color ease-out .3s;}
+                strong{position: absolute;right: 10%;top: calc(50% - 9px);transform-origin:50% 50%;height: 18px;width: 18px;animation-iteration-count: infinite;animation-timing-function: ease-out;animation-duration: 2s;animation-iteration-count: infinite;animation-direction: alternate; animation-play-state: running;}
+                span.background-spec{height: 4px;width: 18px;transition:background-color ease-out .3s;top: 7px;left: 0px;position: absolute;
+                    &:last-child{transform: rotate(-90deg);}
+                }
+                @keyframes rotatePlus {
+                    0% {transform:rotate(0deg);}
+                    //50% {transform:rotate(180deg);}
+                    100% {transform:rotate(360deg);}
+                }
             }
         }
     }
 }
 /*/portfolio*/
+
+/*reviews*/
+.mega-arrow{display: flex;flex-direction:column;justify-content:flex-start;align-items:center;min-height: 80px;
+    .mega-arrow-wrap{position: relative;width: 35px;height: 63px;animation-name: topBottomMovingtwo;    animation-duration: .5s;animation-iteration-count: infinite;animation-direction: alternate;    animation-timing-function: linear;
+        span.item-1{width: 45px;height: 4px;position: absolute;bottom: 19;right: -13px;transform: rotate(-67deg);bottom: 19px;border-radius: 2px;}
+        span.item-2{width: 45px;height: 4px;position: absolute;bottom: 19;left: -13px;transform: rotate(67deg);bottom: 19px;border-radius: 2px;}
+        span.item-3{width: 19px;height: 4px;position: absolute;top: 24px;right: -1px;transform: rotate(-28deg);border-radius: 2px;border-bottom-left-radius: 1px;}
+        span.item-4{width: 12px;height: 4px;position: absolute;top: 23px;left: -1px;transform: rotate(31deg);border-radius: 2px;}
+        span.item-5{width: 30px;height: 4px;position: absolute;top: 15px;left: 2px;transform: rotate(90deg);border-radius: 2px;border-top-right-radius: 0px;}
+    }
+    @keyframes topBottomMovingtwo{
+        0%{margin-top: 0px;}
+        100%{margin-top: 10px;}
+    }
+}
+.reviews{min-height: 1245px;background:#fff url('../images/rewiews-bg.png') center top no-repeat;text-align: center;
+    .title-text{padding-top: 100px;
+        .title-subtitle{font-size: 24px;font-weight: 600;max-width: 100%;position: relative;padding-bottom: 15px;line-height: 1.2}
+        .title{
+            span.background-spec{max-width: 250px;width: 100%;transform: translateX(-50%);bottom: -5px;height: 3px;opacity: .6;position: absolute;}
+        }
+    }
+    .mega-arrow{margin-bottom: 60px;}
+
+    .reviews-slider{max-width: 1425px;margin: 0 auto;
+        .item{padding: 40px 50px;width: 440px;background-color: #fff;}
+        .social{padding: 0 12%;
+            ul{height: 67px;display: flex;justify-content:space-around;align-items:center;flex-direction:row;flex-wrap:wrap;}
+            li{transition:all ease .2s;
+                &:hover{opacity: 0.7;}
+            }
+        }
+        .person{border-top: 1px solid #e8e8e8;border-bottom: 1px solid #e8e8e8;
+            .person-img{padding-top: 18px;width: 125px;height: 125px;border:1px solid #e8e8e8;border-radius: 50%;position: relative;overflow: hidden;
+                img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+            }
+        }
+    }
+}
+/*/reviews*/
