@@ -123,6 +123,8 @@ $(document).ready(function() {
     //oneHeightItems();
     $('.footer_placeholder').height($('.footer').outerHeight());
 
+    scrollUp('.top-block', '.portfolio');
+
     //goTo();
     //animationBlock($('.setion-animate'));
 });
