@@ -1,0 +1,10 @@
+/*portfolio*/
+.portfolio{text-align: center;
+    .title-text{
+        .title{font-family: "FuturaPT";font-size: 30px;display: inline-block;position: relative;
+            span{height: 5px;max-width: 200px;width: 100%;position: absolute;left: 50%;transform: translateX(-50%);bottom:-5px;}
+        }
+        .title-subtitle{padding-top: 18px;max-width: 340px;width: 100%;margin:0 auto;font-weight: bold;font-size: 18px;}
+    }
+}
+/*/portfolio*/
