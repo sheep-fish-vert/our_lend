@@ -12,9 +12,12 @@
 /* /helping adds*/
 
 /* base styles*/
+
 *,*:before, *:after{box-sizing:border-box;outline:none;}
 html{height:100%;}
-body{min-height:100%;width:100%;min-width:320px;font-family:arial,sans-serif;background:#fff;color:#4f4f4f;position:relative;font-size: 16px;line-height: 1;font-family: 'Roboto', sans-serif;}
+
+body{min-height:100%;width:100%;min-width:320px;background:#fff;color:#3d3d3d;position:relative;font-size: 16px;line-height: 1;font-family: 'Roboto', sans-serif;}
+
 img{vertical-align:bottom;border:0;max-width:100%;}
 
 /* /base styles */
@@ -40,7 +43,7 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 
 /* trianges */
 
-    .trianges{position: absolute;width: 0;height: 0;left: calc(50% - 960px);border-width: 160px 960px 0 960px;border-style:solid;
+    .trianges{position: absolute;width: 0;height: 0;left: calc(50% - 960px);border-width: 160px 960px 0 960px;border-style:solid;pointer-events:none;
         &.trianges-bottom{bottom:0;}
         &.trianges-top{top:0;}
         &.not-center{border-color:transparent #fff;}
