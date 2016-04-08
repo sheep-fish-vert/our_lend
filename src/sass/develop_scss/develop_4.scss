@@ -6,5 +6,16 @@
         }
         .title-subtitle{padding-top: 18px;max-width: 340px;width: 100%;margin:0 auto;font-weight: bold;font-size: 18px;}
     }
+    .portfolio-wrap{display: flex;flex-direction:row;justify-content:flex-start;align-items:center;padding-top: 70px;
+        .item{width: 25%;overflow: hidden;position: relative;
+            &>a{display: block;}
+            &:hover{
+                .item-img{}
+            }
+        }
+
+        .item-img{height: 300px;display: flex;flex-direction:column;justify-content:center;align-items:center;background: linear-gradient(135deg, #d7d4d7 0%,#d7d4d7 10%,#fafafd 30%,#fafafd 46%,#fafafd 70%,#fafafd 70%,#d7d4d7 90%,#d7d4d7 100%);transition:background ease-out .3s;}
+        .item-text{display: none;}
+    }
 }
 /*/portfolio*/
