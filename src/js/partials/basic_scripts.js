@@ -201,8 +201,8 @@ $(document).ready(function() {
 
     randomColors();
 
-    //goTo();
-    //animationBlock($('.setion-animate'));
+    cutText();
+
 });
 
 $(window).resize(function() {
