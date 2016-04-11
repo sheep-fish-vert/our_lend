@@ -24,10 +24,10 @@ function rewievsSlider(){
         autoplay: true,
         autoplaySpeed: 2000,
         adaptiveHeight:true,
-        prevArrow:'<button type="button" class="slick-prev"></button>',
-        nextArrow:'<button type="button" class="slick-next"></button>',
+        prevArrow:'<button type="button" class="slick-prev border-spec-hover"><span class="border-spec"></span></button>',
+        nextArrow:'<button type="button" class="slick-next border-spec-hover"><span class="border-spec"></span></button>',
         draggable:false,
-        focusOnSelect:true
+        focusOnSelect:false
     });
 }
 
