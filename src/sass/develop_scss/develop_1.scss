@@ -14,7 +14,7 @@
                 .descript-line{content:'';display: block;position: absolute;left:0;bottom:0;height: 5px;width: 100%;background-color: #f98e3c;}
             }
             .top-block-button{margin-bottom: 100px;
-                a{display: flex;justify-content:center;align-items:center;max-width: 645px;width: 100%;border-radius: 50px;border:2px solid #ca7333;background-color: #f98e3c;height: 78px;position:relative;color:#fff;font-weight: 700;text-decoration: none;font-size: 22px;padding: 0 85px;
+                a{display: flex;justify-content:center;align-items:center;max-width: 645px;width: 100%;border-radius: 50px;border:2px solid #ca7333;background-color: #f98e3c;height: 78px;position:relative;color:#fff;font-weight: 700;text-decoration: none;font-size: 22px;padding: 0 85px;transition:background-color 300ms ease, border-color 300ms ease;
                     .span-button-arrow{display: block;position: absolute;top:-1px;right:-2px;width: 80px;height: 76px;border-radius: 50%;border:2px solid #fa8d3c;background-color: #d17128;
                         &:before, &:after{content:'';display: block;position:absolute;left:calc(50% - 9px);top:calc(50% - 2px);width: 18px;height: 4px;background-color: #fff;transform-origin:100% 2px;}
                         &:before{transform:rotate(45deg);top:calc(50% - 1px);}
@@ -45,7 +45,37 @@
 
 /* services */
 
-    .services{background-image:url(../images/services-bg.png);background-repeat: no-repeat;background-position: center top;background-size:cover;background-color:rgba(0, 0, 0, .6);
+    .services{background-image:url(../images/services-bg.png);background-repeat: no-repeat;background-position: center top;background-size:cover;background-color:rgba(0, 0, 0, .6);padding: 160px 0 190px 0;
+
+        .title{font-family:"Futura", sans-serif;font-weight: 700;font-size: 30px;color:#fff;text-align: center;padding-bottom:15px;position: relative;margin-bottom: 17px;
+            span{display: block;position: absolute;bottom: 0;left: calc(50% - 100px);width: 200px;height: 5px;background-color: #fda961;}
+        }
+        .title-descript{font-weight: 700;color:#fff;font-size: 18px;text-align: center;max-width: 370px;width: 100%;margin:0 auto 50px auto;line-height: 22px;}
+
+        .services-items-wrap{display: flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;
+            .services-item{text-align: center;padding: 55px 40px 45px 40px;position: relative;margin: 0 5px;
+                &:before{content:'';display: block;position: absolute;left: 0;top: 0;width: 100%;height: 100%;z-index: 1;border-radius: 5px;border-width: 1px;background-color: rgba(12, 67, 112, .65);border-color:#0e5166;box-shadow: 0 0 40px 0 rgba(0, 182, 244, .35);opacity:0;transition:opacity 300ms ease;}
+                .services-item-content{position: relative;z-index: 2;text-align: center;}
+                &:hover{
+                    &:before{opacity: 1;}
+                }
+                .services-item-desc{position: relative;padding-bottom: 15px;margin-bottom: 13px;
+                    span{display: block;position: absolute;bottom:0px;width: 52px;height: 2px;background-color: #fa8d3c;left:calc(50% - 26px);}
+                }
+                .services-title{color:#fff;font-size: 24px;font-weight: 700;text-transform: uppercase;margin-bottom: 40px;}
+                .services-image{height: 260px;position: relative;display:flex;align-items:center;justify-content:center;
+                    .services-circle{position: absolute;top:calc(50% - 100px);left:calc(50% - 100px);width: 200px;height: 200px;border-radius: 50%;background-color: #fda961;}
+                    img{position: relative;z-index: 1;}
+                }
+
+                .services-item-button{position: relative;z-index: 1;
+                    .button{max-width: 250px;width: 100%;min-height: 50px;display: flex;justify-content:center;align-items:center;border:3px solid #ffffff;border-radius: 50px;text-decoration: none;color:#fff;font-weight: 700;font-size: 14px;text-transform: uppercase;margin: 0 auto;transition:border-color 300ms ease;
+                        &:hover{border-color:#f98e3c;}
+                    }
+                }
+            }
+        }
+
     }
 
 /* /services */
