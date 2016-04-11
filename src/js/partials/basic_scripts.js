@@ -36,6 +36,7 @@ function oneHeightItems(){
     }
 
     oneHeight($('.oneHeight'));
+
 }
 
 /*scroll animation*/
