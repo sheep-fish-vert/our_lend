@@ -124,7 +124,7 @@ $(document).ready(function() {
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     scrollUp('.top-block-bottom-arrow', '.portfolio');
-
+    cutText();
     //goTo();
     //animationBlock($('.setion-animate'));
 });

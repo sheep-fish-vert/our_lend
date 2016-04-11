@@ -5,8 +5,8 @@
     }
     .title-subtitle{padding-top: 18px;max-width: 340px;width: 100%;margin:0 auto;font-weight: bold;font-size: 18px;}
 }
-.portfolio{text-align: center;
-    .portfolio-wrap{display: flex;flex-direction:row;justify-content:flex-start;align-items:center;flex-wrap: wrap;padding-top: 70px;
+.portfolio{text-align: center;position: relative;z-index: 2;
+    .portfolio-wrap{display: flex;flex-direction:row;justify-content:flex-start;align-items:center;flex-wrap: wrap;padding-top: 70px;position: relative;z-index: 3;
         .item{width: 25%;overflow: hidden;position: relative;
             &>a{display: block;color: inherit;}
             &:hover{
@@ -28,7 +28,7 @@
             .item-type{position: absolute;top:20px;width: 100%;transition: transform 0.3s ease-in-out 0.1s,opacity 0.3s ease-in-out 0.1s;transform: translateY(-100px);opacity: 0;left: 0;}
             .item-desc{}
         }
-        .button-show-more{width: 100%;display: flex;flex-direction:column;justify-content:flex-start;align-items:center;margin-bottom: 10px;
+        .button-show-more{width: 100%;display: flex;flex-direction:column;justify-content:flex-start;align-items:center;margin-bottom: 10px;position: absolute;top: 100%;left: 0;transition:all ease .3s;padding-top: 35px;
             .button-show-text{padding-bottom: 20px;padding-bottom: 20px;position: relative;margin-bottom: 25px;
                 p{font-family: "FuturaPT";font-weight: bold;font-size: 36px;}
                 ul{display: flex;flex-direction:row;justify-content:flex-start;align-items:center;max-width: 480px;position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);
@@ -54,12 +54,13 @@
                 }
                 @keyframes rotatePlus {
                     0% {transform:rotate(0deg);}
-                    //50% {transform:rotate(180deg);}
                     100% {transform:rotate(360deg);}
                 }
             }
         }
     }
+    .trianges.trianges-bottom{bottom: -240px;z-index: 2;}
+    .trianges{left: calc(50% - 1100px);border-width: 240px 1100px 0 1100px;}
 }
 /*/portfolio*/
 
@@ -105,7 +106,7 @@
             .person-subname{color: #8c8c8c;max-width: 235px;width: 100%;margin:0 auto;font-size: 14px;font-weight: 300;
             }
         }
-        .description{text-align: left;padding-top: 16px;font-size: 16px;color: #5e5e5e;line-height: 1.2;}
+        .description{text-align: left;padding-top: 16px;font-size: 16px;color: #5e5e5e;line-height: 1.2;min-height: 111px;}
         .social-button{margin:0 auto;padding-top: 51px;
             a{border-width: 2px;border-color: rgb(232, 232, 232);border-style: solid;max-width: 210px;width: 100%;height: 40px;text-decoration: none;display: flex;justify-content:center;align-items:center;margin:0 auto;border-radius: 20px;transition:all ease .2s;}
         }

@@ -25,14 +25,14 @@ $slick-opacity-not-active: 0.25 !default;
     }
 }
 
-@function slick-font-url($url) {
+/*@function slick-font-url($url) {
     @if function-exists(font-url) {
         @return font-url($url);
     }
     @else {
         @return url($slick-font-path + $url);
     }
-}
+}*/
 
 /* Slider */
 
@@ -43,7 +43,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 /* Icons */
-@if $slick-font-family == "slick" {
+/*@if $slick-font-family == "slick" {
     @font-face {
         font-family: "slick";
         src: slick-font-url("slick.eot");
@@ -52,7 +52,7 @@ $slick-opacity-not-active: 0.25 !default;
         font-style: normal;
     }
 }
-
+*/
 /* Arrows */
 
 .slick-prev,
@@ -88,7 +88,7 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev:before, .slick-next:before {
-    font-family: $slick-font-family;
+    /*font-family: $slick-font-family;*/
     font-size: 20px;
     line-height: 1;
     color: $slick-arrow-color;
