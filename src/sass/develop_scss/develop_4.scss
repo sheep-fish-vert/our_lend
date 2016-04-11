@@ -1,9 +1,9 @@
 /*portfolio*/
 .title-text{
-    .title{font-family: "FuturaPT";font-size: 30px;display: inline-block;position: relative;
-        span{height: 5px;max-width: 200px;width: 100%;position: absolute;left: 50%;transform: translateX(-50%);bottom:-5px;}
+    .title{font-family: "FuturaPT";font-size: 36px;position: relative;
+        span{height: 5px;max-width: 200px;width: 100%;position: absolute;left: 50%;transform: translateX(-50%);bottom:-15px;}
     }
-    .title-subtitle{padding-top: 18px;max-width: 340px;width: 100%;margin:0 auto;font-weight: bold;font-size: 18px;}
+    .title-subtitle{padding-top: 32px;max-width: 340px;width: 100%;margin:0 auto;font-weight: bold;font-size: 18px;}
 }
 .portfolio{text-align: center;position: relative;z-index: 2;
     .portfolio-wrap{display: flex;flex-direction:row;justify-content:flex-start;align-items:center;flex-wrap: wrap;padding-top: 70px;position: relative;z-index: 3;
@@ -82,7 +82,7 @@
     .title-text{padding-top: 100px;
         .title-subtitle{font-size: 24px;font-weight: 600;max-width: 100%;position: relative;padding-bottom: 15px;line-height: 1.2}
         .title{
-            span.background-spec{max-width: 250px;width: 100%;transform: translateX(-50%);bottom: -5px;height: 3px;opacity: .6;position: absolute;}
+            span.background-spec{max-width: 200px;width: 100%;transform: translateX(-50%);bottom: -15px;height: 5px;opacity: .6;position: absolute;}
         }
     }
     .mega-arrow{margin-bottom: 60px;}
@@ -110,17 +110,36 @@
         .social-button{margin:0 auto;padding-top: 51px;
             a{border-width: 2px;border-color: rgb(232, 232, 232);border-style: solid;max-width: 210px;width: 100%;height: 40px;text-decoration: none;display: flex;justify-content:center;align-items:center;margin:0 auto;border-radius: 20px;transition:all ease .2s;}
         }
-        .slick-arrow{width: 80px;height: 80px;border:3px solid #d1d1d1;top: calc(100% + 70px);
-            &:before{display: none;}
-            span{width: 18px;height: 18px;border: 3px solid #d1d1d1 !important;border-top: none !important;border-right: none !important;transform: rotate(45deg) translate(-50%,-50%);position: absolute;top: 55%;left: 40%;}
-            &:hover{
-                span{border-color: inherit !important;}
-            }
-        }
-        .slick-prev {left: 43%;}
-        .slick-next {right: 43%;
-            span{transform: rotate(-135deg) translate(-50%,-50%);top: 20%;}
-        }
     }
 }
+.slick-arrow{width: 80px;height: 80px;border:3px solid #d1d1d1;top: calc(100% + 70px);transition:all ease .2s;
+    &:before{display: none;}
+    &:active{
+       span{ transform: rotate(45deg) translate(-40%,-40%);}
+    }
+    span{width: 18px;height: 18px;border: 3px solid #d1d1d1 !important;border-top: none !important;border-right: none !important;transform: rotate(45deg) translate(-50%,-50%);position: absolute;top: 55%;left: 40%;}
+    &:hover{
+        span{border-color: inherit !important;}
+    }
+}
+.slick-prev {left: 43%;}
+.slick-next {right: 43%;
+    span{transform: rotate(45deg) translate(-50%,-50%);border: 3px solid #d1d1d1 !important;border-left: none !important;border-bottom: none !important;}
+}
 /*/reviews*/
+
+/*partners*/
+.partners{padding-bottom: 120px;padding-top: 100px;background:#fff url('../images/partners-bg.png') center bottom no-repeat;
+    .title-text{text-align: center;}
+    .title{
+        span.background-spec{max-width: 200px;width: 100%;transform: translateX(-50%);bottom: -15px;height: 5px;opacity: .6;position: absolute;}
+    }
+    .partners_slider{max-width: 1200px;margin: 0 auto;padding-top: 52px;}
+    .item{text-align: center;overflow: hidden;box-shadow: 0px 0px 8.3px 1.7px rgba(78, 78, 78, 0.08);    margin: 10px 5px;background-color: #fff;transition:all ease .2s;
+        &:hover{box-shadow: 0px 0px 8.3px 1.7px rgba(78, 78, 78, 0.25);}
+    }
+    a{margin:0 auto;height: 190px;display: flex;flex-direction:column;justify-content:center;align-items:center;}
+    .item-wrap{}
+    .slick-arrow{}
+}
+/*/partners*/
