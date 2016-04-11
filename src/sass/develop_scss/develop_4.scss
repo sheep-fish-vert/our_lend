@@ -86,18 +86,28 @@
     }
     .mega-arrow{margin-bottom: 60px;}
 
-    .reviews-slider{max-width: 1425px;margin: 0 auto;
-        .item{padding: 40px 50px;width: 440px;background-color: #fff;}
+    .reviews-slider{max-width: 1425px;margin: 0 auto;padding-top: 65px;
+        .item{display: inline-block;}
+        .item-wrap{padding: 40px 50px;width: 440px;background-color: #fff;border-radius: 10px;box-shadow: 0px 0px 9.5px 0.5px rgba(78, 78, 78, 0.17);margin: 10px auto 10px;}
         .social{padding: 0 12%;
             ul{height: 67px;display: flex;justify-content:space-around;align-items:center;flex-direction:row;flex-wrap:wrap;}
             li{transition:all ease .2s;
                 &:hover{opacity: 0.7;}
             }
         }
-        .person{border-top: 1px solid #e8e8e8;border-bottom: 1px solid #e8e8e8;
-            .person-img{padding-top: 18px;width: 125px;height: 125px;border:1px solid #e8e8e8;border-radius: 50%;position: relative;overflow: hidden;
-                img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+        .person{border-top: 1px solid #e8e8e8;border-bottom: 1px solid #e8e8e8;padding: 20px 0px 20px;
+            .person-img{padding-top: 18px;width: 125px;height: 125px;border:1px solid #e8e8e8;border-radius: 50%;position: relative;overflow: hidden;margin:0 auto;margin: 0 auto 19px;
+                img{position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);max-width: none;}
             }
+            .person-name{font-size: 16px;font-weight: bold;position: relative;margin-bottom: 30px;
+                span{width: 65px;height: 2px;position: absolute;left: 50%;transform: translateX(-50%);bottom:-14px;}
+            }
+            .person-subname{color: #8c8c8c;max-width: 235px;width: 100%;margin:0 auto;font-size: 14px;font-weight: 300;
+            }
+        }
+        .description{text-align: left;padding-top: 16px;font-size: 16px;color: #5e5e5e;line-height: 1.2;}
+        .social-button{margin:0 auto;padding-top: 51px;
+            a{border-width: 2px;border-color: rgb(232, 232, 232);border-style: solid;max-width: 210px;width: 100%;height: 40px;text-decoration: none;display: flex;justify-content:center;align-items:center;margin:0 auto;border-radius: 20px;transition:all ease .2s;}
         }
     }
 }

@@ -16,9 +16,24 @@ function portfolioShowMore(){
     });
 }
 
+function rewievsSlider(){
+    $('.reviews-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        adaptiveHeight:true,
+        prevArrow:'<button type="button" class="slick-prev"></button>',
+        nextArrow:'<button type="button" class="slick-next"></button>',
+        draggable:false,
+        focusOnSelect:true
+    });
+}
 
 $(document).ready(function(){
     portfolioShowMore();
+    rewievsSlider();
 });
 
 $(window).load(function(){
