@@ -98,8 +98,8 @@ function cutText(){
 
 function randomColors(){
 
-    var colorsMassive = ['ff6e40', 'ff5252', 'ff4081', 'fe40fb', '7c4dff', '536dfe', '448aff', '40c4ff', '18ffff', '64ffda', '69f0ae', 'b2ff59', 'eeff41', 'ffff00', 'ffd740', 'ffab40'];
-    var colorsMassiveHover = ['ff5252', 'ff4081', 'fe40fb', '7c4dff', '536dfe', '448aff', '40c4ff', '18ffff', '64ffda', '69f0ae', 'b2ff59', 'eeff41', 'ffff00', 'ffd740', 'ffab40', 'ff6e40'];
+    var colorsMassive = colorScheme.color;
+    var colorsMassiveHover = colorScheme.hoverColor;
     var colorsMassiveLength = colorsMassive.length;
 
     var color = Math.floor((Math.random() * 16));
