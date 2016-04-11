@@ -15,7 +15,7 @@
             }
             .top-block-button{margin-bottom: 100px;
                 a{display: flex;justify-content:center;align-items:center;max-width: 645px;width: 100%;border-radius: 50px;border:2px solid #ca7333;background-color: #f98e3c;height: 78px;position:relative;color:#fff;font-weight: 700;text-decoration: none;font-size: 22px;padding: 0 85px;transition:background-color 300ms ease, border-color 300ms ease;
-                    .span-button-arrow{display: block;position: absolute;top:-1px;right:-2px;width: 80px;height: 76px;border-radius: 50%;border:2px solid #fa8d3c;background-color: #d17128;transition:background-color 300ms ease, border-color 300ms ease;
+                    .span-button-arrow{display: block;position: absolute;top:-2px;right:-3px;width: 80px;height: 78px;border-radius: 50%;border:2px solid #fa8d3c;background-color: #d17128;transition:background-color 300ms ease, border-color 300ms ease;
                         &:before, &:after{content:'';display: block;position:absolute;left:calc(50% - 9px);top:calc(50% - 2px);width: 18px;height: 4px;background-color: #fff;transform-origin:100% 2px;}
                         &:before{transform:rotate(45deg);top:calc(50% - 1px);}
                         &:after{transform:rotate(-45deg);top:calc(50% - 3px);}
@@ -45,7 +45,7 @@
 
 /* services */
 
-    .services{background-image:url(../images/services-bg.png);background-repeat: no-repeat;background-position: center top;background-size:cover;background-color:rgba(0, 0, 0, .6);padding: 160px 0 190px 0;
+    .services{background-image:url(../images/services-bg.png);background-repeat: no-repeat;background-position: center top;background-size:cover;background-color:rgba(0, 0, 0, .6);padding: 300px 0 160px 0;position: relative;
 
         .title{font-family:"Futura", sans-serif;font-weight: 700;font-size: 30px;color:#fff;text-align: center;padding-bottom:15px;position: relative;margin-bottom: 17px;
             span{display: block;position: absolute;bottom: 0;left: calc(50% - 100px);width: 200px;height: 5px;background-color: #fda961;}
@@ -59,7 +59,7 @@
                 &:hover{
                     &:before{opacity: 1;}
                 }
-                .services-item-desc{position: relative;padding-bottom: 15px;margin-bottom: 13px;
+                .services-item-desc{position: relative;padding-bottom: 15px;margin-bottom: 13px;transform:translateZ(0px);
                     span{display: block;position: absolute;bottom:0px;width: 52px;height: 2px;background-color: #fa8d3c;left:calc(50% - 26px);}
                 }
                 .services-title{color:#fff;font-size: 24px;font-weight: 700;text-transform: uppercase;margin-bottom: 40px;}
@@ -79,6 +79,12 @@
     }
 
 /* /services */
+
+/* contacts */
+
+
+
+/* /contacts */
 
 /* animations */
 
