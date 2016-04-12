@@ -179,6 +179,11 @@ function headeButer(menuMobile,toggleMenu){
                 $(this).toggleClass('active');
                 toggleMenu.stop().slideToggle();
             }
+            if ($(this).hasClass('active')) {
+                $('body').addClass("overflover");
+            } else {
+                $('body').removeClass("overflover");
+            }
         });
 
         $(document).on('click touchstart',function (event){
@@ -188,6 +193,11 @@ function headeButer(menuMobile,toggleMenu){
                     {
                         toggleMenu.slideUp();
                         menuMobile.removeClass('active');
+                        if (menuMobile.hasClass('active')) {
+                            $('body').addClass("overflover");
+                        } else {
+                            $('body').removeClass("overflover");
+                        }
                     }
             }
         });
@@ -214,6 +224,7 @@ $(window).resize(function() {
     if ($(window).width() > 1024 - $.scrollbarWidth()) {
         $('nav').css('display', 'block');
         $('.butterbrod').addClass('active');
+        $('body').removeClass('overflover');
     } else {
         $('nav').css('display', 'none');
         $('.butterbrod').removeClass('active');
