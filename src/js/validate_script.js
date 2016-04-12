@@ -260,11 +260,30 @@ function someAjax(item, someUrl, successFunc, someData){
     }
 
 */
+function portfolioPop(){
+    $('.portfolio-wrap .item').on('click', function(event) {
+        event.preventDefault();
+        var id = $(this).data('id');
 
+        console.log('id ' , id);
+
+        $.fancybox.open({
+             href: "ajax_portfolio_pop.php",
+             type: "ajax",
+             ajax: {
+                type: "POST",
+                data: id,
+                success : function(data){
+                    console.log('data ' , data);
+                }
+             }
+        });
+    });
+}
 $(document).ready(function(){
-
-   validate('#call-popup .contact-form', {submitFunction:validationCall});
-   Maskedinput();
-   fancyboxForm();
+    portfolioPop();
+    validate('#call-popup .contact-form', {submitFunction:validationCall});
+    Maskedinput();
+    fancyboxForm();
 
 });
