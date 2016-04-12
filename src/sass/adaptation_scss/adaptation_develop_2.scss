@@ -30,9 +30,9 @@
                 }
             }
             
-            nav{ display: none; position: absolute; left: 0; right: 0; top: 198px;background-color: rgba(0, 0, 0, 0.8); height: calc(100vh - 198px); width: 100vw;
-                ul{ padding: 10px 0 13px; height: calc(100vh - 198px); display: flex; flex-wrap: wrap;align-content: space-around;
-                    li{float: none; width: 100%;padding: 10px; border: none;
+            nav{ display: none; position: absolute; left: 0; right: 0; top: 100px;background-color: rgba(0, 0, 0, 0.8); height: calc(100vh - 100px) !important; width: 100vw; min-width: 0;
+                ul{ padding: 10px 0 13px; height: calc(100vh - 100px); display: flex; flex-wrap: wrap;align-content: space-around;
+                    li{float: none; width: 100%; border: none;
                         a{font-size: 24px;}
                     }
                 }            
@@ -47,16 +47,23 @@
 @media screen and (max-width: 767px){
 
 }
-@media screen and (max-width: 666px){
-   // header .conteiner .mbox2 { display: block; text-align: center; height: 150px;}
+@media screen and (max-width: 567px){
+   header .conteiner .mbox2 nav{ display: none; position: absolute; left: 0; right: 0; top: 198px;background-color: rgba(0, 0, 0, 0.8); height: calc(100vh - 198px); width: 100vw; min-width: 0;
+        ul{ padding: 10px 0 13px; height: calc(100vh - 198px) !important; display: flex; flex-wrap: wrap;align-content: space-around;
+            li{float: none; width: 100%;padding: 10px; border: none;
+                a{font-size: 24px;}
+            }
+        }            
+    }
     header .conteiner .mbox2 .but-block {  min-width: 180px; position: absolute; left: 0; right: 0;top: 100px;background-color: rgba(0, 0, 0, 0.8); padding-bottom: 20px;
-        a{max-width: 80%; margin: 0 auto;}
-        
+        a{max-width: 250px;; margin: 0 auto;}        
      }
 
 }
 @media screen and (max-width: 479px){
-
+    header .conteiner .mbox2 .but-block { padding-bottom: 10px;}
+    header .conteiner .mbox2 .but-block .button-header { height: 40px; border-radius: 20px; line-height: 38px;}
+    header .conteiner .mbox2 nav { top: 178px; height: calc(100vh - 178px) !important;}
 }
 @media screen and (max-width: 320px){
 
