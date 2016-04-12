@@ -270,8 +270,8 @@ function portfolioPop(){
 
         function heightImg(){
             var popHeight = $('.portfolio-pop').height();
-            var imgPadding = parseInt($('.main-img').css('padding-top'));
-            $('.main-img').height(popHeight-imgPadding);
+            var imgMargin = parseInt($('.main-img').css('margin-top'));
+            $('.main-img').height(popHeight-imgMargin);
         }
         $.ajax({
             type: "POST",
