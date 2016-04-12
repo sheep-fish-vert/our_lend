@@ -110,7 +110,7 @@ function randomColors(){
 
     $('head').append(randomStyles);
 
-
+    $('#preload-circle').attr('stroke', '#'+colorsMassive[color]);
     function specHover(hoverItem, changeItem, hoverOptions){
 
         var hoverFuncOptions = {

@@ -263,21 +263,58 @@ function someAjax(item, someUrl, successFunc, someData){
 function portfolioPop(){
     $('.portfolio-wrap .item').on('click', function(event) {
         event.preventDefault();
-        var id = $(this).data('id');
+        $('.preload').addClass('active');
+        var id = $(this).data('id'),
+            mainImg = null,
+            jspApi = null;
 
-        console.log('id ' , id);
+        function heightImg(){
+            var popHeight = $('.portfolio-pop').height();
+            var imgPadding = parseInt($('.main-img').css('padding-top'));
+            $('.main-img').height(popHeight-imgPadding);
+        }
+        $.ajax({
+            type: "POST",
+            url: "ajax_portfolio_pop.php",
+            data: id,
+            success: function (data) {
+                $.fancybox(data, {
+                    openEffect  : 'fade',
+                    closeEffect : 'fade',
+                    wrapCSS:'portfolio-pop',
+                    'closeBtn' : true,
+                    height:800,
+                    width:1580,
+                    autoSize:false,
+                    'autoDimensions':false,
+                    padding:'0',
+                    afterShow:function(){
+                        console.log('afterShow');
+                        heightImg();
+                        mainImg = $('.main-img');
+                        mainImg.jScrollPane();
+                        jspApi = mainImg.data('jsp');
 
-        $.fancybox.open({
-             href: "ajax_portfolio_pop.php",
-             type: "ajax",
-             ajax: {
-                type: "POST",
-                data: id,
-                success : function(data){
-                    console.log('data ' , data);
-                }
-             }
+                        mainImg.bind('jsp-initialised',function(event, isScrollable){
+                            setTimeout(function(){
+                                $('.preload').removeClass('active');
+                                $('.portfolio-pop').addClass('show');
+                            },2000);
+                        });
+                    },
+                    onUpdate:function(){
+                        console.log('onUpdate ');
+                        heightImg();
+                        jspApi.reinitialise();
+                    }
+                });
+            },
+            error: function (data) {
+                return false;
+            }
         });
+        return false;
+
     });
 }
 $(document).ready(function(){
@@ -285,5 +322,7 @@ $(document).ready(function(){
     validate('#call-popup .contact-form', {submitFunction:validationCall});
     Maskedinput();
     fancyboxForm();
+
+    validate('.contacts-form', {submitFunction:validationCall});
 
 });

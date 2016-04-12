@@ -6,6 +6,8 @@
 //= partials/plagins/jquery.validate.min.js
 //= partials/plagins/jquery.fancybox.pack.js
 //= partials/plagins/jquery.formstyler.min.js
+//= partials/plagins/jquery.mousewheel.js
+//= partials/plagins/jquery.jscrollpane.min.js
 
 /* /plagins */
 

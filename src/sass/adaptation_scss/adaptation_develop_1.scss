@@ -49,6 +49,18 @@
 
     /* /top-block */
 
+    /* contacts */
+
+        .contacts{
+            .contacts-form-wrap{
+                .form-title{font-size: 36px;
+                    span{font-size: 50px;}
+                }
+            }
+        }
+
+    /* /contacts */
+
 }
 @media screen and (max-width: 479px){
 
@@ -67,6 +79,19 @@
         }
 
     /* /top-block */
+
+    /* contacts */
+
+        .contacts{
+            .contacts-descript{line-height: 24px;font-size: 18px;}
+            .contacts-form-wrap{
+                .form-title{font-size: 25px;line-height: 45px;
+                    span{font-size: 40px;}
+                }
+            }
+        }
+
+    /* /contacts */
 
 }
 @media screen and (max-width: 320px){
