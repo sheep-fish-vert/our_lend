@@ -286,4 +286,6 @@ $(document).ready(function(){
     Maskedinput();
     fancyboxForm();
 
+    validate('.contacts-form', {submitFunction:validationCall});
+
 });
