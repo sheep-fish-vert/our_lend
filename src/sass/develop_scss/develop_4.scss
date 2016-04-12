@@ -143,3 +143,19 @@
     .slick-arrow{}
 }
 /*/partners*/
+
+/*preload*/
+.preload{height: 126px;width: 126px;position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);z-index: -1000;opacity: 0;visibility: hidden;transition:all ease .2s;
+    &.active{z-index: 9000;opacity: 1;visibility: visible;}
+}
+/*/preload*/
+
+/*portfolio pop*/
+.portfolio-pop{/*height: 980px;*/opacity: 0;transform: translateY(-150%);transition:opacity ease .3s,transform ease .3s;
+    &.show{opacity: 1;transform: translateY(0%);}
+    .fancybox-skin{background:#f5f5f5;}
+    .portfolio-pop-wrap{display: flex;flex-wrap: nowrap;justify-content: flex-start;align-items:stretch;}
+    .main-img{width: 60%;padding-left: 20px;padding-top: 20px;overflow: hidden;}
+    .description{width: 40%;padding: 20px;}
+}
+/*/portfolio pop*/
