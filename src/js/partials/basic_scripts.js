@@ -193,6 +193,11 @@ function headeButer(menuMobile,toggleMenu){
                     {
                         toggleMenu.slideUp();
                         menuMobile.removeClass('active');
+                        if (menuMobile.hasClass('active')) {
+                            $('body').addClass("overflover");
+                        } else {
+                            $('body').removeClass("overflover");
+                        }
                     }
             }
         });
