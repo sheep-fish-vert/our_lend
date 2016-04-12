@@ -1,7 +1,16 @@
 
 
 
-$(document).ready(function(){
+$(document).ready(function() {
+
+    $('.butterbrod').hover(
+        function() {
+            $(this).find('span').addClass('background-spec');
+        },
+        function() {
+            $(this).find('span').removeClass('background-spec');
+        }
+    );
 
 });
 

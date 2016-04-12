@@ -47,7 +47,7 @@
 
     .services{background-image:url(../images/services-bg.png);background-repeat: no-repeat;background-position: center top;background-size:cover;background-color:rgba(0, 0, 0, .6);padding: 300px 0 160px 0;position: relative;
 
-        .title{font-family:"Futura", sans-serif;font-weight: 700;font-size: 30px;color:#fff;text-align: center;padding-bottom:15px;position: relative;margin-bottom: 17px;
+        .title{font-family:"FuturaPT", sans-serif;font-weight: 700;font-size: 30px;color:#fff;text-align: center;padding-bottom:15px;position: relative;margin-bottom: 17px;
             span{display: block;position: absolute;bottom: 0;left: calc(50% - 100px);width: 200px;height: 5px;background-color: #fda961;}
         }
         .title-descript{font-weight: 700;color:#fff;font-size: 18px;text-align: center;max-width: 370px;width: 100%;margin:0 auto 50px auto;line-height: 22px;}
@@ -82,7 +82,38 @@
 
 /* contacts */
 
-
+    .contacts{position: relative;background-image:url(../images/cantacts-background.jpg);background-repeat: no-repeat;background-size: cover;background-position: center top;padding: 220px 0 100px 0;
+        .contacts-descript{max-width: 720px;width: 100%;margin:0 auto 18px auto;padding: 0  0 18px 0;position: relative;font-size: 24px;font-weight: 700;color:#fff;text-align: center;line-height: 28px;
+            span{position: absolute;max-width: 480px;width: 100%;height: 5px;background-color: #898989;left: calc(50% - 240px);bottom: 0;}
+        }
+        .contacts-arrow{margin-bottom: 40px;
+            .mega-arrow{
+                .mega-arrow-wrap span{background-color: #fff;}
+            }
+        }
+        .contacts-main-title{text-align: center;position: relative;font-family: 'FuturaPT', sans-serif;color:#fff;font-weight: 700;padding-bottom: 25px;margin-bottom: 25px;font-size: 36px;
+            span{position:absolute;bottom:0;left:calc(50% - 100px);max-width: 200px;width: 100%;height: 5px;display: block;}
+        }
+        .contacts-form-wrap{padding: 0 15px;
+            .contacts-form{max-width: 900px;width: 100%;padding: 40px 15px 15px 15px;min-height:570px;background-color:#e8e8e8;margin: 0 auto;display: flex;align-items:flex-start;justify-content:center;}
+            .contacts-form-wrap-main{max-width: 615px;width: 100%;}
+            .form-title{font-size: 48px;color:#fff;margin-bottom: 25px;text-transform: uppercase;line-height: 55px;
+                span{font-weight: 700;font-size: 60px;}
+            }
+            .form-row{max-width: 300px;width: 100%;margin-bottom: 20px;
+                .form-input{width: 100%;}
+                input{line-height: 50px;height: 50px;width: 100%;border:2px solid #898989;border-radius: 4px;background-color: #898989;color:#fff;padding: 0 30px;font-size: 16px;
+                    &::-webkit-input-placeholder {color:#fff;font-family: 'Roboto', sans-serif;}
+                    &:-moz-placeholder {color:#fff;font-family: 'Roboto', sans-serif;}
+                    &::-moz-placeholder {color:#fff;font-family: 'Roboto', sans-serif;}
+                    &:-ms-input-placeholder {color:#fff;font-family: 'Roboto', sans-serif;}
+                }
+                &.submit{margin-bottom: 0;
+                    button{width: 100%;min-height: 60px;border-width: 2px;border-style:solid;display: flex;align-items:center;justify-content:center;border-radius: 5px;background-color: transparent;font-size: 18px;color:#fff;font-weight: 700;text-transform: uppercase;transition:background-color 300ms ease, border-color 300ms ease;}
+                }
+            }
+        }
+    }
 
 /* /contacts */
 

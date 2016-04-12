@@ -8,10 +8,38 @@
 
 }
 @media screen and (max-width: 1280px){
-
+    header .conteiner .mbox2 nav {  min-width: 650px;}
 }
 @media screen and (max-width: 1024px){
-
+    header {  background-color: rgba(0, 0, 0, 0.8);
+        .conteiner .mbox2 {
+            .butterbrod{display: block; position: relative; overflow: hidden; cursor: pointer; margin: 0 35px;
+                .convert-f{position: relative; height: 40px; width: 40px; overflow: hidden; }
+                span{ position: absolute; height: 4px; width: 100px; background-color: white; transition: all 0.3s;
+                    &:nth-child(1){top: 0; transform: rotate(0);}
+                    &:nth-child(2){top: calc(50% - 2px);  opacity: 1; transform: rotate(0);}
+                    &:nth-child(3){bottom: 0; transform: rotate(0);}
+                }
+            }
+            .butterbrod.active{display: block; position: relative;  cursor: pointer;margin: 0 35px;
+                .convert-f{position: relative; height: 40px; width: 40px; overflow: hidden; }
+                span{ position: absolute; height: 4px; width: 100px; background-color: white; transition: all 0.3s;
+                    &:nth-child(1){top: 11px;left: -23px; transform: rotate(-45deg);}
+                    &:nth-child(2){top: calc(50% - 2px); opacity: 0;}
+                    &:nth-child(3){bottom: 3px; left: -15px; transform: rotate(45deg);}
+                }
+            }
+            
+            nav{ display: none; position: absolute; left: 0; right: 0; top: 100px;background-color: rgba(0, 0, 0, 0.8); height: calc(100vh - 100px) !important; width: 100vw; min-width: 0;
+                ul{ padding: 10px 0 13px; height: calc(100vh - 100px); display: flex; flex-wrap: wrap;align-content: space-around;
+                    li{float: none; width: 100%; border: none;
+                        a{font-size: 24px;}
+                    }
+                }            
+            }
+            .logo-block { min-width: 110px; text-align: center;}
+        }
+    }
 }
 @media screen and (max-width: 992px){
 
@@ -19,11 +47,23 @@
 @media screen and (max-width: 767px){
 
 }
-@media screen and (max-width: 666px){
+@media screen and (max-width: 567px){
+   header .conteiner .mbox2 nav{ display: none; position: absolute; left: 0; right: 0; top: 198px;background-color: rgba(0, 0, 0, 0.8); height: calc(100vh - 198px); width: 100vw; min-width: 0;
+        ul{ padding: 10px 0 13px; height: calc(100vh - 198px) !important; display: flex; flex-wrap: wrap;align-content: space-around;
+            li{float: none; width: 100%;padding: 10px; border: none;
+                a{font-size: 24px;}
+            }
+        }            
+    }
+    header .conteiner .mbox2 .but-block {  min-width: 180px; position: absolute; left: 0; right: 0;top: 100px;background-color: rgba(0, 0, 0, 0.8); padding-bottom: 20px;
+        a{max-width: 250px;; margin: 0 auto;}        
+     }
 
 }
 @media screen and (max-width: 479px){
-
+    header .conteiner .mbox2 .but-block { padding-bottom: 10px;}
+    header .conteiner .mbox2 .but-block .button-header { height: 40px; border-radius: 20px; line-height: 38px;}
+    header .conteiner .mbox2 nav { top: 178px; height: calc(100vh - 178px) !important;}
 }
 @media screen and (max-width: 320px){
 

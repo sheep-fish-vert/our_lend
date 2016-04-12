@@ -199,6 +199,9 @@ $(document).ready(function() {
     //oneHeightItems();
     $('.footer_placeholder').height($('.footer').outerHeight());
 
+    headeButer($('.butterbrod'), $('nav'));
+    
+
     scrollUp('.top-block-bottom-arrow', '.portfolio');
 
     randomColors();
@@ -208,6 +211,13 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
+    if ($(window).width() > 1024 - $.scrollbarWidth()) {
+        $('nav').css('display', 'block');
+        $('.butterbrod').addClass('active');
+    } else {
+        $('nav').css('display', 'none');
+        $('.butterbrod').removeClass('active');
+    }
 
     $('.footer_placeholder').height($('.footer').outerHeight());
 });
