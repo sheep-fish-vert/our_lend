@@ -210,8 +210,6 @@ $(document).ready(function() {
     $('.footer_placeholder').height($('.footer').outerHeight());
 
     headeButer($('.butterbrod'), $('nav'));
-    
-
     scrollUp('.top-block-bottom-arrow', '.portfolio');
 
     randomColors();
