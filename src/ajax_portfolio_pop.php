@@ -1,13 +1,15 @@
 <div class="portfolio-pop">
     <div class="portfolio-pop-wrap cfix">
         <div class="main-img">
-            <img src="images/portfolio-pop-img.jpg" alt="">
+            <div class="main-img-wrap">
+                <img src="images/portfolio-pop-img.jpg" alt="">
+            </div>
         </div>
         <div class="description">
             <div class="description-top">
                 <div class="description-type color-spec"><span>- Landing page -</span></div>
                 <div class="description-name">
-                    <h5>FISH EXPRESS</h5><span class="background-spec"></span>
+                    <h5>FISH EXPRESS</h5>
                 </div>
                 <div class="description-desc">
                     <p>Доставка рыбы в любую точку Росcии</p>
