@@ -204,7 +204,10 @@ function fancyboxForm(){
     wrapCSS:'fancybox-form',
     'closeBtn' : true,
     fitToView:true,
-    padding:'0'
+    padding:'0',
+    tpl: {
+        closeBtn: '<a title="Закрыть" class="fancybox-item fancybox-close myClose" href="javascript:;"><span class="background-spec"></span><span class="background-spec"></span></a>'
+    }
   })
 }
 
@@ -333,6 +336,11 @@ function portfolioPop(){
         });
         return false;
 
+    });
+
+    $(document).on('click','.portfolio-pop .myClose', function(event) {
+        console.log('myClose');
+        $.fancybox.close();
     });
 }
 $(document).ready(function(){

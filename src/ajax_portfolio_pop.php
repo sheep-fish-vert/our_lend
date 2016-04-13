@@ -14,7 +14,7 @@
                 <div class="description-desc">
                     <p>Доставка рыбы в любую точку Росcии</p>
                 </div>
-                <a title="Закрыть" class="fancybox-item fancybox-close myClose" href="javascript:;"><span class="background-spec"></span><span class="background-spec"></span></a>
+                <b title="Закрыть" class="fancybox-item fancybox-close myClose" ><span class="background-spec"></span><span class="background-spec"></span></b>
             </div>
             <div class="description-center">
                 <div class="description-center-title">
