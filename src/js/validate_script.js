@@ -276,8 +276,7 @@ function portfolioPop(){
             $('.main-img').height(popHeight-imgMargin);
         }
         function heightSubText(){
-            if( $('.portfolio-pop .description-center-text').outerHeight()>200 && $(window).width() > 992){
-                console.log('bolshe');
+            if( $('.portfolio-pop .description-center-text').outerHeight()>200){
                 $('.portfolio-pop .description-center-text').height(200);
                 setTimeout(function(){
                     mainText = $('.portfolio-pop .description-center-text');
@@ -285,6 +284,11 @@ function portfolioPop(){
                     jspApiText = mainText.data('jsp');
                 },0)
             }
+        }
+        function initJscrollMainImg(){
+            mainImg = $('.main-img');
+            mainImg.jScrollPane();
+            jspApi = mainImg.data('jsp');
         }
         $.ajax({
             type: "POST",
@@ -307,26 +311,58 @@ function portfolioPop(){
                     },
                     afterShow:function(){
                         console.log('afterShow');
-                        heightImg();
-                        heightSubText();
-                        /*main img*/
-                        mainImg = $('.main-img');
-                        mainImg.jScrollPane();
-                        jspApi = mainImg.data('jsp');
 
-                        /*subtextImg*/
+                        //desctop version
 
-                        mainImg.bind('jsp-initialised',function(event, isScrollable){
-                            setTimeout(function(){
-                                $('.preload').removeClass('active');
-                                $('.portfolio-pop').addClass('show');
-                            },1000);
-                        });
+                        if( $(window).width()>992 ){
+                            heightImg();
+                            heightSubText();
+
+                            /*main img*/
+                            initJscrollMainImg();
+
+                            mainImg.bind('jsp-initialised',function(event, isScrollable){
+                                setTimeout(function(){
+                                    $('.preload').removeClass('active');
+                                    $('.portfolio-pop').addClass('show');
+                                },1000);
+                            });
+
+                            console.log('jspApi ' , jspApi);
+                        }
+
+
                     },
                     onUpdate:function(){
                         console.log('onUpdate ');
-                        heightImg();
-                        jspApi.reinitialise();
+
+                        //desctop version
+                        if( $(window).width()>992 ){
+                            heightImg();
+                            jspApi.reinitialise();
+                            if( !$('.main-img').hasClass('jspScrollable') ){
+                                initJscrollMainImg();
+                            }
+                            heightSubText();
+                        }else{
+                            /*main img*/
+                            mainImg = $('.main-img');
+                            mainImg.jScrollPane();
+                            jspApi = mainImg.data('jsp');
+                            jspApi.destroy();
+
+
+                            mainText = $('.portfolio-pop .description-center-text');
+                            mainText.jScrollPane();
+                            jspApiText = mainText.data('jsp');
+                            jspApiText.destroy();
+                            setTimeout(function(){
+                                $('.preload').removeClass('active');
+                                $('.portfolio-pop').addClass('show');
+                                $('.main-img').removeAttr('style');
+                                mainText.removeAttr('style');
+                            },1000);
+                        }
                     }
                 });
             },
