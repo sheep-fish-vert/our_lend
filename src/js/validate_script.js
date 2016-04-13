@@ -266,7 +266,7 @@ function someAjax(item, someUrl, successFunc, someData){
 
 */
 function portfolioPop(){
-    $('.portfolio-wrap .item').on('click', function(event) {
+    $(document).on('click','.portfolio-wrap .item',function(event) {
         event.preventDefault();
         $('.preload').addClass('active');
         var id = $(this).data('id'),
@@ -377,7 +377,6 @@ function portfolioPop(){
     });
 
     $(document).on('click','.portfolio-pop .myClose', function(event) {
-        console.log('myClose');
         $.fancybox.close();
     });
 }
