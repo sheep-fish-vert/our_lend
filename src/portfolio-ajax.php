@@ -1,4 +1,4 @@
-<div class="item">
+<div class="item" data-id="1">
     <a href="#">
         <div class="item-img">
             <img src="images/item-img-1.png" alt="">
@@ -17,7 +17,7 @@
         </div>
     </a>
 </div>
-<div class="item">
+<div class="item" data-id="2">
     <a href="#">
         <div class="item-img">
             <img src="images/item-img-2.png" alt="">
@@ -36,7 +36,7 @@
         </div>
     </a>
 </div>
-<div class="item">
+<div class="item" data-id="3">
     <a href="#">
         <div class="item-img">
             <img src="images/item-img-3.png" alt="">
@@ -55,7 +55,7 @@
         </div>
     </a>
 </div>
-<div class="item">
+<div class="item" data-id="4">
     <a href="#">
         <div class="item-img">
             <img src="images/item-img-4.png" alt="">

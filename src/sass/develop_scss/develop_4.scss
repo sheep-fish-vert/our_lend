@@ -1,3 +1,8 @@
+.ctext{
+    b,strong{font-weight: bold;}
+    i{font-style: italic;}
+}
+
 /*portfolio*/
 .title-text{
     .title{font-family: "FuturaPT";font-size: 36px;position: relative;
@@ -150,6 +155,17 @@
 }
 /*/preload*/
 
+/*fancybox close*/
+.fancybox-close{width: 55px;height: 55px;background-image: none;border:2px solid #e8e8e8;border-radius: 50%;top: 28px;right: 26px;background-color: #fff;overflow: hidden;
+    &:after{position: absolute;width: 0;height: 0;transform: translate(-60%, -60%);background-color: #e8e8e8;transition:all ease .2s;border-radius: 50%;overflow: hidden;content: '';top: 60%;left: 60%;}
+    &:hover{
+        &:after{width: 150%;height: 150%;}
+    }
+    span{width: 21px;height: 4px;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%) rotate(-45deg);z-index: 3;}
+    span:last-child{transform: translate(-50%, -50%) rotate(45deg);}
+}
+/*/fancybox close*/
+
 /*portfolio pop*/
 .portfolio-pop{/*height: 980px;*/opacity: 0;transform: translateY(-150%);transition:opacity ease .3s,transform ease .3s;
     &.show{opacity: 1;transform: translateY(0%);}
@@ -158,13 +174,13 @@
     .main-img{width: calc(60% - 20px);overflow: hidden;margin-top: 20px;
         .main-img-wrap{padding-left: 20px;}
     }
-    .description{width: 40%;padding: 20px;display: flex;flex-direction: column;flex-wrap: nowrap;justify-content: space-around;align-content: flex-start;}
-    .jspVerticalBar{width: 20px;right: 4px;}
+    .description{width: calc(40% + 25px);padding: 20px;display: flex;flex-direction: column;flex-wrap: nowrap;justify-content: space-between;align-content: stretch;}
+    .jspVerticalBar{width: 20px;right: 4px;background:none;}
     .jspTrack{background: linear-gradient(to right, #f2f2f2 1%,#f9f9f9 27%,#ffffff 44%,#ffffff 66%,#e6e6e6 100%);}
     .jspDrag{background-color: #979797;border-radius: 20px;left: 1px;width: 16px;}
 
-    .description>div{padding: 35px;background-color: #fff;box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.22);margin-bottom: 10px;
-        &:last-child{margin-bottom: 0px;}
+    .description>div{padding: 32px 35px;background-color: #fff;box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.22);
+        &:last-child{margin-bottom: 0px;padding: 28px;max-height: 211px;overflow: hidden;}
     }
     .description-name{color: #4e4e4e;font-size: 48px;font-weight: bold;
         h5{position: relative;display: inline-block;
@@ -173,11 +189,41 @@
     }
     .description-type{margin-bottom: 10px;}
     .description-desc{color: #919191;font-size: 18px;padding-top: 29px;}
-    .description-top{max-height: 207px;}
+    .description-top{max-height: 207px;position: relative;
+        .fancybox-close{top: 5px;right: 5px;}
+    }
 
     .description-center-title{font-size: 30px;color: #4e4e4e;padding-bottom: 30px;
         b{position: relative;font-weight: bold;text-transform: uppercase;
             &:after{position: absolute;bottom: -10px;left: 0;background-color: #e7e7e7;height: 2px;width: calc(100% + 30px);content: '';}
+        }
+    }
+    .description-center-text{line-height: 20px;overflow: hidden;
+        .jspVerticalBar{width: 12px;right: 0px;}
+        .jspDrag{left: 1px;width: 10px;}
+        .jspTrack{background:none;background-color: transparent;}
+        .jspVerticalBar{background:none;}
+    }
+    .description-bottom{display: flex;flex-direction: row;flex-wrap: nowrap;justify-content: center;align-content: center;}
+    .description-bottom-left{width: 55%;display: flex;flex-direction: column;flex-wrap: nowrap;justify-content: space-around;align-content: center;
+        b{font-weight: bold;font-size: 16px;}
+    }
+    .description-bottom-right{width: 45%;display: flex;flex-direction: column;flex-wrap: nowrap;justify-content: space-around;align-content: center;text-align: center;border-left:2px solid #e7e7e7;
+        img{display: inline-block;}
+        a{color: #4f4f4f;text-transform: uppercase;text-decoration: none;font-family: "FuturaPT";font-weight: bold;transition:all ease .2s;
+            &:hover{opacity: .8;}
+        }
+
+    }
+    .description-bottom-row{padding: 4px 0px;
+        &:last-child{margin-bottom: 0;}
+        .icon{display: inline-block;width: 30px;height: 26px;background: url(../images/description-bottom-icon-1.png) center center no-repeat;vertical-align: middle;margin-right: 5px;}
+        .icon.icon-2{background: url(../images/description-bottom-icon-2.png) center center no-repeat;}
+    }
+    .description-bottom-href{
+        a{width: 225px;height: 60px;align-content: center;font-size: 16px;color: #4f4f4f;text-decoration: none;border-radius: 40px;margin:0 auto;border:2px solid transparent;font-size: 16px;color: #4f4f4f;line-height: 56px;display: block;text-align: center;font-weight: bold;
+            span{}
+            &:hover{color: #fff;}
         }
     }
 }

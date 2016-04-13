@@ -12,6 +12,63 @@
         }
     }
     /*/portfolio*/
+
+    /*portfolio pop*/
+    .portfolio-pop{
+
+        .jspVerticalBar{}
+        .jspTrack{}
+        .jspDrag{}
+        .description{font-size: 14px;width: calc(40% + 15px);padding: 10px;justify-content: space-around;}
+        .description>div{padding: 18px 18px;
+            &:last-child{padding: 18px;}
+        }
+        .main-img{width: calc(60% - 10px);overflow: hidden;margin-top: 10px;
+            .main-img-wrap{padding-left: 10px;}
+        }
+        .description-name{font-size: 38px;
+            h5{
+                &:after{bottom: -8px;}
+            }
+        }
+        .description-type{margin-bottom: 5px;}
+        .description-desc{font-size: 16px;padding-top: 20px;}
+        .description-top{}
+        .description-center-title{font-size: 26px;padding-bottom: 25px;
+            b{
+                &:after{bottom: -7px;}
+            }
+        }
+        .description-center-text{line-height: 16px;font-size: 14px;
+            .jspVerticalBar{}
+            .jspDrag{}
+            .jspTrack{}
+            .jspVerticalBar{}
+        }
+        .description-bottom{}
+        .description-bottom-left{
+            b{font-size: 14px;}
+        }
+        .description-bottom-right{
+            img{}
+            a{
+                &:hover{}
+            }
+
+        }
+        .description-bottom-row{padding: 2px 0px;
+            &:last-child{}
+            .icon{}
+            .icon.icon-2{}
+        }
+        .description-bottom-href{
+            a{width: 170px;height: 40px;font-size: 14px;line-height: 34px;
+                span{}
+                &:hover{}
+            }
+        }
+    }
+    /*/portfolio pop*/
 }
 @media screen and (max-width: 1170px){
     .slick-next{right: calc(49% - 80px);}

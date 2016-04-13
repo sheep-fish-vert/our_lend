@@ -265,13 +265,23 @@ function portfolioPop(){
         event.preventDefault();
         $('.preload').addClass('active');
         var id = $(this).data('id'),
-            mainImg = null,
-            jspApi = null;
+            mainImg,jspApi,mainText,jspApiText = null;
 
         function heightImg(){
             var popHeight = $('.portfolio-pop').height();
             var imgMargin = parseInt($('.main-img').css('margin-top'));
             $('.main-img').height(popHeight-imgMargin);
+        }
+        function heightSubText(){
+            if( $('.portfolio-pop .description-center-text').outerHeight()>200 && $(window).width() > 992){
+                console.log('bolshe');
+                $('.portfolio-pop .description-center-text').height(200);
+                setTimeout(function(){
+                    mainText = $('.portfolio-pop .description-center-text');
+                    mainText.jScrollPane();
+                    jspApiText = mainText.data('jsp');
+                },0)
+            }
         }
         $.ajax({
             type: "POST",
@@ -288,18 +298,26 @@ function portfolioPop(){
                     autoSize:false,
                     'autoDimensions':false,
                     padding:'0',
+                    'closeBtn' : false,
+                    tpl: {
+                        closeBtn: '<a title="Закрыть" class="fancybox-item fancybox-close myClose" href="javascript:;"><span class="background-spec"></span><span class="background-spec"></span></a>'
+                    },
                     afterShow:function(){
                         console.log('afterShow');
                         heightImg();
+                        heightSubText();
+                        /*main img*/
                         mainImg = $('.main-img');
                         mainImg.jScrollPane();
                         jspApi = mainImg.data('jsp');
+
+                        /*subtextImg*/
 
                         mainImg.bind('jsp-initialised',function(event, isScrollable){
                             setTimeout(function(){
                                 $('.preload').removeClass('active');
                                 $('.portfolio-pop').addClass('show');
-                            },2000);
+                            },1000);
                         });
                     },
                     onUpdate:function(){
