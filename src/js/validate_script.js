@@ -379,6 +379,13 @@ function portfolioPop(){
     $(document).on('click','.portfolio-pop .myClose', function(event) {
         $.fancybox.close();
     });
+
+    $(document).on('click', '.description-bottom-href button', function(event) {
+        event.preventDefault();
+        $.fancybox.close();
+        $('html,body').animate({scrollTop:$('.contacts-main-title').offset().top},800);
+        $('.contacts-form-wrap-main').find('input[name=your_name]').focus();
+    });
 }
 $(document).ready(function(){
     portfolioPop();
