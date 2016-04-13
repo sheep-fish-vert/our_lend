@@ -118,6 +118,7 @@ function validationCall(form){
 }
 
 /* Отправка формы с файлом */
+/* не использовать input[type="file"] в форме и не забыть дописать форме enctype="multipart/form-data" */
 function validationCallDocument(form){
 
     var thisForm = $(form);
@@ -141,6 +142,7 @@ function validationCallDocument(form){
 }
 
 /* Отправка формы с файлaми */
+/* не использовать input[type="file"] в форме и не забыть дописать форме enctype="multipart/form-data" */
 function validationCallDocuments(form){
 
     var thisForm = $(form);
