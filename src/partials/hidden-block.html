@@ -3,6 +3,9 @@
     <div id="call_success">
         <div class="call-success">
              <div class="call_success">
+                <div class="convert">
+                    <img src="images/pop-logo.png" alt="">
+                </div>
                  <div class="call-title">Спасибо за заявку!</div>
                  <div class="call-subtitle">Мы свяжемся с Вами в ближайшее время</div>
              </div>
@@ -10,31 +13,40 @@
     </div>
 
     <div id="call-popup">
-        <form action="ajax.php" name="" class="contact-form">
+        <form action="ajax.php" name="call-me-maybe" class="contact-form">
             <div class="contact-form-title">
-                <img src="images/poplogo.png" alt="">
-                <h5>Lorem ipsum dolor.</h5>
+                <div class="convert">
+                    <img src="images/pop-logo.png" alt="">
+                </div>     
+                <h5>Заполните форму, <br />  и мы вам перезвоним! <span class="border-spec"></span></h5>
             </div>
             <div class="contact-form-row cfix">
                 <div class="contact-form-item">
                     <div class="contact-form-item-input form_row">
                         <div class="form_input">
-                            <input type="text" name="contact_name" required="required" value="" placeholder="Ваше Имя">
+                            <input type="text" name="contact_name" required="required" value="" placeholder="Имя *">
                         </div>
                     </div>
                 </div>
                 <div class="contact-form-item">
                     <div class="contact-form-item-input form_row">
                         <div class="form_input">
-                            <input type="text" name="contact_tel" value="" required="required" placeholder="Ваш номер" class="tel-mask">
+                            <input type="text" name="contact_tel" value="" required="required" placeholder="Телефон *" class="tel-mask">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-item">
+                    <div class="contact-form-item-input form_row">
+                        <div class="form_input">
+                            <input type="email" name="contact_email" required="required" value="" placeholder="E-Mail *">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="contact-form-row cfix">
                 <div class="contact-form-item">
-                    <button type="submit" class="contact-submit">
-                        <span>Отправить заявку</span>
+                    <button type="submit" class="contact-submit border-spec color-spec color-spec-reverse-hover border-spec-hover background-spec-hover ">
+                        <span>ОТПРАВИТЬ</span>
                     </button>
                 </div>
             </div>
