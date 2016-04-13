@@ -15,10 +15,6 @@
 
     /*portfolio pop*/
     .portfolio-pop{
-
-        .jspVerticalBar{}
-        .jspTrack{}
-        .jspDrag{}
         .description{font-size: 14px;width: calc(40% + 15px);padding: 10px;justify-content: space-around;}
         .description>div{padding: 18px 18px;
             &:last-child{padding: 18px;}
@@ -33,39 +29,18 @@
         }
         .description-type{margin-bottom: 5px;}
         .description-desc{font-size: 16px;padding-top: 20px;}
-        .description-top{}
         .description-center-title{font-size: 26px;padding-bottom: 25px;
             b{
                 &:after{bottom: -7px;}
             }
         }
-        .description-center-text{line-height: 16px;font-size: 14px;
-            .jspVerticalBar{}
-            .jspDrag{}
-            .jspTrack{}
-            .jspVerticalBar{}
-        }
-        .description-bottom{}
+        .description-center-text{line-height: 16px;font-size: 14px;}
         .description-bottom-left{
             b{font-size: 14px;}
         }
-        .description-bottom-right{
-            img{}
-            a{
-                &:hover{}
-            }
-
-        }
-        .description-bottom-row{padding: 2px 0px;
-            &:last-child{}
-            .icon{}
-            .icon.icon-2{}
-        }
+        .description-bottom-row{padding: 2px 0px;}
         .description-bottom-href{
-            a{width: 170px;height: 40px;font-size: 14px;line-height: 34px;
-                span{}
-                &:hover{}
-            }
+            a{width: 170px;height: 40px;font-size: 14px;line-height: 34px;}
         }
     }
     /*/portfolio pop*/
@@ -111,7 +86,38 @@
     /*/reviews*/
 }
 @media screen and (max-width: 992px){
-
+    /*portfolio pop*/
+    .portfolio-pop{
+        .portfolio-pop-wrap{flex-direction:column-reverse;flex-wrap:wrap;}
+        .description{width: 100%;margin:0 auto;}
+        .description>div{
+            &:last-child{}
+        }
+        .main-img{width: 100%;margin:0 auto;
+            .main-img-wrap{}
+        }
+        .description-name{
+            h5{
+                &:after{}
+            }
+        }
+        .description-type{}
+        .description-desc{}
+        .description-center-title{
+            b{
+                &:after{}
+            }
+        }
+        .description-center-text{}
+        .description-bottom-left{
+            b{}
+        }
+        .description-bottom-row{}
+        .description-bottom-href{
+            a{}
+        }
+    }
+    /*/portfolio pop*/
 }
 @media screen and (max-width: 767px){
 
