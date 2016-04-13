@@ -37,9 +37,9 @@
                         <b>Перейти на сайт :</b> <a href="http://fish-express.com" class="color-spec">fish-express.com</a>
                     </div>
                     <div class="description-bottom-row description-bottom-href">
-                        <a href="#" class="border-spec background-spec-hover">
+                        <button class="border-spec background-spec-hover">
                             <span>Хочу такой же сайт</span>
-                        </a>
+                        </button>
                     </div>
                 </div>
                 <div class="description-bottom-right">
