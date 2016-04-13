@@ -15,7 +15,7 @@ header{position: fixed; z-index: 150; top: 0; width: 100%; background-color: rgb
                         }
                         &:last-child{border-right: none;}
                         &:hover{
-                            a{ transform: scale(1.5, 1.5);
+                            a{
                                 span{position: absolute; left: -5px; right: -5px; bottom: -3px; opacity: 1;}
                             }
                         }
