@@ -9,6 +9,11 @@
     }
 }
 
+.fancybox-lock body{overflow: hidden; width: 100vw; height: 100vh; min-height: 0;
+    .global-wrapper{overflow: hidden; }
+    .fancybox-overlay-fixed{height: 100vh !important; overflow: hidden;}  
+}
+
 .fancybox-margin header {padding-right: 16px;}
 .mobile.fancybox-margin header {padding-right: 0px;}
 header{position: fixed; z-index: 150; top: 0; width: 100%; background-color: rgba(0, 0, 0, 0.5); backface-visibility: hidden;
