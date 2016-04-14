@@ -271,6 +271,11 @@ function portfolioPop(){
         $('.preload').addClass('active');
         var id = $(this).data('id'),
             mainImg,jspApi,mainText,jspApiText = null;
+            autoSize = false;
+        if( $(window).width()<=992 ){
+            autoSize = true;
+        }
+
 
         function heightImg(){
             var popHeight = $('.portfolio-pop').height();
@@ -304,7 +309,7 @@ function portfolioPop(){
                     'closeBtn' : true,
                     height:800,
                     width:1580,
-                    autoSize:false,
+                    autoSize:autoSize,
                     'autoDimensions':false,
                     padding:'0',
                     'closeBtn' : false,
