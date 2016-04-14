@@ -1,5 +1,14 @@
 /* header */
-.overflover{overflow: hidden;}
+
+.overflover{overflow: hidden;
+    header{padding-right: 16px;}
+}
+.mobile{
+    .overflover{overflow: hidden;
+        header{padding-right: 0px;}
+    }
+}
+
 .fancybox-margin header {padding-right: 16px;}
 .mobile.fancybox-margin header {padding-right: 0px;}
 header{position: fixed; z-index: 150; top: 0; width: 100%; background-color: rgba(0, 0, 0, 0.5); backface-visibility: hidden;
@@ -7,6 +16,7 @@ header{position: fixed; z-index: 150; top: 0; width: 100%; background-color: rgb
         .mbox2{ height: 100px; display: flex; justify-content: space-around; align-items: center ;
             .logo-block{ min-width: 110px;}
             .butterbrod.active{display: none;}
+            .hum-menu{display: none;}
             nav{ min-width: 850px;                
                 ul{width: 100%;
                     li{display: block; float: left; width: calc(100%/6); text-align: center; border-right: 1px solid rgba(255, 255, 255, 0.3); cursor: pointer;
