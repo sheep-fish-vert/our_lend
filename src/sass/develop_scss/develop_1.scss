@@ -69,7 +69,7 @@
                 }
 
                 .services-item-button{position: relative;z-index: 1;
-                    .button{max-width: 250px;width: 100%;min-height: 50px;display: flex;justify-content:center;align-items:center;border:3px solid #ffffff;border-radius: 50px;text-decoration: none;color:#fff;font-weight: 700;font-size: 14px;text-transform: uppercase;margin: 0 auto;transition:border-color 300ms ease;
+                    .button{max-width: 250px;width: 100%;height: 50px;display: flex;justify-content:center;align-items:center;border:3px solid #ffffff;border-radius: 50px;text-decoration: none;color:#fff;font-weight: 700;font-size: 14px;text-transform: uppercase;margin: 0 auto;transition:border-color 300ms ease;
                         &:hover{border-color:#f98e3c;}
                     }
                 }
@@ -110,7 +110,7 @@
                     &:-ms-input-placeholder {color:#fff;font-family: 'Roboto', sans-serif;}
                 }
                 &.submit{margin-bottom: 0;
-                    button{width: 100%;min-height: 60px;border-width: 2px;border-style:solid;display: flex;align-items:center;justify-content:center;border-radius: 5px;background-color: transparent;font-size: 18px;color:#fff;font-weight: 700;text-transform: uppercase;transition:background-color 300ms ease, border-color 300ms ease;}
+                    button{width: 100%;height: 60px;border-width: 2px;border-style:solid;display: flex;align-items:center;justify-content:center;border-radius: 5px;background-color: transparent;font-size: 18px;color:#fff;font-weight: 700;text-transform: uppercase;transition:background-color 300ms ease, border-color 300ms ease;}
                 }
             }
         }
@@ -122,8 +122,38 @@
 
     .footer{
         .footer-top{
-            .icon{display: block;mask-size: cover;mask-repeat:no-repeat;mask-position:center center;
-                &.skype{width: 52px;height: 53px;display: block;mask:url(../images/footer-list-skype.svg);background:red;}
+            .footer-list-img{display: block;
+                &.skype{
+                    svg{width: 52px;height: 53px;
+                        g{transform:scale(0.1);}
+                    }
+                }
+                &.mail{
+                    svg{width:55px;height: 37px;
+                        g{transform:scale(3.1);}
+                    }
+                }
+                &.telefone{
+                   svg{width: 51px;height: 65px;transform:rotate(90deg);
+                        g{transform:scale(1.6);}
+                   }
+                }
+                &.vk{
+                    svg{width: 59px;height: 36px;
+                        g{transform:scale(0.08);}
+                    }
+                }
+                &.fb{
+                    svg{width: 23px;height: 40px;
+                        g{transform:scale(1.4);}
+                    }
+                }
+                &.gp{
+                    svg{width: 47px;height: 47px;
+                        g{transform:scale(0.09);}
+                    }
+                }
+                svg{fill:#ccc;transition:fill 300ms ease;}
             }
         }
         .footer-bottom{background-image:url(../images/footer-background.jpg);background-repeat: no-repeat;background-position: center top;background-size:cover;padding: 190px 0 30px 0;text-align: center;position: relative;
