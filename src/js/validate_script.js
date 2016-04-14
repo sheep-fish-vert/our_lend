@@ -151,7 +151,7 @@ function Maskedinput(){
 function fancyboxForm(){
   $('.fancybox-form').fancybox({
     openEffect  : 'fade',
-    closeEffect : 'fade',
+    closeEffect: 'fade',
     autoResize:true,
     wrapCSS:'fancybox-form',
     'closeBtn' : true,

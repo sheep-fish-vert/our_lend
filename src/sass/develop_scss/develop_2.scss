@@ -9,7 +9,10 @@
     }
 }
 
-.fancybox-lock .global-wrapper{overflow: hidden;}
+.fancybox-lock body{overflow: hidden; width: 100vw; height: 100vh; min-height: 0;
+    .global-wrapper{overflow: hidden; }
+    .fancybox-overlay-fixed{height: 100vh !important; overflow: hidden;}  
+}
 
 .fancybox-margin header {padding-right: 16px;}
 .mobile.fancybox-margin header {padding-right: 0px;}
