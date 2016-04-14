@@ -9,6 +9,8 @@
     }
 }
 
+.fancybox-lock .global-wrapper{overflow: hidden;}
+
 .fancybox-margin header {padding-right: 16px;}
 .mobile.fancybox-margin header {padding-right: 0px;}
 header{position: fixed; z-index: 150; top: 0; width: 100%; background-color: rgba(0, 0, 0, 0.5); backface-visibility: hidden;
