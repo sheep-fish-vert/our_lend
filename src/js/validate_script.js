@@ -117,56 +117,6 @@ function validationCall(form){
     });
 }
 
-/* Отправка формы с файлом */
-/* не использовать input[type="file"] в форме и не забыть дописать форме enctype="multipart/form-data" */
-function validationCallDocument(form){
-
-    var thisForm = $(form);
-    var formData = new FormData($(form)[0]);
-
-    formData.append('file', thisForm.find('input[type=file]')[0].files[0]);
-
-    $.ajax({
-        url: ajaxUrl,
-        type: "POST",
-        data: formData,
-        contentType:false,
-        processData:false,
-        cache:false,
-        success: function(response) {
-            thisForm.trigger("reset");
-            popNext("#call_success", "call-popup");
-        }
-    });
-
-}
-
-/* Отправка формы с файлaми */
-/* не использовать input[type="file"] в форме и не забыть дописать форме enctype="multipart/form-data" */
-function validationCallDocuments(form){
-
-    var thisForm = $(form);
-    var formData = new FormData($(form)[0]);
-
-    $.each(thisForm.find('input[type="file"]')[0].files, function(index, file){
-        formData.append('file-'+index, file);
-    });
-
-    $.ajax({
-        url: ajaxUrl,
-        type: "POST",
-        data: formData,
-        contentType:false,
-        processData:false,
-        cache:false,
-        success: function(response) {
-            thisForm.trigger("reset");
-            popNext("#call_success", "call-popup");
-        }
-    });
-
-}
-
 function popNext(popupId, popupWrap){
 
     $.fancybox.open(popupId,{
@@ -245,26 +195,6 @@ function someAjax(item, someUrl, successFunc, someData){
 
 }
 
-/* example for someAjax func
-
-    write like this
-    someAjax('.link', '/programer_item.php', someFuncName, {action:'someAction', item_id:id});
-
-    or
-
-    someAjax('.link','/programer_item.php', someFuncName, someDataFuncName);
-
-    where
-
-    function someDataFuncName(itemObject){
-
-        return {id:itemObject.data('id'), text:itemObject.parents('.parentOfItemObject').data('text')};
-
-        // where itemObject = $('.link') in someAjax func
-
-    }
-
-*/
 function portfolioPop(){
     $(document).on('click','.portfolio-wrap .item',function(event) {
         event.preventDefault();
@@ -341,8 +271,6 @@ function portfolioPop(){
 
                     },
                     onUpdate:function(){
-                        console.log('onUpdate ');
-
                         //desctop version
                         if( $(window).width()>992 ){
                             heightImg();
@@ -397,7 +325,5 @@ $(document).ready(function(){
     validate('#call-popup .contact-form', {submitFunction:validationCall});
     Maskedinput();
     fancyboxForm();
-
     validate('.contacts-form', {submitFunction:validationCall});
-
 });
