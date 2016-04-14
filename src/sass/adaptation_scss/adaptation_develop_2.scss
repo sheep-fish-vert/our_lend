@@ -78,7 +78,7 @@
         .button-header { content: ''; padding: 8px; position: relative; 
             i{display: block; animation: pulse 1s linear infinite; content: ''; position: absolute; top: -2px; left: -2px; right: -2px;bottom: -2px; border: 2px solid ; border-radius: 50%;}
             span{display: none;}
-            svg{display: block; color: white; fill: red; width: 30px; height: 30px; animation: rotater 2s linear infinite; }
+            svg{display: block; width: 30px; height: 30px; animation: rotater 2s linear infinite; }
         }
      }
      
