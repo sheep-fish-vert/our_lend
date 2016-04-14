@@ -83,8 +83,8 @@
 /* contacts */
 
     .contacts{position: relative;background-image:url(../images/cantacts-background.jpg);background-repeat: no-repeat;background-size: cover;background-position: center top;padding: 220px 0 170px 0;
-        .contacts-descript{max-width: 720px;width: 100%;margin:0 auto 18px auto;padding: 0  0 18px 0;position: relative;font-size: 24px;font-weight: 700;color:#fff;text-align: center;line-height: 28px;
-            span{position: absolute;max-width: 480px;width: 100%;height: 5px;background-color: #898989;left:50%;transform:translate(-50%, 0);bottom: 0;}
+        .contacts-descript{max-width: 720px;width: 100%;margin:0 auto 18px auto;padding: 0  10px 18px 10px;position: relative;font-size: 24px;font-weight: 700;color:#fff;text-align: center;line-height: 28px;
+            span{position: absolute;max-width: 480px;width: calc(100% - 20px);height: 5px;background-color: #898989;left:50%;transform:translate(-50%, 0);bottom: 0;}
         }
         .contacts-arrow{margin-bottom: 40px;
             .mega-arrow{
@@ -156,7 +156,7 @@
                     svg{width: 59px;height: 36px;}
                 }
                 &.fb{
-                    svg{width: 23px;height: 40px;}
+                    svg{width: 34px;height: 55px;}
                 }
                 &.gp{
                     svg{width: 47px;height: 47px;}
@@ -170,6 +170,40 @@
     }
 
 /* /footer */
+
+/* my-little-pony */
+
+.secret-fon{position: fixed;top: 0;right: 0;bottom: 0;left: 0;box-shadow:inset 0 0 0 rgba(222, 141, 249, 0);transition:box-shadow 300ms ease;pointer-events:none;z-index: 9999;background-color: transparent;}
+.secret-erotic{position: fixed;z-index:-100;left: 50%;transform:translate(-50%, 0);bottom: 0;width: 450px;pointer-events:none;
+    .secret-erotic-wrap{opacity: 0;transition:opacity 300ms ease;
+        &.active{opacity: 1;}
+    }
+}
+
+body.pink{
+    .secret-fon{box-shadow:inset 0 0 255px rgba(222, 141, 249, .8);backface-visibility:hidden;}
+    .secret-erotic{display: block;z-index: 3;backface-visibility:hidden;}
+
+    .background-spec{background-color:#de8df9!important;}
+    .background-spec-reverse{background-color:#bd00fc!important;}
+    .background-spec-hover:hover{background-color:#bd00fc!important;}
+    .background-spec-reverse-hover:hover{background-color:#de8df9!important;}
+    .border-spec{border-color:#de8df9!important;}
+    .border-spec-reverse{border-color:#bd00fc!important;}
+    .border-spec-hover:hover{border-color:#bd00fc!important;}
+    .border-spec-reverse-hover:hover{border-color:#de8df9!important;}
+    .color-spec{color:#de8df9!important;}
+    .color-spec-reverse{color:#bd00fc!important;}
+    .color-spec-hover:hover{color:#bd00fc!important;}
+    .color-spec-reverse-hover:hover{color:#de8df9!important;}
+    .svg-spec{fill:#de8df9!important;}
+    .svg-spec-reverse{fill:#bd00fc!important;}
+    .svg-spec-hover:hover{fill:#bd00fc!important;}
+    .svg-spec-reverse-hover:hover{fill:#de8df9!important;}
+
+}
+
+/* /my-little-pony */
 
 /* animations */
 
