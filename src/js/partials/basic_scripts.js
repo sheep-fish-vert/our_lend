@@ -196,6 +196,7 @@ $(window).resize(function() {
         $('body').removeClass('overflover');
     } else {
         $('nav').css('display', 'none');
+        $('.hum-menu').css('display', 'none');
         $('.asked').css('display', 'block');
         $('.butterbrod').removeClass('active');
     }

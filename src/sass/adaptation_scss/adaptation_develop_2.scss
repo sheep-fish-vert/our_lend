@@ -30,10 +30,10 @@
                 }
             }
             nav{display: none;}
-            .hum-menu { position: absolute; left: 0;
-                nav.asked{display: block;}
+            .hum-menu { position: absolute; left: -100vh;  right: 0; top: 100px;background-color: rgba(0, 0, 0, 0.8); height: calc(100vh - 100px) !important; width: 100vw; min-width: 0;transition: all 0.3s; overflow: hidden;
+                nav.asked{display: block; }
             }
-            nav.asked{ display: none; position: absolute; left: 0; right: 0; top: 100px;background-color: rgba(0, 0, 0, 0.8); height: calc(100vh - 100px) !important; width: 100vw; min-width: 0;
+            nav.asked{ display: none;
                 ul{ padding: 10px 0 13px; height: calc(100vh - 100px); display: flex; flex-wrap: wrap;align-content: space-around;
                     li{float: none; width: 100%; border: none;
                         a{font-size: 24px;}
@@ -45,6 +45,7 @@
     }
     header .conteiner .mbox2 .but-block .call-back-me { display: none;}
     
+    .overflover header .conteiner .mbox2 .hum-menu { left: 0; right: 0;}
     
 }
 @media screen and (max-width: 992px){
