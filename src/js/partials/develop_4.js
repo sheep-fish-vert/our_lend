@@ -9,7 +9,7 @@ function portfolioShowMore(){
                 $('.portfolio-wrap').append(data);
                 setTimeout(function(){
                     var bottom = $('.portfolio')[0].scrollHeight;
-                    $('html,body').animate({scrollTop:bottom},800);
+                    $('html,body').animate({scrollTop:bottom},300);
                 },200);
             }
         });
