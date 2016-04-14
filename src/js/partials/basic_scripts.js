@@ -209,7 +209,7 @@ $(document).ready(function() {
     //oneHeightItems();
     $('.footer_placeholder').height($('.footer').outerHeight());
 
-    headeButer($('.butterbrod'), $('nav'));
+    headeButer($('.butterbrod'), $('.hum-menu'));
     scrollUp('.top-block-bottom-arrow', '.portfolio');
 
     randomColors();
@@ -219,12 +219,13 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
+
     if ($(window).width() > 1024 - $.scrollbarWidth()) {
-        $('nav').css('display', 'block');
+        //$('nav').css('display', 'block');
         $('.butterbrod').addClass('active');
         $('body').removeClass('overflover');
     } else {
-        $('nav').css('display', 'none');
+        //$('nav').css('display', 'none');
         $('.butterbrod').removeClass('active');
     }
 
