@@ -75,8 +75,8 @@
         header .conteiner .mbox2 .butterbrod.active {right: 16px;}
      }
      header .conteiner .mbox2 .but-block { top: 25px; right: calc(100% - 70px); left: 20px; min-width: 50px;
-        .button-header { content: ''; padding: 8px; position: relative; 
-            i{display: block; animation: pulse 1s linear infinite; content: ''; position: absolute; top: -2px; left: -2px; right: -2px;bottom: -2px; border: 2px solid ; border-radius: 50%;}
+        .button-header { content: ''; padding: 8px; position: relative;  width: 50px !important;
+            i{display: block; animation: pulse 1s linear infinite; content: ''; position: absolute; top: -2px; left: -2px; right: -2px;bottom: -2px; border-width: 2px; border-style: solid; ; border-radius: 50%;}
             span{display: none;}
             svg{display: block; width: 30px; height: 30px; animation: rotater 2s linear infinite; }
         }
@@ -89,8 +89,8 @@
     }
     
      @keyframes pulse {
-        from {top: -2px; left: -2px; right: -2px;bottom: -2px; border: 2px solid ; opacity: 1;}
-        to {top: -12px; left: -12px; right: -12px;bottom: -12px; border: 0px solid ; opacity: 0;}
+        from {top: -2px; left: -2px; right: -2px;bottom: -2px; border-width: 2px; opacity: 1;}
+        to {top: -12px; left: -12px; right: -12px;bottom: -12px; border-width: 0px; opacity: 0;}
     }
 
 }
