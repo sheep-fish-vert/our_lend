@@ -74,7 +74,7 @@ function randomColors(){
 
     color = Math.floor((Math.random() * 16));
 
-    var randomStyles = '<style data-spec-hover=true>.color-spec{color:#'+colorsMassive[color]+'!important;}.background-spec{background-color:#'+colorsMassive[color]+'!important;}.border-spec{border-color:#'+colorsMassive[color]+'!important;} .border-shadow{border-color:#'+colorsMassive[color]+'!important; box-shadow: 0px 0px 14px 0px #'+colorsMassive[color]+ '; } .color-spec-hover:hover{color: #'+colorsMassiveHover[color]+'!important; }.background-spec-hover:hover{background-color:#'+colorsMassiveHover[color]+'!important; }.border-spec-hover:hover{border-color:#'+colorsMassiveHover[color]+'!important; }.background-spec-reverse{background-color:#'+colorsMassiveHover[color]+'!important; }.background-spec-reverse-hover:hover{background-color:#'+colorsMassive[color]+'!important; }.border-spec-reverse{border-color:#'+colorsMassiveHover[color]+'!important; }.border-spec-reverse-hover:hover{border-color:#'+colorsMassive[color]+'!important; }.svg-spec{fill:#'+colorsMassive[color]+'}.svg-spec-hover:hover{fill:#'+colorsMassiveHover[color]+'}</style > ';
+    var randomStyles = '<style data-spec-hover=true>.color-spec{color:#'+colorsMassive[color]+'!important;}.background-spec{background-color:#'+colorsMassive[color]+'!important;}.border-spec{border-color:#'+colorsMassive[color]+'!important;} .border-shadow{border-color:#'+colorsMassive[color]+'!important; box-shadow: 0px 0px 14px 0px #'+colorsMassive[color]+ '; } .color-spec-hover:hover{color: #'+colorsMassiveHover[color]+'!important; }.background-spec-hover:hover{background-color:#'+colorsMassiveHover[color]+'!important; }.border-spec-hover:hover{border-color:#'+colorsMassiveHover[color]+'!important; }.background-spec-reverse{background-color:#'+colorsMassiveHover[color]+'!important; }.background-spec-reverse-hover:hover{background-color:#'+colorsMassive[color]+'!important;}.border-spec-reverse{border-color:#'+colorsMassiveHover[color]+'!important; }.border-spec-reverse-hover:hover{border-color:#'+colorsMassive[color]+'!important; }.svg-spec{fill:#'+colorsMassive[color]+'!important;}.svg-spec-hover:hover{fill:#'+colorsMassiveHover[color]+'!important;}</style > ';
 
     $('head').append(randomStyles);
 
@@ -85,9 +85,11 @@ function randomColors(){
             backgroundUnhover:null,
             colorUnhover:null,
             borderUnhover:null,
+            fillUnhover:null,
             backgroundHover:null,
             colorHover:null,
-            borderHover:null
+            borderHover:null,
+            fillHover:null
         }
 
         $.extend(hoverFuncOptions, hoverOptions);
@@ -102,6 +104,9 @@ function randomColors(){
         if(hoverFuncOptions.borderHover != null){
             hoverStyle = hoverStyle + 'border-color:#'+ hoverFuncOptions.borderHover + '!important;';
         }
+        if(hoverFuncOptions.fillHover != null){
+            hoverStyle = hoverStyle + 'fill:#'+hoverFuncOptions.fillHover + '!important;';
+        }
 
         var unhoverStyle = '';
         if(hoverFuncOptions.backgroundUnhover != null){
@@ -113,6 +118,9 @@ function randomColors(){
         if(hoverFuncOptions.borderUnhover != null){
             unhoverStyle = unhoverStyle + 'border-color:#'+ hoverFuncOptions.borderUnhover + '!important;';
         }
+        if(hoverFuncOptions.fillUnhover != null){
+            unhoverStyle = unhoverStyle + 'fill:#'+hoverFuncOptions.fillUnhover + '!important;';
+        }
 
         if(unhoverStyle != ''){
             $(changeItem).attr('style', unhoverStyle);
@@ -121,19 +129,21 @@ function randomColors(){
         $(hoverItem).hover(
             function(){
                 if(hoverStyle != ''){
-                    $(changeItem).attr('style', hoverStyle);
+                    $(this).find(changeItem).attr('style', hoverStyle);
                 }
             },
             function(){
                 if(unhoverStyle != ''){
-                    $(changeItem).attr('style', unhoverStyle);
+                    $(this).find(changeItem).attr('style', unhoverStyle);
                 }
             }
         );
 
     }
 
-    specHover('.top-block-button a', '.top-block-button a .span-button-arrow', {backgroundUnhover:colorsMassiveHover[color],borderUnhover:colorsMassive[color],backgroundHover:colorsMassive[color],borderHover:colorsMassiveHover[color]});
+    specHover('.top-block-button a', '.span-button-arrow', {backgroundUnhover:colorsMassiveHover[color],borderUnhover:colorsMassive[color],backgroundHover:colorsMassive[color],borderHover:colorsMassiveHover[color]})
+
+    specHover('.footer-list a', 'svg', {fillUnhover:'8d8d8d', fillHover:colorsMassiveHover[color]});
 
 
 }

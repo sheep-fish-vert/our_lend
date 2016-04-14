@@ -121,7 +121,7 @@
 /* footer */
 
     .footer{
-        .footer-top{text-align: center;display: flex;align-items:center;justify-content:flex-start;flex-wrap:wrap;max-width:1220px;width: 100%;margin: 0 auto;position: relative;z-index: 2;
+        .footer-top{text-align: center;display: flex;align-items:center;justify-content:flex-start;flex-wrap:wrap;max-width:1220px;width: 100%;margin: 0 auto;position: relative;z-index: 2;margin-bottom: -30px;
             .footer-list{width: 50%;
                 ul{display: flex;justify-content:space-around;align-items:center;flex-wrap:wrap;
                     li{position: relative;width: 33.33%;
@@ -131,7 +131,7 @@
                         }
                         &:after{content:'';display: block;position: absolute;width: 1px;height: 40px;background-color: #e2e2e2;top:50%;margin-top: -15px;right: 0;}
                     }
-                    a{text-decoration: none;font-family: 'FuturaPT', sans-serif;color:#8d8d8d;font-weight: 700;font-size: 18px;text-transform: uppercase;}
+                    a{text-decoration: none;font-family: 'FuturaPT', sans-serif;color:#8d8d8d;font-weight: 700;font-size: 18px;text-transform: uppercase;transition:color 300ms ease;}
                 }
                 &:last-child{
                     ul{flex-direction:row-reverse;
@@ -141,7 +141,7 @@
                     }
                 }
             }
-            .footer-list-img{display: block;margin-bottom: 10px;height: 65px;display: flex;align-items:center;
+            .footer-list-img{display: block;padding-bottom: 10px;height: 65px;display: flex;align-items:center;
                 svg{display: block;margin:0 auto;}
                 &.skype{
                     svg{width: 52px;height: 53px;}
@@ -161,7 +161,7 @@
                 &.gp{
                     svg{width: 47px;height: 47px;}
                 }
-                svg{fill:#8d8d8d;transition:fill 300ms ease;}
+                svg{fill:#8d8d8d;transition-property:fill;transition-duration:300ms;transition-timing-function:ease;}
             }
         }
         .footer-bottom{background-image:url(../images/footer-background.jpg);background-repeat: no-repeat;background-position: center top;background-size:cover;padding: 190px 0 30px 0;text-align: center;position: relative;overflow: hidden;
