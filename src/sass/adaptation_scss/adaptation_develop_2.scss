@@ -43,6 +43,9 @@
             .logo-block { min-width: 110px; text-align: center;}
         }
     }
+    header .conteiner .mbox2 .but-block .call-back-me { display: none;}
+    
+    
 }
 @media screen and (max-width: 992px){
 
@@ -52,8 +55,8 @@
 
 }
 @media screen and (max-width: 567px){
-   header .conteiner .mbox2 nav{ display: none; position: absolute; left: 0; right: 0; top: 198px;background-color: rgba(0, 0, 0, 0.8); height: calc(100vh - 198px); width: 100vw; min-width: 0;
-        ul{ padding: 10px 0 13px; height: calc(100vh - 198px) !important; display: flex; flex-wrap: wrap;align-content: space-around;
+   header .conteiner .mbox2 nav.asked{ display: none; position: absolute; left: 0; right: 0; top: 100px;background-color: rgba(0, 0, 0, 0.8); height: calc(100vh - 100px); width: 100vw; min-width: 0;
+        ul{ padding: 10px 0 13px; height: calc(100vh - 100px) !important; display: flex; flex-wrap: wrap;align-content: space-around;
             li{float: none; width: 100%;padding: 10px; border: none;
                 a{font-size: 24px;}
             }
@@ -71,11 +74,29 @@
         }
         header .conteiner .mbox2 .butterbrod.active {right: 16px;}
      }
+     header .conteiner .mbox2 .but-block { top: 25px; right: calc(100% - 70px); left: 20px; min-width: 50px;
+        .button-header { content: ''; padding: 8px; position: relative; 
+            i{display: block; animation: pulse 1s linear infinite; content: ''; position: absolute; top: -2px; left: -2px; right: -2px;bottom: -2px; border: 2px solid ; border-radius: 50%;}
+            span{display: none;}
+            svg{display: block; width: 30px; height: 30px; animation: rotater 2s linear infinite; }
+        }
+     }
+     
+     @keyframes rotater {
+        0% {transform: rotate(20deg);}
+        50% {transform: rotate(-20deg);}
+        100% {transform: rotate(20deg);}
+    }
+    
+     @keyframes pulse {
+        from {top: -2px; left: -2px; right: -2px;bottom: -2px; border: 2px solid ; opacity: 1;}
+        to {top: -12px; left: -12px; right: -12px;bottom: -12px; border: 0px solid ; opacity: 0;}
+    }
 
 }
 @media screen and (max-width: 479px){
     header .conteiner .mbox2 .but-block { padding-bottom: 10px;}
-    header .conteiner .mbox2 .but-block .button-header { height: 40px; border-radius: 20px; line-height: 38px;}
+    header .conteiner .mbox2 .but-block .button-header { height: 50px; border-radius: 25px; line-height: 38px; width: 50px;}
     header .conteiner .mbox2 nav { top: 178px; height: calc(100vh - 178px) !important;}
     
     #call-popup { padding: 65px 20px 10px;
