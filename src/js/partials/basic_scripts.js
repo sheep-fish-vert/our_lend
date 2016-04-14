@@ -221,11 +221,14 @@ $(document).ready(function() {
 $(window).resize(function() {
 
     if ($(window).width() > 1024 - $.scrollbarWidth()) {
-        //$('nav').css('display', 'block');
+        $('nav').css('display', 'block');
+        $('.asked').css('display', 'block');
+        $('.hum-menu').css('display', 'none');
         $('.butterbrod').addClass('active');
         $('body').removeClass('overflover');
     } else {
-        //$('nav').css('display', 'none');
+        $('nav').css('display', 'none');
+        $('.asked').css('display', 'block');
         $('.butterbrod').removeClass('active');
     }
 
