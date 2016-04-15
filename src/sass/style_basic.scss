@@ -33,8 +33,7 @@ img{vertical-align:bottom;border:0;max-width:100%;}
 
 .global-wrapper{overflow: hidden;}
 
-.footer_placeholder{height: 200px;}
-.footer{position:absolute;bottom:0;left:0;width:100%;z-index:2;}
+.footer{position:relative;bottom:0;left:0;width:100%;z-index:2;}
 
 ::-webkit-input-placeholder {color:#212121;}
 :-moz-placeholder {color:#212121;}
