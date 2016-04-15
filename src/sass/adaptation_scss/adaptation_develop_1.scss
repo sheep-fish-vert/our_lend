@@ -4,6 +4,11 @@
 @media screen and (max-width: 1600px){
 
 }
+@media screen and (max-width: 1455px){
+    /*services*/
+    .services .services-items-wrap .services-item{padding: 20px 15px 20px 15px;}
+    /*/services*/
+}
 @media screen and (max-width: 1366px){
 
     /* my little pony */
@@ -14,7 +19,9 @@
 
 }
 @media screen and (max-width: 1280px){
-
+    /*services*/
+    .services .services-items-wrap .services-item{padding: 10px 5px 10px 5px;}
+    /*/services*/
 }
 @media screen and (max-width: 1024px){
 
@@ -25,6 +32,12 @@
     }
 
     /* /my little pony */
+    /*services*/
+    .services .services-items-wrap .services-item{padding: 10px 0px 10px 0px;margin: 0 0px;}
+    .services .services-items-wrap{flex-wrap: nowrap;}
+    .services .services-items-wrap .services-item .services-title{font-size: 21px;margin-bottom: 3px;min-height: 42px;}
+    .services .services-items-wrap .services-item .services-item-button .button{height: 43px;max-width: 196px;}
+    /*/services*/
 
 }
 @media screen and (max-width: 992px){
@@ -60,6 +73,9 @@
 
     /* /footer */
 
+    /*services*/
+    .services{padding: 300px 0 90px 0;}
+    /*/services*/
 }
 @media screen and (max-width: 767px){
 
