@@ -1,5 +1,8 @@
 /* header */
 
+.st0{fill:transparent;}
+.st1{fill: white; transition-property: fill;  transition-duration: 0.3s;}
+
 .overflover{overflow: hidden;
     header{padding-right: 16px;}
 }
@@ -19,7 +22,11 @@
 header{position: fixed; z-index: 150; top: 0; width: 100%; background-color: rgba(0, 0, 0, 0.5); backface-visibility: hidden;
     .conteiner{ padding: 0 15px;
         .mbox2{ height: 100px; display: flex; justify-content: space-around; align-items: center ;
-            .logo-block{ min-width: 110px;}
+            .logo-block{ min-width: 110px;max-width: 110px;
+                .convert{width: 100%;
+                    svg{width: 100%; height: auto;   transition-property: fill;  transition-duration: 3s;}
+                }
+            }
             .butterbrod.active{display: none;}
             .hum-menu{display: none;}
             nav{ min-width: 850px;                

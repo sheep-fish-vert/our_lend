@@ -41,11 +41,22 @@ function oneHeightItems(){
 
 /*GO TO href*/
 function goTo(){
-    $('.header-menu a').click(function(e){
+    $('nav li a').click(function(e){
         e.preventDefault();
         var href = $(this).attr('href');
-        var target = $(href).offset().top-65;
-        $(scroller).animate({scrollTop:target},500);
+        var dist = 140;
+        if (href == '#top-block') { 
+            dist = 170;
+        };
+        
+        var target = $(href).offset().top - dist;
+        
+        $(scroller).animate({ scrollTop: target }, 500);
+
+        $('.hum-menu').css('display', 'none');
+        $('.asked').css('display', 'block');
+        $('.butterbrod').removeClass('active');
+         $('body').removeClass('overflover');
     });
 }
 
@@ -144,8 +155,10 @@ function randomColors(){
 
     }
 
+     
     specHover('.top-block-button a', '.span-button-arrow', {backgroundUnhover:colorsMassiveHover[color],borderUnhover:colorsMassive[color],backgroundHover:colorsMassive[color],borderHover:colorsMassiveHover[color]})
 
+    specHover('.logo-block .convert svg', '.st1', { fillUnhover: 'white', fillHover: colorsMassiveHover[color] });
     specHover('.footer-list a', 'svg', {fillUnhover:'8d8d8d', fillHover:colorsMassiveHover[color]});
 
 
@@ -194,7 +207,8 @@ $(document).ready(function() {
     scrollUp('.top-block-bottom-arrow', '.portfolio');
 
     randomColors();
-
+    goTo();
+    
     cutText();
 
 });
