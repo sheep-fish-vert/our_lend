@@ -121,7 +121,34 @@ function partnersSlider(){
     });
 }
 
+function servicesSlider(){
+  var service = $('.services-items-wrap');
+    function sliker(){
+      service.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        adaptiveHeight:true,
+        arrows: false,
+        draggable:true,
+        focusOnSelect:false
+      });
+    }
+    if( $(window).width() <= 992){
+      sliker();
+    }
+    $(window).resize(function(event) {
+      if( !$('.services-items-wrap').hasClass('slick-slider') && $(window).width() <= 992){
+        sliker();
+      }else{
+        service.slick('unslick');
+      }
+    });
+}
 $(document).ready(function(){
+    servicesSlider();
     reviewsPopUp();
     portfolioShowMore();
     rewievsSlider();

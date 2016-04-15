@@ -101,6 +101,12 @@
         .person .person-right{width: 100%;padding-top: 20px;}
     }
     /*/portfolio pop*/
+
+    /*arrow*/
+    .reviews .mega-arrow{margin-bottom: 25px;}
+    .mega-arrow .mega-arrow-wrap{animation: none;}
+    .top-block .top-block-footer .top-block-bottom-arrow{animation: none;}
+    /*/arrow*/
 }
 @media screen and (max-width: 767px){
 
@@ -133,11 +139,7 @@
     }
     /*/portfolio pop*/
 
-    /*arrow*/
-    .reviews .mega-arrow{margin-bottom: 25px;}
-    .mega-arrow .mega-arrow-wrap{animation: none;}
-    .top-block .top-block-footer .top-block-bottom-arrow{animation: none;}
-    /*/arrow*/
+
 }
 @media screen and (max-width: 479px){
     /*portfolio*/
