@@ -87,7 +87,7 @@
 }
 @media screen and (max-width: 992px){
     /*portfolio pop*/
-    .portfolio-pop{
+    .portfolio-pop:not(.reviews_pop_wrapper){
         .portfolio-pop-wrap{flex-direction:column-reverse;flex-wrap:wrap;}
         .description{width: 100%;margin:0 auto;}
         .main-img{width: 100%;margin:0 auto;}
@@ -132,6 +132,12 @@
         .person .person-right{text-align: center;}
     }
     /*/portfolio pop*/
+
+    /*arrow*/
+    .reviews .mega-arrow{margin-bottom: 25px;}
+    .mega-arrow .mega-arrow-wrap{animation: none;}
+    .top-block .top-block-footer .top-block-bottom-arrow{animation: none;}
+    /*/arrow*/
 }
 @media screen and (max-width: 479px){
     /*portfolio*/
