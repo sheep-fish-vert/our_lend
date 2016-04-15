@@ -7,11 +7,11 @@
             <div class="item-text-wrap border-spec">
                 <div class="item-type color-spec"><span>- Landing page -</span></div>
                 <div class="item-name">
-                    <h3>FISH EXPRESS</h3>
+                    <h3>CHEESE <b>studio production</b></h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Доставка рыбы <br>в любую точку Росcии</p>
+                    <p>Съемка профессиональных видеороликов «под ключ»</p>
                 </div>
             </div>
         </div>
@@ -43,13 +43,13 @@
         </div>
         <div class="item-text">
             <div class="item-text-wrap border-spec">
-                <div class="item-type color-spec"><span>- Landing page -</span></div>
+                <div class="item-type color-spec"><span>- Сайт -</span></div>
                 <div class="item-name">
-                    <h3>FISH EXPRESS</h3>
+                    <h3>LUCKY CATS</h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Доставка рыбы <br>в любую точку Росcии</p>
+                    <p>Уникальные мебли для кошек</p>
                 </div>
             </div>
         </div>
@@ -64,11 +64,11 @@
             <div class="item-text-wrap border-spec">
                 <div class="item-type color-spec"><span>- Landing page -</span></div>
                 <div class="item-name">
-                    <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+                    <h3>UBER</h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem iure blanditiis, rerum corrupti nam explicabo, et autem minima. Voluptates asperiores totam maiores saepe dolore. Inventore officiis, labore, natus magnam soluta eum! Voluptatibus molestiae quos, officiis quis sunt omnis, commodi corporis.</p>
+                    <p>Лучшие вакансии для таксистов</p>
                 </div>
             </div>
         </div>
@@ -78,8 +78,12 @@
     <div class="button-show-more-wrap">
         <div class="button-show-text">
             <p>Это только часть...</p>
-            <ul><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li>
-            </ul>
+            <div class="ul-wrap">
+                <ul><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li>
+                </ul>
+                <ul><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li>
+                </ul>
+            </div>
         </div>
         <button class="border-spec background-spec-hover">
             <b>Смотрите дальше</b>
