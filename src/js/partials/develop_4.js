@@ -62,9 +62,16 @@ function partnersSlider(){
 }
 
 function servicesSlider(){
-  var service = $('.services-items-wrap');
+  var servic = $('.services-items-wrap');
+  $(window).resize(function(event) {
+    if( !$('.services-items-wrap').hasClass('slick-slider') && $(window).width() <= 992){
+      sliker();
+    }else if( $('.services-items-wrap').hasClass('slick-slider') ){
+      $('.services-items-wrap').slick("unslick");
+    }
+  });
     function sliker(){
-      service.slick({
+      servic.slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -79,16 +86,9 @@ function servicesSlider(){
     if( $(window).width() <= 992){
       sliker();
     }
-    $(window).resize(function(event) {
-      if( !$('.services-items-wrap').hasClass('slick-slider') && $(window).width() <= 992){
-        sliker();
-      }else{
-        service.slick('unslick');
-      }
-    });
 }
 $(document).ready(function(){
-    servicesSlider();
+
     reviewsPopUp();
     portfolioShowMore();
     rewievsSlider();
@@ -96,7 +96,7 @@ $(document).ready(function(){
 });
 
 $(window).load(function(){
-
+  servicesSlider();
 });
 
 $(window).resize(function(){
