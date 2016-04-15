@@ -2,6 +2,16 @@
 
     .top-block{background-image:url(../images/top-block-bg.jpg);background-repeat: no-repeat;background-position: center top;background-size:cover;position: relative;
         &:before{content:'';display: block;position: absolute;top:0;left:0;right:0;bottom:0;background-color: rgba(0, 0, 0, .3);}
+
+        .mouse-parallax{
+            .parallax-layer{
+                span{background-repeat: no-repeat;width: 100%;margin-left: 0;}
+                &.layer-2{top: 100px;
+                    span{background-position:90% top;}
+                }
+            }
+        }
+
         .top-block-wrap{height: 960px;display: flex;flex-direction:column;justify-content:flex-end;align-items:center;position: relative;text-align: center;}
 
         .top-block-main{max-width: 645px;width: 100%;
@@ -196,7 +206,7 @@
 
 /* mousemove-parallax */
 
-    .mouse-parallax{position: absolute;top:0;left:0;width: 100%;z-index: 0;
+    .mouse-parallax{position: absolute;top:0;left:0;bottom:0;width: 100%;z-index: 0;
         .parallax-layer{position: absolute;left: 0;width: 100%;overflow: hidden;
             &.layer-1{z-index: 1;}
             &.layer-2{z-index: 2;}
