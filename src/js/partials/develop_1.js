@@ -7,8 +7,6 @@
 
             var imgHeight = $(this).find('img').height()+20;
 
-            console.log(imgHeight);
-
             var imageSrc = '../'+$(this).find('img').attr('src');
             $(this).find('img').remove();
             $(this).find('span').css({'height':imgHeight+'px', 'background-image':'url('+imageSrc+')'});
