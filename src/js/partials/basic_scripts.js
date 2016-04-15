@@ -45,12 +45,12 @@ function goTo(){
         e.preventDefault();
         var href = $(this).attr('href');
         var dist = 140;
-        if (href == '#top-block') { 
+        if (href == '#top-block') {
             dist = 170;
         };
-        
+
         var target = $(href).offset().top - dist;
-        
+
         $(scroller).animate({ scrollTop: target }, 500);
 
         $('.hum-menu').css('display', 'none');
@@ -238,9 +238,10 @@ function randomColors(){
     }
 
     specHover('.top-block-button a', '.span-button-arrow', { backgroundUnhover: colorsMassiveHover[color], borderUnhover: colorsMassive[color], backgroundHover: colorsMassive[color], borderHover: colorsMassiveHover[color], reverseBackground: true });
-    
-    specHover('.logo-block .convert svg', '.st1', { fillUnhover: 'white', fillHover: colorsMassiveHover[color] });
-    
+
+    specHover('.logo-block .convert svg', '.st1', { fillUnhover: 'white', fillHover: colorsMassiveHover[color]});
+    specHover('.but-block a', 'svg', {fillUnhover:colorsMassive[color], fillHover:colorsMassive[color], reverseFill:true});
+
     specHover('.services-item', '.button', { borderHover: colorsMassiveHover[color] });
     specHover('.services-item', '.services-circle', {backgroundHover:colorsMassiveHover[color]});
     specHover('.footer-list a', 'svg', {fillHover:colorsMassiveHover[color]});
@@ -341,7 +342,7 @@ $(document).ready(function() {
 
     randomColors();
     goTo();
-    
+
     cutText();
 
     secret();
