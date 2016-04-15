@@ -8,7 +8,6 @@
             var imgHeight = $(this).find('img').height()+20;
 
             var imageSrc = '../'+$(this).find('img').attr('src');
-            $(this).find('img').remove();
             $(this).find('span').css({'height':imgHeight+'px', 'background-image':'url('+imageSrc+')'});
 
         });
@@ -21,6 +20,13 @@
         });
 
         $(window).resize(function(){
+
+            $('.parallax-layer').each(function(){
+
+                var imgHeight = $(this).find('img').height()+20;
+                $(this).find('span').css({'height':imgHeight+'px'});
+
+            });
 
             $('.parallax-block').each(function(index, el) {
                 var centerParallaxBlockY = $(this).height()/2;

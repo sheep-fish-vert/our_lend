@@ -112,6 +112,9 @@
                 .top-block-button{
                     a{font-size: 15px;padding: 0 70px;height: 60px;
                         .span-button-arrow{width: 58px;height: 58px;}
+                        &:hover{
+                            .span-button-arrow{right:calc(100% - 56px);}
+                        }
                     }
                 }
             }
