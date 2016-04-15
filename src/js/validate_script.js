@@ -229,7 +229,7 @@ function portfolioPop(){
         }
         $.ajax({
             type: "POST",
-            url: "ajax_portfolio_pop.php",
+            url: ajax_Port_Pop,
             data: id,
             success: function (data) {
                 $.fancybox(data, {
@@ -318,6 +318,63 @@ function portfolioPop(){
         $.fancybox.close();
         $('html,body').animate({scrollTop:$('.contacts-main-title').offset().top},800);
         $('.contacts-form-wrap-main').find('input[name=your_name]').focus();
+    });
+}
+function portfolioShowMore(){
+    $(document).on('click','.button-show-more button',function(event){
+        $('.button-show-more').hide(function(){
+            $(this).remove();
+        });
+        $.ajax({
+            url : show_More,
+            success : function(data){
+                $('.portfolio-wrap').append(data);
+                setTimeout(function(){
+                    var bottom = $('.portfolio')[0].scrollHeight;
+                    $('html,body').animate({scrollTop:bottom},300);
+                },200);
+            }
+        });
+    });
+}
+function reviewsPopUp(){
+    $(document).on('click','.reviews-slider .social-button button,.reviews-slider .person-img',function(event){
+        var id = $(this).data('id');
+        $('.preload').addClass('active');
+
+        var autoSize = false;
+        if( $(window).width()<=992 ){
+            autoSize = true;
+        }
+        $.ajax({
+            type: "POST",
+            url: ajax_Reviw_Pop,
+            data: id,
+            success: function (data) {
+                $.fancybox(data, {
+                    openEffect  : 'fade',
+                    closeEffect : 'fade',
+                    wrapCSS:'portfolio-pop reviews_pop_wrapper',
+                    'closeBtn' : true,
+                    autoSize:true,
+                    //autoResize:false,
+                    fitToView:true,
+                    maxWidth:770,
+                    padding:'0',
+                    'closeBtn' : true,
+                    tpl: {
+                        closeBtn: '<a title="Закрыть" class="fancybox-item fancybox-close myClose" href="javascript:;"><span class="background-spec"></span><span class="background-spec"></span></a>'
+                    },
+                    afterShow:function(){
+                      setTimeout(function(){
+                          $('.preload').removeClass('active');
+                          $('.portfolio-pop').addClass('show');
+                      },1000);
+                    }
+                });
+            }
+        });
+        return false;
     });
 }
 $(document).ready(function(){
