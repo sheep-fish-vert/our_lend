@@ -7,7 +7,8 @@
 
             var imgHeight = $(this).find('img').height()+20;
 
-            var imageSrc = '../'+$(this).find('img').attr('src');
+            var imageSrc = './'+$(this).find('img').attr('src');
+            $(this).css({'height':imgHeight+'px'});
             $(this).find('span').css({'height':imgHeight+'px', 'background-image':'url('+imageSrc+')'});
 
         });
@@ -24,6 +25,7 @@
             $('.parallax-layer').each(function(){
 
                 var imgHeight = $(this).find('img').height()+20;
+                $(this).css({'height':imgHeight+'px'});
                 $(this).find('span').css({'height':imgHeight+'px'});
 
             });
