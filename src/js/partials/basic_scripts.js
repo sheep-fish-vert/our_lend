@@ -226,7 +226,10 @@ function randomColors(){
 
     }
 
-    specHover('.top-block-button a', '.span-button-arrow', {backgroundUnhover:colorsMassiveHover[color],borderUnhover:colorsMassive[color],backgroundHover:colorsMassive[color],borderHover:colorsMassiveHover[color], reverseBackground:true})
+    specHover('.top-block-button a', '.span-button-arrow', {backgroundUnhover:colorsMassiveHover[color],borderUnhover:colorsMassive[color],backgroundHover:colorsMassive[color],borderHover:colorsMassiveHover[color], reverseBackground:true});
+
+    specHover('.services-item', '.button', {borderHover:colorsMassiveHover[color]});
+    specHover('.services-item', '.services-circle', {backgroundHover:colorsMassiveHover[color]});
 
     specHover('.footer-list a', 'svg', {fillHover:colorsMassiveHover[color]});
 
