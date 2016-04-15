@@ -108,7 +108,12 @@
         .contacts{
             .contacts-form-wrap{
                 .form-title{font-size: 36px;
-                    span{font-size: 50px;}
+                    h2{
+                        span{font-size: 50px;}
+                    }
+                }
+                .form-row-half{display: block;
+                    .form-row{max-width:none;}
                 }
             }
         }
@@ -157,7 +162,9 @@
             .contacts-descript{line-height: 24px;font-size: 18px;}
             .contacts-form-wrap{
                 .form-title{font-size: 25px;line-height: 45px;
-                    span{font-size: 40px;}
+                    h2{
+                        span{font-size: 40px;}
+                    }
                 }
             }
         }
