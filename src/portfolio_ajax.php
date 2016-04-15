@@ -1,74 +1,74 @@
-<div class="item" data-id="13">
+<div class="item" data-id="1">
     <a href="#">
         <div class="item-img">
-            <img src="images/item-img-13.png" alt="">
+            <img src="images/item-img-1.png" alt="">
         </div>
         <div class="item-text">
             <div class="item-text-wrap border-spec">
                 <div class="item-type color-spec"><span>- Landing page -</span></div>
                 <div class="item-name">
-                    <h3>Асфальт мастер</h3>
+                    <h3>CHEESE <b>studio production</b></h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Укладка холодного асфальта</p>
+                    <p>Съемка профессиональных видеороликов «под ключ»</p>
                 </div>
             </div>
         </div>
     </a>
 </div>
-<div class="item" data-id="14">
+<div class="item" data-id="2">
     <a href="#">
         <div class="item-img">
-            <img src="images/item-img-14.png" alt="">
+            <img src="images/item-img-2.png" alt="">
         </div>
         <div class="item-text">
             <div class="item-text-wrap border-spec">
                 <div class="item-type color-spec"><span>- Landing page -</span></div>
                 <div class="item-name">
-                    <h3>ASIA</h3>
+                    <h3>FISH EXPRESS</h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Ваш логистически оператор</p>
+                    <p>Доставка рыбы <br>в любую точку Росcии</p>
                 </div>
             </div>
         </div>
     </a>
 </div>
-<div class="item" data-id="15">
+<div class="item" data-id="3">
     <a href="#">
         <div class="item-img">
-            <img src="images/item-img-15.png" alt="">
+            <img src="images/item-img-3.png" alt="">
         </div>
         <div class="item-text">
             <div class="item-text-wrap border-spec">
                 <div class="item-type color-spec"><span>- Сайт -</span></div>
                 <div class="item-name">
-                    <h3>Уфимская служба<br>по ремонту авто</h3>
+                    <h3>LUCKY CATS</h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Кузовной ремонт</p>
+                    <p>Уникальные мебли для кошек</p>
                 </div>
             </div>
         </div>
     </a>
 </div>
-<div class="item" data-id="16">
+<div class="item" data-id="4">
     <a href="#">
         <div class="item-img">
-            <img src="images/item-img-16.png" alt="">
+            <img src="images/item-img-4.png" alt="">
         </div>
         <div class="item-text">
             <div class="item-text-wrap border-spec">
                 <div class="item-type color-spec"><span>- Landing page -</span></div>
                 <div class="item-name">
-                    <h3>4D STUDIO</h3>
+                    <h3>UBER</h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Дизайн интерьера</p>
+                    <p>Лучшие вакансии для таксистов</p>
                 </div>
             </div>
         </div>

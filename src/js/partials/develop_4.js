@@ -4,7 +4,7 @@ function portfolioShowMore(){
             $(this).remove();
         });
         $.ajax({
-            url : 'portfolio-ajax.php',
+            url : 'portfolio_ajax.php',
             success : function(data){
                 $('.portfolio-wrap').append(data);
                 setTimeout(function(){
