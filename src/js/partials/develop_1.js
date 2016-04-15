@@ -14,8 +14,10 @@
         });
 
         $('.parallax-block').each(function(index, el) {
-            var centerParallaxBlock = $(this).height()/2;
-            $(this).attr('data-center', centerParallaxBlock);
+            var centerParallaxBlockY = $(this).height()/2;
+            var centerParallaxBlockX = $(this).width()/2;
+            $(this).attr('data-center-y', centerParallaxBlockY);
+            $(this).attr('data-center-x', centerParallaxBlockX);
         });
 
         $(window).resize(function(){
@@ -34,11 +36,23 @@
             var coordX = e.pageX;
             var coordY = e.pageY;
 
-            var movedPath = $(this).data('center') - coordX;
+            var movedPathX = $(this).data('center-x') - coordX;
+            var movedPathY = null;
+
+            if($(this).is('.y-too')){
+                movedPathY = $(this).data('center-y') - coordY;
+            }
 
             $(this).find('.parallax-layer:not(.not-move)').each(function(index, el) {
-                var movedPathWithKoof = movedPath * $(this).data('speed');
-                $(this).find('span').css('left', movedPathWithKoof);
+                var movedPathWithKoofX = movedPathX * $(this).data('speed');
+
+                if(movedPathY != null){
+                    var movedPathWithKoofY = movedPathY * $(this).data('speed');
+                    $(this).find('span').css({'left': movedPathWithKoofX+'px', 'top': movedPathWithKoofY+'px'});
+                }else{
+                    $(this).find('span').css({'left': movedPathWithKoofX+'px'});
+                }
+
             });
 
         });
