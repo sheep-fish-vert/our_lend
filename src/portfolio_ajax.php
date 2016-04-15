@@ -1,74 +1,74 @@
-<div class="item" data-id="1">
+<div class="item" data-id="13">
     <a href="#">
         <div class="item-img">
-            <img src="images/item-img-1.png" alt="">
+            <img src="images/item-img-13.png" alt="">
         </div>
         <div class="item-text">
             <div class="item-text-wrap border-spec">
                 <div class="item-type color-spec"><span>- Landing page -</span></div>
                 <div class="item-name">
-                    <h3>FISH EXPRESS</h3>
+                    <h3>Асфальт мастер</h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Доставка рыбы <br>в любую точку Росcии</p>
+                    <p>Укладка холодного асфальта</p>
                 </div>
             </div>
         </div>
     </a>
 </div>
-<div class="item" data-id="2">
+<div class="item" data-id="14">
     <a href="#">
         <div class="item-img">
-            <img src="images/item-img-2.png" alt="">
+            <img src="images/item-img-14.png" alt="">
         </div>
         <div class="item-text">
             <div class="item-text-wrap border-spec">
                 <div class="item-type color-spec"><span>- Landing page -</span></div>
                 <div class="item-name">
-                    <h3>FISH EXPRESS</h3>
+                    <h3>ASIA</h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Доставка рыбы <br>в любую точку Росcии</p>
+                    <p>Ваш логистически оператор</p>
                 </div>
             </div>
         </div>
     </a>
 </div>
-<div class="item" data-id="3">
+<div class="item" data-id="15">
     <a href="#">
         <div class="item-img">
-            <img src="images/item-img-3.png" alt="">
+            <img src="images/item-img-15.png" alt="">
         </div>
         <div class="item-text">
             <div class="item-text-wrap border-spec">
-                <div class="item-type color-spec"><span>- Landing page -</span></div>
+                <div class="item-type color-spec"><span>- Сайт -</span></div>
                 <div class="item-name">
-                    <h3>FISH EXPRESS</h3>
+                    <h3>Уфимская служба<br>по ремонту авто</h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Доставка рыбы <br>в любую точку Росcии</p>
+                    <p>Кузовной ремонт</p>
                 </div>
             </div>
         </div>
     </a>
 </div>
-<div class="item" data-id="4">
+<div class="item" data-id="16">
     <a href="#">
         <div class="item-img">
-            <img src="images/item-img-4.png" alt="">
+            <img src="images/item-img-16.png" alt="">
         </div>
         <div class="item-text">
             <div class="item-text-wrap border-spec">
                 <div class="item-type color-spec"><span>- Landing page -</span></div>
                 <div class="item-name">
-                    <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
+                    <h3>4D STUDIO</h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem iure blanditiis, rerum corrupti nam explicabo, et autem minima. Voluptates asperiores totam maiores saepe dolore. Inventore officiis, labore, natus magnam soluta eum! Voluptatibus molestiae quos, officiis quis sunt omnis, commodi corporis.</p>
+                    <p>Дизайн интерьера</p>
                 </div>
             </div>
         </div>
@@ -78,8 +78,12 @@
     <div class="button-show-more-wrap">
         <div class="button-show-text">
             <p>Это только часть...</p>
-            <ul><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li>
-            </ul>
+            <div class="ul-wrap">
+                <ul><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li>
+                </ul>
+                <ul><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li>
+                </ul>
+            </div>
         </div>
         <button class="border-spec background-spec-hover">
             <b>Смотрите дальше</b>

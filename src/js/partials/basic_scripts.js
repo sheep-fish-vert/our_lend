@@ -325,7 +325,6 @@ function headeButer(menuMobile,toggleMenu){
 /* DOCUMENT READY  */
 $(document).ready(function() {
     //oneHeightItems();
-    $('.footer_placeholder').height($('.footer').outerHeight());
 
     headeButer($('.butterbrod'), $('.hum-menu'));
     scrollUp('.top-block-bottom-arrow', '.portfolio');
@@ -353,6 +352,4 @@ $(window).resize(function() {
             $('.butterbrod').removeClass('active');
         }
     }
-
-    $('.footer_placeholder').height($('.footer').outerHeight());
 });
