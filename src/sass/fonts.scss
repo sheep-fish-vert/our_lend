@@ -17,6 +17,11 @@
 /* fonts */
 //  example -> @include font-face('PFDinTextPro', 'PFDinTextPro-Bold', 700, italic);
 @include font-face('FuturaPT', 'Futura PT Bold', 700);
+@include font-face('Roboto', 'Roboto-Light', 300);
+@include font-face('Roboto', 'Roboto-Regular');
+@include font-face('Roboto', 'Roboto-Medium', 500);
+@include font-face('Roboto', 'Roboto-Bold', 700);
+@include font-face('Roboto', 'Roboto-Black', 900);
 
 @include font-face('slick');
 

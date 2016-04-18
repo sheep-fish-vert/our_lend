@@ -24,7 +24,6 @@ var gulp = require('gulp'),
             html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
             js: 'src/js/*.js',//В стилях и скриптах нам понадобятся только main файлы
             style: 'src/sass/style.scss',
-            styleTop:'src/sass/top-block.scss',
             img: 'src/images/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
             fonts: 'src/fonts/**/*.*',
             php:'src/*.php'
@@ -75,17 +74,6 @@ gulp.task('style:build', function () {
     .pipe(reload({stream: true}));
 });
 
-gulp.task('styleTop:build', function () {
-    return sass(path.src.styleTop)
-    .on('error', sass.logError)
-    .pipe(autoprefixer({
-        browsers: ['> 0%'],
-        cascade: false
-    }))
-    .pipe(gulp.dest(path.build.css))
-    .pipe(reload({stream: true}));
-});
-
 gulp.task('image:build', function () {
     gulp.src(path.src.img) //Выберем наши картинки
         .pipe(gulp.dest(path.build.img)) //И бросим в build
@@ -107,7 +95,6 @@ gulp.task('build', [
     'html:build',
     'js:build',
     'style:build',
-    'styleTop:build',
     'fonts:build',
     'image:build',
     'php:build'
@@ -119,7 +106,6 @@ gulp.task('watch', function(){
     });
     watch([path.watch.style], function(event, cb) {
         gulp.start('style:build');
-        gulp.start('styleTop:build');
     });
     watch([path.watch.js], function(event, cb) {
         gulp.start('js:build');
@@ -155,31 +141,10 @@ gulp.task('css-minify', function() {
     .pipe(reload({stream: true}));
 });
 
-gulp.task('css-minify-top', function() {
-    return sass(path.src.styleTop,{
-        style: 'compressed'
-    })
-    .on('error', sass.logError)
-    .pipe(autoprefixer({
-        browsers: ['> 0%'],
-        cascade: false
-    }))
-    .pipe(gulp.dest(path.build.css))
-    .pipe(reload({stream: true}));
-});
 
 gulp.task('js-minify', function(){
 
     gulp.src('build/js/main.js')
-    .pipe(uglify()) //Сожмем наш js
-    .pipe(gulp.dest(path.build.js))
-    .pipe(reload({stream: true}));
-
-});
-
-gulp.task('js-minify-top', function(){
-
-    gulp.src('build/js/top-block.js')
     .pipe(uglify()) //Сожмем наш js
     .pipe(gulp.dest(path.build.js))
     .pipe(reload({stream: true}));
@@ -199,4 +164,4 @@ gulp.task('js-minify-valid', function(){
 
 gulp.task('default', ['build', 'webserver', 'watch']);
 
-gulp.task('minify', ['css-minify', 'css-minify-top', 'js-minify', 'js-minify-top', 'js-minify-valid']);
+gulp.task('minify', ['css-minify', 'js-minify', 'js-minify-valid']);
