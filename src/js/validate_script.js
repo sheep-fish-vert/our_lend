@@ -379,6 +379,8 @@ function reviewsPopUp(){
 }
 $(document).ready(function(){
     portfolioPop();
+    reviewsPopUp();
+    portfolioShowMore();
     validate('#call-popup .contact-form', {submitFunction:validationCall});
     Maskedinput();
     fancyboxForm();

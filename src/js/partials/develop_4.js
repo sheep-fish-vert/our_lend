@@ -88,9 +88,6 @@ function servicesSlider(){
     }
 }
 $(document).ready(function(){
-
-    reviewsPopUp();
-    portfolioShowMore();
     rewievsSlider();
     partnersSlider();
 });
