@@ -262,9 +262,10 @@
                 }
                 .top-block-button{
                     a{font-size: 15px;padding: 0 70px;height: 60px;
-                        .span-button-arrow{width: 58px;height: 58px;}
+                        .button-background{right:calc(100% - 50px);}
+                        .span-button-arrow{width: 60px;height: 60px;right:calc(100% - 57px);}
                         &:hover{
-                            .span-button-arrow{right:calc(100% - 56px);}
+                            .button-background{right: 0;}
                         }
                     }
                 }
