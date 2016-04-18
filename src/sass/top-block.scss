@@ -65,13 +65,16 @@
             }
             .top-block-button{margin-bottom: 100px;
                 a{display: flex;justify-content:center;align-items:center;max-width: 645px;width: 100%;border-radius: 50px;border:2px solid #ca7333;background-color: #f98e3c;height: 78px;position:relative;color:#fff;font-weight: 700;text-decoration: none;font-size: 22px;padding: 0 85px;transition:background-color 300ms ease, border-color 300ms ease;
-                    .span-button-arrow{display: block;position: absolute;top:-2px;right:-3px;width: 80px;height: 78px;border-radius: 50%;border:2px solid #fa8d3c;background-color: #d17128;transition:background-color 300ms ease, border-color 300ms ease, right 500ms ease, transform 500ms ease;
+                    .button-text{position: relative;z-index: 2;}
+                    .button-background{display:block;position: absolute;left:-2px;top:-2px;bottom:-2px;z-index: 1;right:calc(100% - 70px);border-radius: 50px;border-width:2px;border-style:solid;transition:right 500ms ease;}
+                    .span-button-arrow{display: block;position: absolute;z-index:3;top:-2px;right:calc(100% - 77px);width: 80px;height: 78px;border-radius: 50%;border:2px solid #fa8d3c;background-color: #d17128;transition:background-color 300ms ease, border-color 300ms ease, right 500ms ease, transform 500ms ease;
                         &:before, &:after{content:'';display: block;position:absolute;left:calc(50% - 9px);top:calc(50% - 2px);width: 18px;height: 4px;background-color: #fff;transform-origin:100% 2px;}
                         &:before{transform:rotate(45deg);top:calc(50% - 1px);}
                         &:after{transform:rotate(-45deg);top:calc(50% - 3px);}
                     }
                     &:hover{
-                        .span-button-arrow{right:calc(100% - 77px);transform:rotateY(-180deg);}
+                        .button-background{right:0;}
+                        .span-button-arrow{right:-3px;}
                     }
                 }
             }
