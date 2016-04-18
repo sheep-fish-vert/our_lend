@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+    <!--[if IE 8]>
+        <html xmlns="http://www.w3.org/1999/xhtml" class="ie8" lang="ru-RU">
+    <![endif]-->
+    <!--[if !(IE 8) ]><!-->
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="ru-RU">
+    <!--<![endif]-->
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title></title>
+        <link rel='stylesheet' id='buttons-css'  href='http://test43.sheep.fish/wp-includes/css/buttons.min.css?ver=4.4.2' type='text/css' media='all' />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' id='open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext%2Ccyrillic%2Ccyrillic-ext&#038;ver=4.4.2' type='text/css' media='all' />
+        <link rel='stylesheet' id='dashicons-css'  href='http://test43.sheep.fish/wp-includes/css/dashicons.min.css?ver=4.4.2' type='text/css' media='all' />
+        <link rel='stylesheet' id='login-css'  href='http://test43.sheep.fish/wp-admin/css/login.min.css?ver=4.4.2' type='text/css' media='all' />
+        <link rel="stylesheet" href="css/style.css">
+        <meta name='robots' content='noindex,follow' />
+    </head>
+
+
+    <body class="login login-action-login wp-core-ui  locale-ru-ru">
+        <div class="horn"><img src="images/horn.png" alt=""></div>
+        <div id="login">
+
+            <h1><a href="https://ru.wordpress.org/" title="Сайт работает на WordPress" tabindex="-1">PS_repair</a></h1>
+            <div class="subtitle">
+                <p>Разработка и поддержка сайтов,<br/> Landing page и Фирменного стиля.</p>
+            </div>
+            <div class="contacts-site">
+                <a href="#" class="item">
+                    <p><img src="images/ic-skype.png" alt=""></p>
+                    <p>sheeep.fish</p>
+                </a>
+                <a href="#" class="item">
+                    <p>website</p>
+                    <p>sheep.fish</p>
+                </a>
+                <a href="#" class="item">
+                    <p><img src="images/ic-mail.png" alt=""></p>
+                    <p>hr@sheep.fish</p>
+                </a>
+            </div>
+            <div class="notify">
+                <p>Вход в систему</p>
+            </div>
+            <form name="loginform" id="loginform" action="http://test43.sheep.fish/wp-login.php" method="post">
+                <p>
+                    <label for="user_login">Имя пользователя<br />
+                    <input type="text" name="log" id="user_login" class="input" value="" size="20" /></label>
+                </p>
+                <p>
+                    <label for="user_pass">Пароль<br />
+                    <input type="password" name="pwd" id="user_pass" class="input" value="" size="20" /></label>
+                </p>
+                <p class="forgetmenot"><label for="rememberme"><input name="rememberme" type="checkbox" id="rememberme" value="forever"  /> Запомнить меня</label></p>
+                <p class="submit cfix">
+                <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary button-large" value="Войти" />
+                <input type="hidden" name="redirect_to" value="http://test43.sheep.fish/wp-admin/" />
+                <input type="hidden" name="testcookie" value="1" />
+                </p>
+                <p id="nav" class="subButton">
+                <a href="http://test43.sheep.fish/wp-login.php?action=lostpassword" title="Восстановление пароля">Забыли пароль?</a>
+                </p>
+                <p id="backtoblog" class="subButton"><a href="http://test43.sheep.fish/" title="Потерялись?">&larr; Назад к сайту &laquo;Sheep Fish&raquo;</a></p>
+            </form>
+
+            <script type="text/javascript">
+            function wp_attempt_focus(){
+            setTimeout( function(){ try{
+            d = document.getElementById('user_login');
+            d.focus();
+            d.select();
+            } catch(e){}
+            }, 200);
+            }
+            wp_attempt_focus();
+            if(typeof wpOnload=='function')wpOnload();
+            </script>
+
+        </div>
+        <div class="clear"></div>
+    </body>
+    </html>
