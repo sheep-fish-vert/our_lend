@@ -8,114 +8,20 @@
 
 }
 @media screen and (max-width: 1280px){
-    header .conteiner .mbox2 nav {  min-width: 650px;}
+
 }
 @media screen and (max-width: 1024px){
-    header {  background-color: rgba(0, 0, 0, 0.8);
-        .conteiner .mbox2 {
-            .butterbrod{display: block; position: relative; overflow: hidden; cursor: pointer; margin: 0 35px; min-width: 40px;  
-                .convert-f{position: relative; height: 40px; width: 40px; overflow: hidden; }
-                span{ position: absolute; height: 4px; width: 100px; background-color: white; transition: all 0.3s;
-                    &:nth-child(1){top: 0; transform: rotate(0);}
-                    &:nth-child(2){top: calc(50% - 2px);  opacity: 1; transform: rotate(0);}
-                    &:nth-child(3){bottom: 0; transform: rotate(0);}
-                }
-            }
-            .butterbrod.active{display: block;  
-                .convert-f{position: relative; height: 40px; width: 40px; overflow: hidden; }
-                span{ position: absolute; height: 4px; width: 100px; background-color: white; transition: all 0.3s;
-                    &:nth-child(1){top: 11px;left: -23px; transform: rotate(-45deg);}
-                    &:nth-child(2){top: calc(50% - 2px); opacity: 0;}
-                    &:nth-child(3){bottom: 3px; left: -15px; transform: rotate(45deg);}
-                }
-            }
-            nav{display: none;}
-            .hum-menu { position: absolute; left: -100vh;  right: 0; top: 100px; height: calc(100vh - 100px) !important; width: 100vw; min-width: 0;transition: all 0.3s; overflow: hidden; backface-visibility: hidden;
-                &:after{content: '' ; position: absolute; top: 0; background-color:rgba(0, 0, 0, 0.8); left: 0; right: 0; bottom: -1000px;  z-index: -1;} 
-                nav.asked{display: block; }
-            }
-            nav.asked{ display: none; 
-                ul{ padding: 10px 0 13px; height: calc(100vh - 100px); display: flex; flex-wrap: wrap;align-content: space-around;top: 0;
-                    li{float: none; width: 100%; border: none;
-                        a{font-size: 24px;}
-                    }
-                }            
-            }
-            .logo-block { min-width: 110px; text-align: center;}
-        }
-    }
-    header .conteiner .mbox2 .but-block .call-back-me { display: none;}
-    
-    .overflover header .conteiner .mbox2 .hum-menu { left: 0; right: 0;}
-    
+
 }
 @media screen and (max-width: 992px){
 
 }
 @media screen and (max-width: 767px){
-      #call-popup {  background-color: white; width:500px;  padding: 65px 20px;}
 
 }
 @media screen and (max-width: 567px){
-   header .conteiner .mbox2 nav.asked{ display: none; position: absolute; left: 0; right: 0; top: 0; height: calc(100vh - 100px); width: 100vw; min-width: 0;
-        ul{ padding: 10px 0 13px; height: calc(100vh - 100px) !important; display: flex; flex-wrap: wrap;align-content: space-around;
-            li{float: none; width: 100%;padding: 10px; border: none;
-                a{font-size: 24px;}
-            }
-        }            
-    }
-    header .conteiner .mbox2 .but-block {  min-width: 180px; position: absolute; left: 0; right: 0;top: 100px; padding-bottom: 20px;
-        a{max-width: 250px;; margin: 0 auto;}        
-     }
-     
-     header .conteiner .mbox2 .butterbrod { position: absolute; top: 30px; right: 0;}
-     header .conteiner .mbox2 .logo-block { margin: 0 auto; }
-     .desktop{
-        .overflover {
-            .but-block{ padding-right: 16px;}
-        }
-        header .conteiner .mbox2 .butterbrod.active {right: 16px;}
-     }
-     header .conteiner .mbox2 .but-block { top: 25px; right: calc(100% - 70px); left: 20px; min-width: 50px;
-        .button-header { content: ''; padding: 8px; position: relative;  width: 50px !important;
-            i{display: block; animation: pulse 1s linear infinite; content: ''; position: absolute; top: -2px; left: -2px; right: -2px;bottom: -2px; border-width: 2px; border-style: solid; ; border-radius: 50%;}
-            span{display: none;}
-            svg{display: block; width: 30px; height: 30px; animation: rotater 2s linear infinite; }
-        }
-     }
-     #call-popup {  width:400px; }
-     @keyframes rotater {
-        0% {transform: rotate(20deg);}
-        50% {transform: rotate(-20deg);}
-        100% {transform: rotate(20deg);}
-    }
-    
-     @keyframes pulse {
-        from {top: -2px; left: -2px; right: -2px;bottom: -2px; border-width: 2px; opacity: 1;}
-        to {top: -12px; left: -12px; right: -12px;bottom: -12px; border-width: 0px; opacity: 0;}
-    }
 
 }
 @media screen and (max-width: 479px){
-    header .conteiner .mbox2 .but-block { padding-bottom: 10px;}
-    header .conteiner .mbox2 .but-block .button-header { height: 50px; border-radius: 25px; line-height: 38px; width: 50px;}
-    header .conteiner .mbox2 nav { top: 178px; height: calc(100vh - 178px) !important;}
-    
-    #call-popup { padding: 65px 10px 10px; width:350px;
-        form {
-            .contact-form-title h5 { padding: 20px 0; font-size: 18px;}
-            .contact-form-row .contact-form-item { padding: 10px 0;
-                input { height: 40px; line-height: 40px;}
-            }
-        }
-    }
-    .fancybox-form .fancybox-close {top: 8px; right: 8px;}
-        
-}
-@media screen and (max-width: 400px){
-    #call-popup { width:300px;}
-    #call_success{ width: 260px; }
-}
-@media screen and (max-width: 350px){
-    #call-popup { width:280px;}
+
 }
