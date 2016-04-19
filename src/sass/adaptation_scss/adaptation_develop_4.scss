@@ -177,9 +177,9 @@
         .description-bottom-right{width: 100%;border-left: 0;}
         .description > div:last-child{max-height: 100%;flex-direction: column;}
         .description-bottom-row{padding: 7px 0px;}
-        .description-name{font-size: 30px;}
-        .description-desc{font-size: 14px;}
-        .description-center-title{font-size: 22px;}
+        .description-name{font-size: 30px !important;}
+        .description-desc{font-size: 14px !important;}
+        .description-center-title{font-size: 22px !important;}
         .main-img .main-img-wrap{padding-left: 0;}
     }
     /*/portfolio pop*/
