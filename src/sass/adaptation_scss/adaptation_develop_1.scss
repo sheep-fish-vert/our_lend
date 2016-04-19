@@ -6,7 +6,7 @@
 }
 @media screen and (max-width: 1455px){
     /*services*/
-    .services .services-items-wrap .services-item{padding: 20px 15px 20px 15px;}
+    .services .services-items-wrap .services-item .services-item-content a{padding: 20px 15px 20px 15px;}
     /*/services*/
 }
 @media screen and (max-width: 1366px){
@@ -21,7 +21,7 @@
 @media screen and (max-width: 1280px){
     /*services*/
 
-        .services .services-items-wrap .services-item{padding: 10px 5px 10px 5px;}
+        .services .services-items-wrap .services-item .services-item-content a{padding: 10px 5px 10px 5px;}
 
     /*/services*/
 
@@ -36,7 +36,7 @@
 
     /*services*/
 
-        .services .services-items-wrap .services-item{padding: 10px 0px 10px 0px;margin: 0 0px;}
+        .services .services-items-wrap .services-item .services-item-content a{padding: 10px 0px 10px 0px;margin: 0 0px;}
         .services .services-items-wrap{flex-wrap: nowrap;}
         .services .services-items-wrap .services-item .services-title{font-size: 21px;margin-bottom: 3px;min-height: 42px;}
         .services .services-items-wrap .services-item .services-item-button .button{height: 43px;max-width: 196px;}
@@ -129,6 +129,8 @@
 
     /*services*/
     .services{padding: 300px 0 90px 0;}
+    .services .services-items-wrap .services-item{margin: 0 5px 15px;width: 48%;}
+    .services .services-items-wrap{flex-wrap: wrap;flex-direction: row;align-items: center;}
     /*/services*/
 }
 @media screen and (max-width: 767px){
@@ -263,6 +265,10 @@
 
     /* /header */
 
+    /*services*/
+    .services .services-items-wrap .services-item{margin: 0 5px 15px;width: auto;}
+    .services .services-items-wrap{flex-wrap: nowrap;flex-direction: column;}
+    /*/services*/
 }
 
 @media screen and (max-width: 479px){
