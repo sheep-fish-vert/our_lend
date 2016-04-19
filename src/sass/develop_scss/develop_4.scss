@@ -2,6 +2,16 @@
     b,strong{font-weight: bold;}
     i{font-style: italic;}
 }
+/*овца психоделика*/
+body.pink{
+    .top-block:after{animation-timing-function: ease-out;animation-duration: 0.2s;animation-iteration-count: infinite; animation-play-state: running;animation-name: phsihodelic;}
+    @keyframes phsihodelic {
+        0% {transform:translateY(0px);}
+        100% {transform:translateY(-4px);}
+    }
+}
+/*/овца психоделика*/
+
 
 /*portfolio*/
 .title-text{
@@ -11,6 +21,7 @@
     .title-subtitle{padding-top: 32px;max-width: 340px;width: 100%;margin:0 auto;font-weight: bold;font-size: 18px;}
 }
 .portfolio{text-align: center;position: relative;z-index: 2;padding-top: 50px;
+    .portfolio-main{position: relative;}
     .portfolio-wrap{display: flex;flex-direction:row;justify-content:flex-start;align-items:center;flex-wrap: wrap;padding-top: 70px;position: relative;z-index: 3;
         .item{width: 25%;overflow: hidden;position: relative;
             &>a{display: block;color: inherit;}
