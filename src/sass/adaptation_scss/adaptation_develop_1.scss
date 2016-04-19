@@ -237,7 +237,9 @@
           }
 
           header .conteiner .mbox2 .butterbrod { position: absolute; top: 30px; right: 0;}
-          header .conteiner .mbox2 .logo-block { margin: 0 auto; }
+          header .conteiner .mbox2 .logo-block {margin: 0 auto;max-width: 132px;height: 68px;
+            .convert svg{width: 200px;left: -37px;}
+          }
           .desktop{
              .overflover {
                  .but-block{ padding-right: 16px;}
@@ -248,7 +250,7 @@
              .button-header { content: ''; padding: 8px; position: relative;  width: 50px !important;
                  i{display: block; animation: pulse 1s linear infinite; content: ''; position: absolute; top: -2px; left: -2px; right: -2px;bottom: -2px; border-width: 2px; border-style: solid; ; border-radius: 50%;}
                  span{display: none;}
-                 svg{display: block; width: 30px; height: 30px; animation: rotater 2s linear infinite; }
+                 svg{display: block; width: 30px; height: 30px; animation: rotater 2s linear infinite; fill:#fff;}
              }
           }
           #call-popup {  width:400px; }
