@@ -246,7 +246,9 @@
                     &:focus{background-color: rgba(255, 255, 255, 1);}
                 }
                 &.submit{margin-bottom: 0;
-                    button{cursor:pointer;width: 100%;max-width:300px;height: 60px;border-width: 2px;border-style:solid;display: flex;align-items:center;justify-content:center;border-radius: 35px;background-color: transparent;font-size: 18px;color:#fff;font-weight: 700;text-transform: uppercase;margin:0 auto;transition:background-color 300ms ease, border-color 300ms ease;}
+                    button{cursor:pointer;width:300px;height: 60px;border-width: 2px;border-style:solid;display: flex;align-items:center;justify-content:center;border-radius: 35px;background-color: transparent;font-size: 18px;color:#fff;font-weight: 700;text-transform: uppercase;margin:0 auto;transition:background-color 300ms ease, border-color 300ms ease;text-align: center;
+                        span{display: inline-block;}
+                    }
                 }
             }
             .form-row-half{display: flex;justify-content:space-between;
