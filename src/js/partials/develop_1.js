@@ -252,7 +252,7 @@
 
         specHover('.services-item', '.button', { borderHover: colorsMassiveHover[color] });
         specHover('.services-item', '.services-circle', {backgroundHover:colorsMassiveHover[color]});
-        specHover('.footer-list a', 'svg', {fillHover:colorsMassiveHover[color]});
+        specHover('.footer-list a', '#layer_2', {fillHover:colorsMassiveHover[color]});
     }
 
 /* /random color by load */
