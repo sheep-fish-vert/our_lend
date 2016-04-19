@@ -114,8 +114,13 @@
                     span{color:#f98e3c;font-weight: 900;}
                 }
             }
-            .top-block-descript{font-size: 22px;color:#fff;position: relative;padding-bottom:8px;margin-bottom: 60px;
-                .descript-line{content:'';display: block;position: absolute;left:0;bottom:0;height: 5px;width: 0;transition:width 300ms ease 500ms, background-color 300ms ease 500ms;}
+            .top-block-descript{font-size: 22px;color:#fff;margin-bottom: 60px;text-align: center;
+                .top-block-descript-wrap{display: inline-block;position: relative;padding-bottom:8px;min-height:52px;display: -webkit-flex;align-items:flex-end;justify-content:center;transition:opacity 300ms ease;
+                    .descript-line{content:'';display: block;position: absolute;left:0;bottom:0;height: 5px;width: 0;transition:width 6000ms ease 300ms;}
+                    &.new-text{opacity: 0;
+                        .descript-line{width: 0;transition:width 0ms ease 0ms;}
+                    }
+                }
             }
             .top-block-button{margin-bottom: 100px;
                 a{display: flex;justify-content:center;align-items:center;max-width: 645px;width: 100%;border-radius: 50px;border:2px solid #ca7333;background-color: #f98e3c;height: 78px;position:relative;color:#fff;font-weight: 700;text-decoration: none;font-size: 22px;padding: 0 85px;transition:background-color 300ms ease, border-color 300ms ease;

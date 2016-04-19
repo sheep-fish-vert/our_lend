@@ -274,6 +274,35 @@
 
 /* /top-block text hover */
 
+/* change text in top block by interval */
+
+function changeTextValueByInteval(){
+
+    var itemText = 0;
+
+    function itemTextChange(){
+        $('.top-block-descript-wrap').addClass('new-text');
+        var textVal = textMas[itemText];
+        itemText++;
+        if(itemText >= textMas.length){
+            itemText = 0;
+        }
+        setTimeout(function(){
+            $('.top-block-descript-wrap h2').text(textVal);
+            $('.top-block-descript-wrap').removeClass('new-text');
+        },300);
+    };
+
+    itemTextChange();
+
+    setInterval(function(){
+        itemTextChange()
+    },6200);
+
+}
+
+/* /change text top block by inteval */
+
 /* secret */
 
     function secret(){
@@ -342,6 +371,8 @@ $(window).load(function(){
     secret();
     addParallaxImage();
     parallaxMouseMove();
+    changeTextValueByInteval();
+
 
 });
 
