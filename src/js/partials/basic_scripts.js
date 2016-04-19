@@ -52,7 +52,7 @@ function goTo(){
 
         var target = $(href).offset().top - dist;
 
-        $(scroller).animate({ scrollTop: target }, 500);
+        $(scroller).stop().animate({ scrollTop: target }, 500);
 
         $('.hum-menu').css('display', 'none');
         $('.asked').css('display', 'block');
