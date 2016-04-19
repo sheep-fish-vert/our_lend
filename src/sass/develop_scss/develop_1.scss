@@ -116,7 +116,7 @@
             }
             .top-block-descript{font-size: 22px;color:#fff;margin-bottom: 60px;text-align: center;
                 .top-block-descript-wrap{display: inline-block;position: relative;padding-bottom:8px;min-height:52px;display: -webkit-flex;align-items:flex-end;justify-content:center;transition:opacity 300ms ease;
-                    .descript-line{content:'';display: block;position: absolute;left:0;bottom:0;height: 5px;width: 0;transition:width 6000ms ease 300ms;}
+                    .descript-line{content:'';display: block;position: absolute;left:0;bottom:0;height: 5px;width: 0;/*transition:width 6000ms ease 300ms;*/}
                     &.new-text{opacity: 0;
                         .descript-line{width: 0;transition:width 0ms ease 0ms;}
                     }

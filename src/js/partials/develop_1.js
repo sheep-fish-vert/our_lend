@@ -374,7 +374,7 @@ $(window).load(function(){
     secret();
     addParallaxImage();
     parallaxMouseMove();
-    changeTextValueByInteval();
+    //changeTextValueByInteval();
 
 
 });
