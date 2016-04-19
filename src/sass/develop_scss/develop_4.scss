@@ -138,14 +138,14 @@ body.pink{
     &:active{
        span{ transform: rotate(45deg) translate(-40%,-40%);}
     }
-    span{width: 18px;height: 18px;border: 3px solid #d1d1d1 !important;border-top: none !important;border-right: none !important;transform: rotate(45deg) translate(-50%,-50%);position: absolute;top: 55%;left: 40%;}
+    span{width: 18px;height: 18px;border: 3px solid #d1d1d1 !important;border-top: none !important;border-right: none !important;transform: rotate(45deg) translate(-50%,-50%);position: absolute;top: 55%;left: 42%;}
     &:hover{
         span{border-color: inherit !important;}
     }
 }
 .slick-prev {left: 43%;}
 .slick-next {right: 43%;
-    span{transform: rotate(45deg) translate(-50%,-50%);border: 3px solid #d1d1d1 !important;border-left: none !important;border-bottom: none !important;}
+    span{transform: rotate(45deg) translate(-50%,-50%);border: 3px solid #d1d1d1 !important;border-left: none !important;border-bottom: none !important;left: auto;right: 42%;}
 }
 /*/reviews*/
 
