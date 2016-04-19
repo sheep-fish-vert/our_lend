@@ -135,7 +135,7 @@ $(document).ready(function() {
     //oneHeightItems();
 
     headeButer($('.butterbrod'), $('.hum-menu'));
-    scrollUp('.top-block-bottom-arrow', '.portfolio');
+    scrollUp('.top-block-bottom-arrow, .top-block-footer .color-spec', '.portfolio');
 
     goTo();
 
