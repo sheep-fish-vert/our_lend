@@ -13,7 +13,8 @@ $.scrollbarWidth=function(){var a,b,c;if(c===undefined){a=$('<div style="width:5
 function scrollUp(block,targetBlock) {
 
     $(block).click(function(e){
-        var target = $(targetBlock).offset().top;
+        var head = $('header').outerHeight();
+        var target = $(targetBlock).offset().top-head;
 
         $(scroller).animate({scrollTop:target},800);
         return false;
