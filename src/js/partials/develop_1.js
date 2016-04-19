@@ -248,7 +248,7 @@
         specHover('.top-block-button a', '.span-button-arrow', { backgroundUnhover: colorsMassiveHover[color], borderUnhover: colorsMassive[color], backgroundHover: colorsMassive[color], borderHover: colorsMassiveHover[color], reverseBackground: true });
 
         specHover('.logo-block .convert svg', '.st1', { fillUnhover: 'white', fillHover: colorsMassiveHover[color]});
-        //specHover('.but-block a', 'svg', {fillUnhover:colorsMassive[color], fillHover:colorsMassive[color], reverseFill:true});
+        specHover('.but-block a', 'svg', {fillUnhover:colorsMassive[color], fillHover:colorsMassive[color], reverseFill:true});
 
         specHover('.services-item', '.button', { borderHover: colorsMassiveHover[color] });
         specHover('.services-item', '.services-circle', {backgroundHover:colorsMassiveHover[color]});
