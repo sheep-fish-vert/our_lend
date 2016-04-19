@@ -99,7 +99,7 @@
 
         .mouse-parallax{
             .parallax-layer{
-                span{background-repeat: no-repeat;width: 100%;margin-left: 0;}
+                span{background-repeat: no-repeat;width: 100%;margin-left: 0;backface-visibility: hidden;}
                 &.layer-2{top: 100px;
                     span{background-position:90% top;}
                 }
@@ -327,7 +327,7 @@
         .parallax-layer{position: absolute;left: 0;width: 100%;overflow: hidden;
             &.layer-1{z-index: 1;}
             &.layer-2{z-index: 2;}
-            span{display: block;position: absolute;top:0;width: 200%;background-repeat: repeat-x;margin-left:-50%;background-size: auto 100%;}
+            span{display: block;position: absolute;top:0;width: 200%;background-repeat: repeat-x;margin-left:-50%;background-size: auto 100%;backface-visibility: hidden;}
             img{opacity: 0;}
         }
     }
