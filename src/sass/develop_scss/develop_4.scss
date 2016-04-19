@@ -129,7 +129,9 @@ body.pink{
         }
         .description{text-align: left;padding-top: 16px;font-size: 16px;color: #5e5e5e;line-height: 1.2;min-height: 111px;}
         .social-button{margin:0 auto;padding-top: 51px;
-            button{border-width: 2px;border-color: rgb(232, 232, 232);border-style: solid;max-width: 210px;width: 100%;height: 40px;text-decoration: none;display: flex;justify-content:center;align-items:center;margin:0 auto;border-radius: 20px;transition:all ease .2s;background-color:transparent;cursor: pointer;}
+            button{border-width: 2px;border-color: rgb(232, 232, 232);border-style: solid;width: 210px;height: 40px;text-decoration: none;display: flex;justify-content:center;align-items:center;margin:0 auto;border-radius: 20px;transition:all ease .2s;background-color:transparent;cursor: pointer;text-align: center;
+                span{display: inline-block;}
+            }
         }
     }
 }
