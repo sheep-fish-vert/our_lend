@@ -321,12 +321,11 @@ function portfolioPop(){
     });
 }
 function portfolioShowMore(){
-    $(document).on('click','.button-show-more button',function(event){
+    $(document).on('click','.button-show-more button:not([disabled])',function(event){
         var id = $(this).data('button-id');
         $('.button-show-more').hide(function(){
             $(this).remove();
         });
-        console.log(id);
         $.ajax({
             url : show_More,
             data: id,

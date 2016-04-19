@@ -1,74 +1,150 @@
-<div class="item" data-id="1">
+<div class="item" data-id="9">
     <a href="#">
         <div class="item-img">
-            <img src="images/item-img-1.png" alt="">
+            <img src="images/item-img-9.png" alt="">
         </div>
         <div class="item-text">
             <div class="item-text-wrap border-spec">
                 <div class="item-type color-spec"><span>- Landing page -</span></div>
                 <div class="item-name">
-                    <h3>CHEESE <b>studio production</b></h3>
+                    <h3>Key to Way</h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Съемка профессиональных видеороликов «под ключ»</p>
+                    <p>Такси в Москве</p>
                 </div>
             </div>
         </div>
     </a>
 </div>
-<div class="item" data-id="2">
+<div class="item" data-id="10">
     <a href="#">
         <div class="item-img">
-            <img src="images/item-img-2.png" alt="">
+            <img src="images/item-img-10.png" alt="">
         </div>
         <div class="item-text">
             <div class="item-text-wrap border-spec">
                 <div class="item-type color-spec"><span>- Landing page -</span></div>
                 <div class="item-name">
-                    <h3>FISH EXPRESS</h3>
+                    <h3>GOLDEN MARROW</h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Доставка рыбы <br>в любую точку Росcии</p>
+                    <p>Нейминговая компания</p>
                 </div>
             </div>
         </div>
     </a>
 </div>
-<div class="item" data-id="3">
+<div class="item" data-id="11">
     <a href="#">
         <div class="item-img">
-            <img src="images/item-img-3.png" alt="">
+            <img src="images/item-img-11.png" alt="">
         </div>
         <div class="item-text">
             <div class="item-text-wrap border-spec">
                 <div class="item-type color-spec"><span>- Сайт -</span></div>
                 <div class="item-name">
-                    <h3>LUCKY CATS</h3>
+                    <h3>СТЕКЛОМОНТАЖ</h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Уникальные мебли для кошек</p>
+                    <p>Панорамное остекление домов</p>
                 </div>
             </div>
         </div>
     </a>
 </div>
-<div class="item" data-id="4">
+<div class="item" data-id="12">
     <a href="#">
         <div class="item-img">
-            <img src="images/item-img-4.png" alt="">
+            <img src="images/item-img-12.png" alt="">
         </div>
         <div class="item-text">
             <div class="item-text-wrap border-spec">
                 <div class="item-type color-spec"><span>- Landing page -</span></div>
                 <div class="item-name">
-                    <h3>UBER</h3>
+                    <h3>GREEN WALL</h3>
                     <span class="background-spec"></span>
                 </div>
                 <div class="item-desc">
-                    <p>Лучшие вакансии для таксистов</p>
+                    <p>Фитостены</p>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="item" data-id="13">
+    <a href="#">
+        <div class="item-img">
+            <img src="images/item-img-13.png" alt="">
+        </div>
+        <div class="item-text">
+            <div class="item-text-wrap border-spec">
+                <div class="item-type color-spec"><span>- Landing page -</span></div>
+                <div class="item-name">
+                    <h3>Асфальт мастер</h3>
+                    <span class="background-spec"></span>
+                </div>
+                <div class="item-desc">
+                    <p>Укладка холодного асфальта</p>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="item" data-id="14">
+    <a href="#">
+        <div class="item-img">
+            <img src="images/item-img-14.png" alt="">
+        </div>
+        <div class="item-text">
+            <div class="item-text-wrap border-spec">
+                <div class="item-type color-spec"><span>- Landing page -</span></div>
+                <div class="item-name">
+                    <h3>ASIA</h3>
+                    <span class="background-spec"></span>
+                </div>
+                <div class="item-desc">
+                    <p>Ваш логистически оператор</p>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="item" data-id="15">
+    <a href="#">
+        <div class="item-img">
+            <img src="images/item-img-15.png" alt="">
+        </div>
+        <div class="item-text">
+            <div class="item-text-wrap border-spec">
+                <div class="item-type color-spec"><span>- Сайт -</span></div>
+                <div class="item-name">
+                    <h3>Уфимская служба<br>по ремонту авто</h3>
+                    <span class="background-spec"></span>
+                </div>
+                <div class="item-desc">
+                    <p>Кузовной ремонт</p>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="item" data-id="16">
+    <a href="#">
+        <div class="item-img">
+            <img src="images/item-img-16.png" alt="">
+        </div>
+        <div class="item-text">
+            <div class="item-text-wrap border-spec">
+                <div class="item-type color-spec"><span>- Landing page -</span></div>
+                <div class="item-name">
+                    <h3>4D STUDIO</h3>
+                    <span class="background-spec"></span>
+                </div>
+                <div class="item-desc">
+                    <p>Дизайн интерьера</p>
                 </div>
             </div>
         </div>
@@ -85,6 +161,7 @@
                 </ul>
             </div>
         </div>
+        <!-- когда больше нет что подгружать - нужно вместо "смотрите дальше" вставить "Продолжение следует..."  и  на button  добавить атрибут disabled | Витя, удали потом комент-->
         <button class="border-spec background-spec-hover" data-button-id="2">
             <b>Смотрите дальше</b>
             <strong>
