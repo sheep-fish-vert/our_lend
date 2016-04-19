@@ -22,9 +22,9 @@
     header{position: fixed; z-index: 150; top: 0; width: 100%; background-color: rgba(0, 0, 0, 0.5); backface-visibility: hidden;
         .conteiner{ padding: 0 15px;
             .mbox2{ height: 100px; display: flex; justify-content: space-around; align-items: center ;
-                .logo-block{ min-width: 110px;max-width: 110px;
+                .logo-block{ min-width: 110px;max-width: 120px;height:64px;overflow:hidden;
                     .convert{width: 100%;
-                        svg{width: 100%; height: auto;   transition-property: fill;  transition-duration: 3s;}
+                        svg{width: 185px; height: auto;position:relative;left:-37px;top:-21px;cursor:pointer;transition-property: fill;  transition-duration: 3s;}
                     }
                 }
                 .butterbrod.active{display: none;}
