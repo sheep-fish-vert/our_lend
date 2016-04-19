@@ -60,7 +60,6 @@ function partnersSlider(){
           ]
     });
 }
-
 function servicesSlider(){
   var servic = $('.services-items-wrap');
   $(window).resize(function(event) {
@@ -87,13 +86,30 @@ function servicesSlider(){
       sliker();
     }
 }
+function navigationScroll(){
+    var headHeight = $('header').outerHeight();
+    $(window).scroll(function(event) {
+        var scrolltop = $(window).scrollTop();
+        var point = 0;
+        $('.main section').each(function(index, el) {
+            if(scrolltop >= $(this).offset().top-headHeight&& ($(this).offset().top + $(this).outerHeight()-headHeight) >= scrolltop){
+                point = index;
+                $('header .conteiner .mbox2 nav ul li').removeClass('active');
+                $('header .conteiner .mbox2 nav ul li').eq(point).addClass('active');
+                return false;
+            }
+        });
+    });
+}
+
 $(document).ready(function(){
+    navigationScroll();
     rewievsSlider();
     partnersSlider();
 });
 
 $(window).load(function(){
-  servicesSlider();
+  //servicesSlider();
 });
 
 $(window).resize(function(){

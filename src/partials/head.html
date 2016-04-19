@@ -28,15 +28,16 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-
+    <style>
+        body{transition: all ease-out .3s;opacity: 0;}
+        body.show{opacity: 1;}
+    </style>
     <script>
-
-        var ajaxUrl="ajax.php";
-
         //Витя, удали потом комменты
-        var ajax_Port_Pop = "ajax_portfolio_pop.php";  // большой попап с примером работы
-        var show_More = "portfolio_ajax.php";  // кнопка показать ещё (портфолио)
-        var ajax_Reviw_Pop = "ajax_reviews_pop.php";// полные отзывы
+        var ajaxUrl="ajax.php",
+            ajax_Port_Pop = "ajax_portfolio_pop.php",  // большой попап с примером работы
+            show_More = "portfolio_ajax.php",  // кнопка показать ещё (портфолио)
+            ajax_Reviw_Pop = "ajax_reviews_pop.php";// полные отзывы
     </script>
     <!--[if lt IE 10]>
     <link rel="stylesheet" href="https://rawgit.com/codefucker/finalReject/master/reject/reject.css" media="all" />

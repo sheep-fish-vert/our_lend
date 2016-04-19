@@ -85,7 +85,7 @@
                 </ul>
             </div>
         </div>
-        <button class="border-spec background-spec-hover">
+        <button class="border-spec background-spec-hover" data-button-id="2">
             <b>Смотрите дальше</b>
             <strong>
                 <span class="background-spec"></span>
