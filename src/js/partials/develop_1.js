@@ -257,6 +257,23 @@
 
 /* /random color by load */
 
+/* top-block text hover */
+
+    function topBlockTextHover(){
+
+        $('.top-block-footer p span').hover(
+            function(){
+                $('.top-block-bottom-arrow').addClass('paused');
+            },
+            function(){
+                $('.top-block-bottom-arrow').removeClass('paused');
+            }
+        );
+
+    }
+
+/* /top-block text hover */
+
 /* secret */
 
     function secret(){
@@ -315,6 +332,7 @@
 $(document).ready(function(){
 
     randomColors();
+    topBlockTextHover();
 
 });
 

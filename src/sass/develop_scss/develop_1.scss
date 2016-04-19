@@ -136,10 +136,10 @@
 
         .top-block-footer{max-width: 430px;width: 100%;margin:0 auto 0 auto;font-size: 22px;color:#fff;margin-bottom: 100px;position: relative;
             p{line-height: 26px;
-                span{font-weight: 700;color:#fa8d3c;}
+                span{font-weight: 700;color:#fa8d3c;cursor: pointer;}
             }
             .top-block-bottom-arrow{position: absolute;left:calc(50% - 15px);top:calc(100% + 8px);height: 35px;width: 30px;cursor:pointer;animation-name:topBottomMoving;animation-duration:.5s;animation-iteration-count:infinite;animation-direction:alternate;animation-timing-function: linear;
-                &:hover{animation-play-state: paused;}
+                &:hover, &.paused{animation-play-state: paused;}
                 .arrow-wrap{position: absolute;left:0;right:0;
                     .arrow-wrap-left, .arrow-wrap-right{content:'';display: block;position: absolute;width: 20px;height: 2px;background-color: #fff;top:15px;}
                     .arrow-wrap-left{transform-origin:100% 50%;transform:rotate(45deg);left:calc(50% - 20px);}
