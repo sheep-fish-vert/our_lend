@@ -276,51 +276,54 @@
 
 /* change text in top block by interval */
 
-function changeTextValueByInteval(){
+    function changeTextValueByInteval(){
 
-    var itemText = 0;
+        var itemText = 0;
 
-    function itemTextChange(){
-        $('.top-block-descript-wrap').addClass('new-text');
-        var textVal = textMas[itemText];
-        itemText++;
-        if(itemText >= textMas.length){
-            itemText = 0;
-        }
-        setTimeout(function(){
-            $('.top-block-descript-wrap h2').text(textVal);
-            $('.top-block-descript-wrap').removeClass('new-text');
-        },300);
-    };
+        function itemTextChange(){
+            $('.top-block-descript-wrap').addClass('new-text');
+            var textVal = textMas[itemText];
+            itemText++;
+            if(itemText >= textMas.length){
+                itemText = 0;
+            }
+            setTimeout(function(){
+                $('.top-block-descript-wrap h2').text(textVal);
+                $('.top-block-descript-wrap').removeClass('new-text');
+            },300);
+        };
 
-    itemTextChange();
+        itemTextChange();
 
-    setInterval(function(){
-        itemTextChange()
-    },6200);
+        setInterval(function(){
+            itemTextChange()
+        },6200);
 
-}
+    }
 
 /* /change text top block by inteval */
 
 /* secret */
 
     function secret(){
-        var ponyId = 0;
-        var ponyMain = '<img src=images/secret.gif alt="secret-dance" />';
+
+        var secretImgNum = Math.floor((Math.random() * secretMas.length));
+
+        var secretId = 0;
+        var secretMain = '<img src='+secretMas[secretImgNum]+' alt="secret-dance" />';
 
         $('.logo-block').click(function(){
 
             if(!$('body').is('.pink') && !$('body').is('.pause')){
 
-                ponyId++;
-                if(ponyId == 8){
+                secretId++;
+                if(secretId == 8){
                     $('body').addClass('pink pause');
                     $('.mega-hover').each(function() {
                         $(this).attr('style', $(this).data('secret-unhover'));
                     });
 
-                    $('.secret-erotic-wrap').addClass('active').prepend(ponyMain);
+                    $('.secret-erotic-wrap').addClass('active').prepend(secretMain);
                     $('meta[name=theme-color]').remove();
                     $('head').append('<meta name="theme-color" content="#E094F8">');
 
@@ -328,7 +331,7 @@ function changeTextValueByInteval(){
                         $('body').removeClass('pause');
                     },1000);
 
-                    ponyId = 0;
+                    secretId = 0;
                 }
 
             }
