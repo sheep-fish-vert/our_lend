@@ -66,12 +66,12 @@
             }
             .contact-form-row{
                 .contact-form-item{ padding: 20px 0;
-                    input{width: 100%; height: 60px; border-radius: 30px; border: 2px solid rgb(209, 209, 209);font-size: 16px; font-family: "Roboto";  color: rgb(79, 79, 79);  line-height: 58px; text-indent: 30px;  transition: all 0.3s;}
+                    input{width: 100%; height: 60px; border-radius: 30px; border: 2px solid rgb(209, 209, 209);font-size: 16px;line-height: 22px; font-family: "Roboto";  color: rgb(79, 79, 79); text-indent: 30px;  transition: all 0.3s;}
                     label{display: none !important;}
-                    ::-webkit-input-placeholder {color: rgb(79, 79, 79);}
-                    ::-moz-placeholder          {color: rgb(79, 79, 79);}
-                    :-moz-placeholder           {color: rgb(79, 79, 79);}
-                    :-ms-input-placeholder      {color: rgb(79, 79, 79);}
+                    ::-webkit-input-placeholder {color: rgb(79, 79, 79);line-height: 22px;font-size: 16px;}
+                    ::-moz-placeholder          {color: rgb(79, 79, 79);line-height: 22px;font-size: 16px;}
+                    :-moz-placeholder           {color: rgb(79, 79, 79);line-height: 22px;font-size: 16px;}
+                    :-ms-input-placeholder      {color: rgb(79, 79, 79);line-height: 22px;font-size: 16px;}
                     input.error{border-color: red !important; box-shadow: 0px 0px 14px 0px red;}
                 }
             }
@@ -227,8 +227,9 @@ html.desktop.mac{
         .contacts-main-title{text-align: center;position: relative;font-family: 'FuturaPT', sans-serif;color:#fff;font-weight: 700;padding-bottom: 25px;margin-bottom: 25px;font-size: 36px;
             span{position:absolute;bottom:0;left:calc(50% - 100px);max-width: 200px;width: 100%;height: 5px;display: block;}
         }
-        .contacts-form-wrap{padding: 0 15px;
-            .contacts-form{max-width: 900px;width: 100%;padding: 40px 15px 15px 15px;min-height:570px;margin: 0 auto;display: flex;align-items:flex-start;justify-content:center;}
+        .contacts-form-wrap{
+            .contacts-form{max-width: 900px;width: 100%;padding: 40px 0px 15px 0px;min-height:570px;margin: 0 auto;display: flex;align-items:flex-start;justify-content:center;}
+            .contacts-form-wrapper{padding: 0 10px;}
             .contacts-form-wrap-main{max-width: 615px;width: 100%;}
             .form-title{font-size: 48px;color:#fff;padding-bottom:25px;margin-bottom: 40px;text-transform: uppercase;line-height: 55px;position:relative;
                 h2{
