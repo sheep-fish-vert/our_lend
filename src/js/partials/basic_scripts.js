@@ -43,7 +43,7 @@ function oneHeightItems(){
 /*GO TO href*/
 function goTo(){
     $(document).on('click','header nav li a', function(event){
-        event.preventDefault();
+
         var href = $(this).attr('href');
         var dist = 140;
         if (href == '#top-block') {
@@ -52,12 +52,13 @@ function goTo(){
 
         var target = $(href).offset().top - dist;
 
-        $(scroller).stop().animate({ scrollTop: target }, 500);
+        $(scroller).stop().animate({ scrollTop: target}, 500);
 
         $('.hum-menu').css('display', 'none');
         $('.asked').css('display', 'block');
         $('.butterbrod').removeClass('active');
-         $('body').removeClass('overflover');
+        $('body').removeClass('overflover');
+        //event.preventDefault();
     });
 }
 
