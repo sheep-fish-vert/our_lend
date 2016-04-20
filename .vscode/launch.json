@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to Node",
+            "type": "node",
+            "request": "attach",
+            "address": "localhost:3333",
+            "port": 3333
+        }
+    ]
+}
