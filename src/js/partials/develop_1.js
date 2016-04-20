@@ -253,6 +253,66 @@
         specHover('.services-item', '.button', { borderHover: colorsMassiveHover[color] });
         specHover('.services-item', '.services-circle', {backgroundHover:colorsMassiveHover[color]});
         specHover('.footer-list a', '.footer-svg', {fillHover:colorsMassiveHover[color]});
+
+        /* secret */
+
+            function secret(){
+
+                var secretImgNum = Math.floor((Math.random() * secretMas.length));
+
+                var secretId = 0;
+                var secretMain = '<img src='+secretMas[secretImgNum]+' alt="secret-dance" />';
+
+                $('.logo-block').click(function(){
+
+                    if(!$('body').is('.pink') && !$('body').is('.pause')){
+
+                        secretId++;
+                        if(secretId == 8){
+                            $('body').addClass('pink pause');
+                            $('.mega-hover').each(function() {
+                                $(this).attr('style', $(this).data('secret-unhover'));
+                            });
+
+                            $('.secret-erotic-wrap').addClass('active').prepend(secretMain);
+                            $('meta[name=theme-color]').remove();
+                            $('head').append('<meta name="theme-color" content="#E094F8">');
+
+                            setTimeout(function(){
+                                $('body').removeClass('pause');
+                            },1000);
+
+                            secretId = 0;
+                        }
+
+                    }
+                    else if(!$('body').is('.pause') && $('body').is('.pink')){
+
+                        $('body').addClass('pause');
+                        $('.secret-erotic-wrap').removeClass('active');
+                        setTimeout(function(){
+                            $('body').removeClass('pink pause');
+                            $('.mega-hover').each(function() {
+                                if($(this).is('[data-unhover]')){
+                                    $(this).attr('style', $(this).data('unhover'));
+                                }else{
+                                    $(this).removeAttr('style');
+                                }
+                            });
+                            $('meta[name=theme-color]').remove();
+                            $('head').append('<meta name="theme-color" content="#'+colorsMassive[color]+'""><meta name="msapplication-navbutton-color" content="#'+colorsMassive[color]+'"">');
+                            $('.secret-erotic-wrap img').remove();
+                        },400);
+
+                    }
+
+                });
+
+            }
+
+            secret();
+
+        /* /secret */
     }
 
 /* /random color by load */
@@ -303,64 +363,6 @@
 
 /* /change text top block by inteval */
 
-/* secret */
-
-    function secret(){
-
-        var secretImgNum = Math.floor((Math.random() * secretMas.length));
-
-        var secretId = 0;
-        var secretMain = '<img src='+secretMas[secretImgNum]+' alt="secret-dance" />';
-
-        $('.logo-block').click(function(){
-
-            if(!$('body').is('.pink') && !$('body').is('.pause')){
-
-                secretId++;
-                if(secretId == 8){
-                    $('body').addClass('pink pause');
-                    $('.mega-hover').each(function() {
-                        $(this).attr('style', $(this).data('secret-unhover'));
-                    });
-
-                    $('.secret-erotic-wrap').addClass('active').prepend(secretMain);
-                    $('meta[name=theme-color]').remove();
-                    $('head').append('<meta name="theme-color" content="#E094F8">');
-
-                    setTimeout(function(){
-                        $('body').removeClass('pause');
-                    },1000);
-
-                    secretId = 0;
-                }
-
-            }
-            else if(!$('body').is('.pause') && $('body').is('.pink')){
-
-                $('body').addClass('pause');
-                $('.secret-erotic-wrap').removeClass('active');
-                setTimeout(function(){
-                    $('body').removeClass('pink pause');
-                    $('.mega-hover').each(function() {
-                        if($(this).is('[data-unhover]')){
-                            $(this).attr('style', $(this).data('unhover'));
-                        }else{
-                            $(this).removeAttr('style');
-                        }
-                    });
-                    $('meta[name=theme-color]').remove();
-                    $('head').append('<meta name="theme-color" content="#88c5bd">');
-                    $('.secret-erotic-wrap img').remove();
-                },400);
-
-            }
-
-        });
-
-    }
-
-/* /secret */
-
 
 $(document).ready(function(){
 
@@ -371,7 +373,6 @@ $(document).ready(function(){
 
 $(window).load(function(){
 
-    secret();
     addParallaxImage();
     parallaxMouseMove();
     //changeTextValueByInteval();
