@@ -210,7 +210,11 @@
 /* /services */
 
 /* contacts */
-
+html.desktop.mac{
+    .contacts{
+        .trianges.trianges-bottom.not-center{border-width: 100px 960px 0 960px;}
+    }
+}
     .contacts{position: relative;background-image:url(../images/cantacts-background-new.jpg);background-repeat: no-repeat;background-size: cover;background-position: center top;padding: 220px 0 170px 0;
         .contacts-descript{max-width: 720px;width: 100%;margin:0 auto 18px auto;padding: 0  10px 18px 10px;position: relative;font-size: 24px;font-weight: 700;color:#fff;text-align: center;line-height: 28px;
             span{position: absolute;max-width: 480px;width: calc(100% - 20px);height: 5px;background-color: #898989;left:50%;transform:translate(-50%, 0);bottom: 0;}

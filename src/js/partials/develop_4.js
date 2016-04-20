@@ -123,6 +123,9 @@ $(document).ready(function(){
     navigationScroll();
     rewievsSlider();
     partnersSlider();
+    if (navigator.appVersion.indexOf("Mac")!=-1) {
+      $('html').addClass('mac');
+    }
 });
 
 $(window).load(function(){
