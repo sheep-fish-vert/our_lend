@@ -6,6 +6,7 @@ function rewievsSlider(){
         autoplay: false,
         autoplaySpeed: 2000,
         adaptiveHeight:true,
+        swipeToSlide:true,
         prevArrow:'<button type="button" class="slick-prev border-spec-hover"><span class="border-spec"></span></button>',
         nextArrow:'<button type="button" class="slick-next border-spec-hover"><span class="border-spec"></span></button>',
         draggable:true,
@@ -31,6 +32,7 @@ function partnersSlider(){
         infinite: true,
         slidesToShow: 5,
         slidesToScroll: 1,
+        swipeToSlide:true,
         //autoplay: true,
         autoplaySpeed: 2000,
         adaptiveHeight:true,
@@ -60,7 +62,6 @@ function partnersSlider(){
           ]
     });
 }
-
 function servicesSlider(){
   var servic = $('.services-items-wrap');
   $(window).resize(function(event) {
@@ -75,6 +76,7 @@ function servicesSlider(){
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
+        swipeToSlide:true,
         autoplay: true,
         autoplaySpeed: 3000,
         adaptiveHeight:true,
@@ -87,16 +89,44 @@ function servicesSlider(){
       sliker();
     }
 }
-$(document).ready(function(){
+function navigationScroll(){
+    var headHeight = $('header').outerHeight();
+    $(window).scroll(function(event) {
+        var scrolltop = $(window).scrollTop();
+        var point = 0;
+        $('.main section').each(function(index, el) {
+            if(scrolltop >= $(this).offset().top-headHeight&& ($(this).offset().top + $(this).outerHeight()-headHeight) >= scrolltop){
+                point = index;
+                $('header .conteiner .mbox2 nav ul li').removeClass('active');
+                $('header .conteiner .mbox2 nav ul li').eq(point).addClass('active');
+                return false;
+            }
+        });
+    });
+}
 
-    reviewsPopUp();
-    portfolioShowMore();
+function preventKeyDown(){
+  $(document).keydown(function(event) {
+    if( event.keyCode == 123 ){
+      return false;
+    }else if( event.ctrlKey && event.shiftKey && event.keyCode == 73 ){
+      return false;
+    }
+  });
+  $(document).on('contextmenu', function(event) {
+    event.preventDefault();
+  });
+}
+
+$(document).ready(function(){
+    //preventKeyDown();
+    navigationScroll();
     rewievsSlider();
     partnersSlider();
 });
 
 $(window).load(function(){
-  servicesSlider();
+  //servicesSlider();
 });
 
 $(window).resize(function(){

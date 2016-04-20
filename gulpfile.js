@@ -141,9 +141,19 @@ gulp.task('css-minify', function() {
     .pipe(reload({stream: true}));
 });
 
+
 gulp.task('js-minify', function(){
 
     gulp.src('build/js/main.js')
+    .pipe(uglify()) //Сожмем наш js
+    .pipe(gulp.dest(path.build.js))
+    .pipe(reload({stream: true}));
+
+});
+
+gulp.task('js-minify-valid', function(){
+
+    gulp.src('build/js/validate_script.js')
     .pipe(uglify()) //Сожмем наш js
     .pipe(gulp.dest(path.build.js))
     .pipe(reload({stream: true}));
@@ -154,4 +164,4 @@ gulp.task('js-minify', function(){
 
 gulp.task('default', ['build', 'webserver', 'watch']);
 
-gulp.task('minify', ['css-minify', 'js-minify']);
+gulp.task('minify', ['css-minify', 'js-minify', 'js-minify-valid']);

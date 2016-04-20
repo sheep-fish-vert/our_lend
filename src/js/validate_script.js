@@ -122,6 +122,7 @@ function popNext(popupId, popupWrap){
     $.fancybox.open(popupId,{
         padding:0,
         fitToView:false,
+        'closeBtn' : false,
         wrapCSS:popupWrap,
         autoSize:true,
         afterClose: function(){
@@ -135,7 +136,7 @@ function popNext(popupId, popupWrap){
     timer = setTimeout(function(){
         $('form').trigger("reset");
         $.fancybox.close(popupId);
-    },2000);
+    },2500);
 
 }
 
@@ -321,18 +322,22 @@ function portfolioPop(){
     });
 }
 function portfolioShowMore(){
-    $(document).on('click','.button-show-more button',function(event){
+    $(document).on('click','.button-show-more button:not([disabled])',function(event){
+        var id = $(this).data('button-id');
         $('.button-show-more').hide(function(){
             $(this).remove();
         });
         $.ajax({
             url : show_More,
+            data: id,
             success : function(data){
                 $('.portfolio-wrap').append(data);
-                setTimeout(function(){
-                    var bottom = $('.portfolio')[0].scrollHeight;
-                    $('html,body').animate({scrollTop:bottom},300);
-                },200);
+                if( $(window).width()>600 ){
+                    setTimeout(function(){
+                        var bottom = $('.portfolio')[0].scrollHeight;
+                        $('html,body').animate({scrollTop:bottom},300);
+                    },200);
+                }
             }
         });
     });
@@ -379,6 +384,8 @@ function reviewsPopUp(){
 }
 $(document).ready(function(){
     portfolioPop();
+    reviewsPopUp();
+    portfolioShowMore();
     validate('#call-popup .contact-form', {submitFunction:validationCall});
     Maskedinput();
     fancyboxForm();
