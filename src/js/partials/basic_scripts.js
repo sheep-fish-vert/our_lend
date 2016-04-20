@@ -42,8 +42,8 @@ function oneHeightItems(){
 
 /*GO TO href*/
 function goTo(){
-    $('nav li a').click(function(e){
-        e.preventDefault();
+    $(document).on('click','header nav li a', function(event){
+        event.preventDefault();
         var href = $(this).attr('href');
         var dist = 140;
         if (href == '#top-block') {
