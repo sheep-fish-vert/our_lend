@@ -35,9 +35,9 @@ body.pink{
         }
 
         .item-img{height: 300px;display: flex;flex-direction:column;justify-content:center;align-items:center;background: linear-gradient(135deg, #d7d4d7 0%,#d7d4d7 10%,#fafafd 30%,#fafafd 46%,#fafafd 70%,#fafafd 70%,#d7d4d7 90%,#d7d4d7 100%);transition:background ease-out .3s;}
-        .item-text{position: absolute;overflow: hidden;top: 0;left: 0;transition: all 0.3s ease-out 0.4s;background-color: rgba(255, 255, 255, 0.85);height: 100%;width: 100%;padding: 15px;opacity: 0;    backface-visibility: hidden;
+        .item-text{position: absolute;overflow: hidden;top: 0;left: 0;transition: all 0.3s ease-out 0.4s;background-color: rgba(255, 255, 255, 0.85);height: 100%;width: 100%;padding: 15px;opacity: 0;backface-visibility: hidden;
             .item-text-wrap{height: 100%;width: 100%;display: flex;flex-direction:column;justify-content:center;align-items:center;border:3px solid transparent;padding: 10px;position: relative;}
-            .item-name{font-weight: bold;font-size: 30px;padding-bottom: 15px;position: relative;margin-bottom: 17px;transition: all 0.3s ease-in-out 0.1s;transform: scale(10);opacity: 0;    backface-visibility: hidden;color: #4e4e4e;
+            .item-name{font-weight: bold;font-size: 30px;padding-bottom: 15px;position: relative;margin-bottom: 17px;transition: all 0.3s ease-in-out 0.1s;transform: scale(10);opacity: 0;backface-visibility: hidden;color: #4e4e4e;
                 span{bottom: 0;left: 50%;transform: translateX(-50%);width: 150px;height: 5px;position: absolute;}
                 b{display: block;font-size: 14px;color: #4e4e4e;}
             }
