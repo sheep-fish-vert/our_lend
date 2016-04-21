@@ -95,8 +95,33 @@ function validate(form, options){
 }
 
 /*Отправка формы с вызовом попапа*/
-function validationCall(form){
+function validationCall1(form) {
 
+    yandexID.reachGoal('popup' + redFlag);
+    console.log('popup' + redFlag);
+        
+  var thisForm = $(form);
+  var formSur = thisForm.serialize();
+
+    $.ajax({
+        url : ajaxUrl,
+        data: formSur,
+        method:'POST',
+        success : function(data){
+            if ( data.trim() == 'true') {
+                thisForm.trigger("reset");
+                popNext("#call_success", "call-popup");
+            }
+            else {
+               thisForm.trigger('reset');
+            }
+
+        }
+    });
+}
+function validationCall2(form){
+    yandexID.reachGoal('contacts-form');
+    console.log('contacts-form');
   var thisForm = $(form);
   var formSur = thisForm.serialize();
 
@@ -386,8 +411,8 @@ $(document).ready(function(){
     portfolioPop();
     reviewsPopUp();
     portfolioShowMore();
-    validate('#call-popup .contact-form', {submitFunction:validationCall});
+    validate('#call-popup .contact-form', {submitFunction:validationCall1});
     Maskedinput();
     fancyboxForm();
-    validate('.contacts-form', {submitFunction:validationCall});
+    validate('.contacts-form', {submitFunction:validationCall2});
 });
