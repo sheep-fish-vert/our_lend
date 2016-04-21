@@ -44,37 +44,37 @@ body.pink{
             .item-desc{transition: all 0.3s ease-in-out 0.1s;transform: translateY(100px) translateZ(0px);opacity: 0;max-width: 300px;margin:0 auto;backface-visibility: hidden;font-weight: bold;font-size: 18px;}
             .item-type{position: absolute;top:20px;width: 100%;transition: transform 0.3s ease-in-out 0.1s,opacity 0.3s ease-in-out 0.1s;transform: translateY(-100px) translateZ(0px);opacity: 0;left: 0;backface-visibility: hidden;font-size: 18px;}
         }
-        .button-show-more{width: 100%;display: flex;flex-direction:column;justify-content:flex-start;align-items:center;margin-bottom: 10px;position: absolute;top: 100%;left: 0;transition:all ease .3s;padding-top: 35px;
-            .button-show-text{padding-bottom: 20px;padding-bottom: 20px;position: relative;margin-bottom: 25px;
-                p{font-family: "FuturaPT";font-weight: bold;font-size: 36px;}
-                .ul-wrap{max-width: 300px;position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);overflow: hidden;height: 4px;width: 300px;}
-                ul{display: flex;flex-direction:row;justify-content:flex-start;align-items:center;position: absolute;top: 0;left: 0;
-                    li{width: 12px;height: 2px;opacity: .5;margin-right: 6px;
-                        &:last-child{margin-bottom: 0;}
-                    }
-                    &:last-child{bottom: 0px;left: -3%;top: auto;}
+    }
+    .button-show-more{width: 100%;display: flex;flex-direction:column;justify-content:flex-start;align-items:center;margin-bottom: 10px;position: absolute;top: 100%;left: 0;transition:all ease .3s;padding-top: 35px;z-index: 10;
+        .button-show-text{padding-bottom: 20px;padding-bottom: 20px;position: relative;margin-bottom: 25px;
+            p{font-family: "FuturaPT";font-weight: bold;font-size: 36px;}
+            .ul-wrap{max-width: 300px;position: absolute;bottom: 0;left: 50%;transform: translateX(-50%);overflow: hidden;height: 4px;width: 300px;}
+            ul{display: flex;flex-direction:row;justify-content:flex-start;align-items:center;position: absolute;top: 0;left: 0;
+                li{width: 12px;height: 2px;opacity: .5;margin-right: 6px;
+                    &:last-child{margin-bottom: 0;}
                 }
-
+                &:last-child{bottom: 0px;left: -3%;top: auto;}
             }
-            button{height: 60px;max-width: 300px;width: 100%;border:3px solid transparent;background-color: transparent;border-radius: 35px;transition:background-color ease-out .3s;cursor: pointer;position: relative;
-                &:hover{
-                    strong{animation-name: rotatePlus;}
-                    span.background-spec{background-color: #fff !important;}
-                    b{color: white;}
-                }
-                &:active{
-                    b{position: relative;top: 2px;}
-                    strong{animation-play-state: paused;top: calc(50% - 7px)}
-                }
-                b{font-weight: bold;font-size: 18px;margin-left: -10px;transition:color ease-out .3s;}
-                strong{position: absolute;right: 10%;top: calc(50% - 9px);transform-origin:50% 50%;height: 18px;width: 18px;animation-iteration-count: infinite;animation-timing-function: ease-out;animation-duration: 2s;animation-iteration-count: infinite;animation-direction: alternate; animation-play-state: running;}
-                span.background-spec{height: 4px;width: 18px;transition:background-color ease-out .3s;top: 7px;left: 0px;position: absolute;
-                    &:last-child{transform: rotate(-90deg);}
-                }
-                @keyframes rotatePlus {
-                    0% {transform:rotate(0deg);}
-                    100% {transform:rotate(360deg);}
-                }
+
+        }
+        button{height: 60px;max-width: 300px;width: 100%;border:3px solid transparent;background-color: transparent;border-radius: 35px;transition:background-color ease-out .3s;cursor: pointer;position: relative;
+            &:hover{
+                strong{animation-name: rotatePlus;}
+                span.background-spec{background-color: #fff !important;}
+                b{color: white;}
+            }
+            &:active{
+                b{position: relative;top: 2px;}
+                strong{animation-play-state: paused;top: calc(50% - 7px)}
+            }
+            b{font-weight: bold;font-size: 18px;margin-left: -10px;transition:color ease-out .3s;}
+            strong{position: absolute;right: 10%;top: calc(50% - 9px);transform-origin:50% 50%;height: 18px;width: 18px;animation-iteration-count: infinite;animation-timing-function: ease-out;animation-duration: 2s;animation-iteration-count: infinite;animation-direction: alternate; animation-play-state: running;}
+            span.background-spec{height: 4px;width: 18px;transition:background-color ease-out .3s;top: 7px;left: 0px;position: absolute;
+                &:last-child{transform: rotate(-90deg);}
+            }
+            @keyframes rotatePlus {
+                0% {transform:rotate(0deg);}
+                100% {transform:rotate(360deg);}
             }
         }
     }

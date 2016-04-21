@@ -327,9 +327,6 @@ function portfolioShowMore(){
         var id = $(this).data('button-id');
         var page = $(this).data('page');
         var elementsPrepage = $(this).data('prepage');
-        $('.button-show-more').hide(function(){
-            $(this).remove();
-        });
         $.ajax({
             url : show_More,
             data: {page:page, elementsPrepage:elementsPrepage},
