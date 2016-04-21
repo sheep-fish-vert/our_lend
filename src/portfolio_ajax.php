@@ -150,24 +150,3 @@
         </div>
     </a>
 </div>
-<div class="button-show-more">
-    <div class="button-show-more-wrap">
-        <div class="button-show-text">
-            <p>Это только часть...</p>
-            <div class="ul-wrap">
-                <ul><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li>
-                </ul>
-                <ul><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li><li class="background-spec"></li>
-                </ul>
-            </div>
-        </div>
-        <!-- когда больше нет что подгружать - нужно вместо "смотрите дальше" вставить "Продолжение следует..."  и  на button  добавить атрибут disabled | Витя, удали потом комент-->
-        <button class="border-spec background-spec-hover" data-button-id="2">
-            <b>Смотрите дальше</b>
-            <strong>
-                <span class="background-spec"></span>
-                <span class="background-spec"></span>
-            </strong>
-        </button>
-    </div>
-</div>

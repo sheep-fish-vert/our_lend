@@ -348,20 +348,28 @@ function portfolioPop(){
 }
 function portfolioShowMore(){
     $(document).on('click','.button-show-more button:not([disabled])',function(event){
+        var item = $(this);
         var id = $(this).data('button-id');
+        var page = $(this).data('page');
+        var elementsPrepage = $(this).data('prepage');
         $('.button-show-more').hide(function(){
             $(this).remove();
         });
         $.ajax({
             url : show_More,
-            data: id,
+            data: {page:page, elementsPrepage:elementsPrepage},
             success : function(data){
-                $('.portfolio-wrap').append(data);
-                if( $(window).width()>600 ){
-                    setTimeout(function(){
-                        var bottom = $('.portfolio')[0].scrollHeight;
-                        $('html,body').animate({scrollTop:bottom},300);
-                    },200);
+                if(data.trim() != 'false'){
+                    $('.portfolio-wrap').append(data);
+                    item.data('page', page++);
+                    if( $(window).width()>600 ){
+                        setTimeout(function(){
+                            var bottom = $('.portfolio')[0].scrollHeight;
+                            $('html,body').animate({scrollTop:bottom},300);
+                        },200);
+                    }
+                }else{
+                    item.find('b').text('Продолжение следует...');
                 }
             }
         });
