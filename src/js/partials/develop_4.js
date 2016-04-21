@@ -100,9 +100,12 @@ function navigationScroll(){
 
         $('.main section').each(function(index, el) {
 
-            if(scrolltop >= $(this).offset().top-headHeight&& ($(this).offset().top + $(this).outerHeight()-headHeight) >= scrolltop){
+            if(scrolltop >= $(this).offset().top-headHeight && ($(this).offset().top + $(this).outerHeight()-headHeight) >= scrolltop && !$(this).is('.on-scroll')){
 
                 point = index;
+
+                $('.main section').removeClass('on-scroll');
+                $(this).addClass('on-scroll');
                 $('header .conteiner .mbox2 nav ul li').removeClass('active');
                 $('header .conteiner .mbox2 nav ul li').eq(point).addClass('active');
 
