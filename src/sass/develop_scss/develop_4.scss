@@ -135,13 +135,13 @@ body.pink{
         }
     }
 }
-.slick-arrow{width: 80px;height: 80px;border:3px solid #d1d1d1;top: calc(100% + 70px);transition:all ease .2s;
+.slick-arrow{width: 80px;height: 80px;border:3px solid #d1d1d1;top: calc(100% + 70px);transition:all ease .2s;background: white;
     &:before{display: none;}
     &:active{
        span{ transform: rotate(45deg) translate(-40%,-40%);}
     }
     span{width: 18px;height: 18px;border: 3px solid #d1d1d1 !important;border-top: none !important;border-right: none !important;transform: rotate(45deg) translate(-50%,-50%);position: absolute;top: 55%;left: 42%;}
-    &:hover{
+    &:hover{background: white;
         span{border-color: inherit !important;}
     }
 }
