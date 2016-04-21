@@ -22,18 +22,15 @@ $(document).ready(function () {
         redFlag += $(this).attr("data-id");
     });
 
-    $('.description-bottom-href button').click(function () { 
+   $(document).on('click', '.description-bottom-href button', function () { 
         yandexID.reachGoal('want' + redFlag);
         console.log('want' + redFlag);
     });
 
     $('.services-item .fancybox-form').click(function () {
-        redFlag = 'uslugi'+ $(this).find('.services-item').index();      
+        redFlag = 'uslugi'+ $(this).closest('.services-item').index();      
     });
     
-    $('.services-item .fancybox-form').click(function () {
-        redFlag = 'uslugi'+ $(this).find('.services-item').index();      
-    });
 
     $('.top-block-wrap .fancybox-form').click(function () {
         redFlag = 'top-big';
