@@ -142,13 +142,14 @@
 
 }
 @media screen and (max-width: 479px){
+
     /*portfolio*/
     .portfolio{
         .portfolio-wrap{
             .item{width: 100%;}
-            .button-show-more{padding-top: 22px;}
-            .button-show-more .button-show-text p{font-size: 30px;}
         }
+        .button-show-more{padding-top: 22px;}
+        .button-show-more .button-show-text p{font-size: 30px;}
         .trianges.trianges-bottom{bottom: -210px;}
     }
     /*/portfolio*/
@@ -187,11 +188,8 @@
 @media screen and (max-width: 320px){
     /*portfolio*/
     .portfolio{
-        .portfolio-wrap{
-            .item{}
-            .button-show-more{padding-top: 15px;}
-            .button-show-more button{height: 52px;}
-        }
+        .button-show-more{padding-top: 15px;}
+        .button-show-more button{height: 52px;}
         .trianges.trianges-bottom{bottom: -185px;}
     }
     /*/portfolio*/
