@@ -99,7 +99,7 @@ function validationCall1(form) {
 
     yandexID.reachGoal('popup' + redFlag);
     console.log('popup' + redFlag);
-        
+
   var thisForm = $(form);
   var formSur = thisForm.serialize();
 
@@ -346,27 +346,32 @@ function portfolioPop(){
         $('.contacts-form-wrap-main').find('input[name=your_name]').focus();
     });
 }
+
 function portfolioShowMore(){
-    $(document).on('click','.button-show-more button:not([disabled])',function(event){
+    $(document).on('click','.button-show-more button:not(.preload)',function(event){
         var item = $(this);
         var id = $(this).data('button-id');
-        var page = $(this).data('page');
+        var page = parseInt($(this).data('page'));
         var elementsPrepage = $(this).data('prepage');
+        item.addClass('preload');
         $.ajax({
             url : show_More,
             data: {page:page, elementsPrepage:elementsPrepage},
             success : function(data){
                 if(data.trim() != 'false'){
                     $('.portfolio-wrap').append(data);
-                    item.data('page', page++);
-                    if( $(window).width()>600 ){
+                    page = page + 1;
+                    item.data('page', page);
+                    item.removeClass('preload');
+                    if( $(window).width()>600){
                         setTimeout(function(){
                             var bottom = $('.portfolio')[0].scrollHeight;
                             $('html,body').animate({scrollTop:bottom},300);
                         },200);
                     }
                 }else{
-                    item.find('b').text('Продолжение следует...');
+
+                    item.removeClass('preload').find('b').text('Продолжение следует...');
                 }
             }
         });
