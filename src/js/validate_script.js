@@ -354,7 +354,7 @@ function portfolioShowMore(){
         var elementsPrepage = $(this).data('prepage');
         itemButton.addClass('preload2');
         $.ajax({
-            url : 'js/json/show_more.json', // show_More
+            url : show_More, // show_More
             data: {page:page, elementsPrepage:elementsPrepage},
             success : function(data){
                 data.items.forEach(function(item, i, arr){
@@ -372,7 +372,8 @@ function portfolioShowMore(){
                     }
                 });
                 if(data.last){
-                    itemButton.removeClass('preload2').addClass('no-more').find('b').text('Продолжение следует...');
+                    itemButton.removeClass('preload2').addClass('no-more');
+                    itemButton.parent().find('.button-show-text p').text('Продолжение следует...');
                 }
             }
         });

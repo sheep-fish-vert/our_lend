@@ -5,57 +5,57 @@
             "item_id":9,
             "item_img":"images/item-img-9.png",
             "item_top_text":"- Landing page -",
-            "item_name":"Royal Bonuse",
-            "item_bottom_text":"Казино"
+            "item_name":"Key to Way",
+            "item_bottom_text":"Такси в Москве"
         },
         {
             "item_id":10,
             "item_img":"images/item-img-10.png",
             "item_top_text":"- Landing page -",
-            "item_name":"Royal Bonuse",
-            "item_bottom_text":"Казино"
+            "item_name":"GOLDEN MARROW",
+            "item_bottom_text":"Нейминговая компания"
         },
         {
             "item_id":11,
             "item_img":"images/item-img-11.png",
-            "item_top_text":"- Landing page -",
-            "item_name":"Royal Bonuse",
-            "item_bottom_text":"Казино"
+            "item_top_text":"- Сайт -",
+            "item_name":"СТЕКЛОМОНТАЖ",
+            "item_bottom_text":"Панорамное остекление домов"
         },
         {
             "item_id":12,
             "item_img":"images/item-img-12.png",
             "item_top_text":"- Landing page -",
-            "item_name":"Royal Bonuse",
-            "item_bottom_text":"Казино"
+            "item_name":"GREEN WALL",
+            "item_bottom_text":"Фитостены"
         },
         {
             "item_id":13,
             "item_img":"images/item-img-13.png",
             "item_top_text":"- Landing page -",
-            "item_name":"Royal Bonuse",
-            "item_bottom_text":"Казино"
+            "item_name":"Асфальт мастер",
+            "item_bottom_text":"Укладка холодного асфальта"
         },
         {
             "item_id":14,
             "item_img":"images/item-img-14.png",
             "item_top_text":"- Landing page -",
-            "item_name":"Royal Bonuse",
-            "item_bottom_text":"Казино"
+            "item_name":"ASIA",
+            "item_bottom_text":"Ваш логистически оператор"
         },
         {
             "item_id":15,
             "item_img":"images/item-img-15.png",
-            "item_top_text":"- Landing page -",
-            "item_name":"Royal Bonuse",
-            "item_bottom_text":"Казино"
+            "item_top_text":"- Сайт -",
+            "item_name":"Уфимская служба<br>по ремонту авто",
+            "item_bottom_text":"Кузовной ремонт"
         },
         {
             "item_id":16,
             "item_img":"images/item-img-16.png",
             "item_top_text":"- Landing page -",
-            "item_name":"Royal Bonuse",
-            "item_bottom_text":"Казино"
+            "item_name":"4D STUDIO",
+            "item_bottom_text":"Дизайн интерьера"
         }
     ]
 }

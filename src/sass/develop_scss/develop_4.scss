@@ -62,6 +62,17 @@ body.pink{
                 strong{animation-name: rotatePlus;}
                 b{opacity: .5;}
             }
+            &.no-more{display: none;
+                &.background-spec-hover:hover{background-color: transparent !important;}
+                &.border-spec{border-color: transparent !important;}
+                &:hover{
+                    b{color: #000;}
+                }
+                &:active{
+                    b{position: relative;top: 0px;}
+                }
+                strong{display: none;}
+            }
             &:hover{
                 strong{animation-name: rotatePlus;}
                 span.background-spec{background-color: #fff !important;}
