@@ -348,33 +348,31 @@ function portfolioPop(){
 
 function portfolioShowMore(){
     $(document).on('click','.button-show-more button:not(.preload2, .no-more)',function(event){
-        var item = $(this);
+        var itemButton = $(this);
         var id = $(this).data('button-id');
         var page = parseInt($(this).data('page'));
         var elementsPrepage = $(this).data('prepage');
-        item.addClass('preload');
-
+        itemButton.addClass('preload2');
         $.ajax({
             url : 'js/json/show_more.json', // show_More
             data: {page:page, elementsPrepage:elementsPrepage},
             success : function(data){
-
                 data.items.forEach(function(item, i, arr){
                     $('.portfolio-wrap').append('<div class="item" data-id='+item.item_id+'><a href="#"><div class="item-img"><img src="'+item.item_img+'" alt=""></div><div class="item-text"><div class="item-text-wrap border-spec"><div class="item-type color-spec"><span>'+item.item_top_text+'</span></div><div class="item-name"><h3>'+item.item_name+'</h3><span class="background-spec"></span></div><div class="item-desc"><p>'+item.item_bottom_text+'</p></div></div></div></a></div>');
                     if(i == (arr.length-1)){
-                        item.attr('data-page', page+1);
-                        item.removeClass('preload2');
+                        itemButton.attr('data-page', page+1);
+                        itemButton.removeClass('preload2');
                         if( $(window).width()>600){
                             setTimeout(function(){
                                 var bottom = $('.portfolio')[0].scrollHeight;
                                 $('html,body').animate({scrollTop:bottom},300);
                             },200);
                         }
+
                     }
                 });
-
                 if(data.last){
-                    item.removeClass('preload2').addClass('no-more').find('b').text('Продолжение следует...');
+                    itemButton.removeClass('preload2').addClass('no-more').find('b').text('Продолжение следует...');
                 }
             }
         });
