@@ -99,7 +99,7 @@ function validationCall1(form) {
 
     yandexID.reachGoal('popup' + redFlag);
     console.log('popup' + redFlag);
-        
+
   var thisForm = $(form);
   var formSur = thisForm.serialize();
 
@@ -231,7 +231,6 @@ function portfolioPop(){
         if( $(window).width()<=992 ){
             autoSize = true;
         }
-
 
         function heightImg(){
             var popHeight = $('.portfolio-pop').height();
