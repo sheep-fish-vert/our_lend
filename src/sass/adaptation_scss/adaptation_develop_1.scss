@@ -35,6 +35,21 @@
     /* /header */
 
 }
+@media screen and (max-width: 1170px){
+
+    /* services */
+
+        .services{
+            .services-items-wrap{
+                .services-item{width: 24%;
+                    .services-title{font-size: 20px;}
+                }
+            }
+        }
+
+    /* /services */
+
+}
 @media screen and (max-width: 1024px){
 
     /*services*/
