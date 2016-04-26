@@ -58,6 +58,10 @@ body.pink{
 
         }
         button{height: 60px;max-width: 300px;width: 100%;border:3px solid transparent;background-color: transparent;border-radius: 35px;transition:background-color ease-out .3s;cursor: pointer;position: relative;
+            &.preload2{
+                strong{animation-name: rotatePlus;}
+                b{opacity: .5;}
+            }
             &:hover{
                 strong{animation-name: rotatePlus;}
                 span.background-spec{background-color: #fff !important;}

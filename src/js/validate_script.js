@@ -347,12 +347,12 @@ function portfolioPop(){
 }
 
 function portfolioShowMore(){
-    $(document).on('click','.button-show-more button:not(.preload, .no-more)',function(event){
+    $(document).on('click','.button-show-more button:not(.preload2, .no-more)',function(event){
         var item = $(this);
         var id = $(this).data('button-id');
         var page = parseInt($(this).data('page'));
         var elementsPrepage = $(this).data('prepage');
-        item.addClass('preload');
+        item.addClass('preload2');
         $.ajax({
             url : show_More,
             data: {page:page, elementsPrepage:elementsPrepage},
@@ -361,7 +361,7 @@ function portfolioShowMore(){
                     $('.portfolio-wrap').append(data);
                     page = page + 1;
                     item.data('page', page);
-                    item.removeClass('preload');
+                    item.removeClass('preload2');
                     if( $(window).width()>600){
                         setTimeout(function(){
                             var bottom = $('.portfolio')[0].scrollHeight;
@@ -370,7 +370,7 @@ function portfolioShowMore(){
                     }
                 }else{
 
-                    item.removeClass('preload').addClass('no-more').find('b').text('Продолжение следует...');
+                    item.removeClass('preload2').addClass('no-more').find('b').text('Продолжение следует...');
                 }
             }
         });
