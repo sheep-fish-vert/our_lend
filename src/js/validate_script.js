@@ -354,7 +354,7 @@ function portfolioShowMore(){
         var elementsPrepage = $(this).data('prepage');
         itemButton.addClass('preload2');
         $.ajax({
-            url : show_More, // show_More
+            url : 'js/json/show_more.json', // show_More
             data: {page:page, elementsPrepage:elementsPrepage},
             success : function(data){
                 data.items.forEach(function(item, i, arr){
