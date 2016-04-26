@@ -348,7 +348,7 @@ function portfolioPop(){
 }
 
 function portfolioShowMore(){
-    $(document).on('click','.button-show-more button:not(.preload)',function(event){
+    $(document).on('click','.button-show-more button:not(.preload, .no-more)',function(event){
         var item = $(this);
         var id = $(this).data('button-id');
         var page = parseInt($(this).data('page'));
@@ -371,7 +371,7 @@ function portfolioShowMore(){
                     }
                 }else{
 
-                    item.removeClass('preload').find('b').text('Продолжение следует...');
+                    item.removeClass('preload').addClass('no-more').find('b').text('Продолжение следует...');
                 }
             }
         });
