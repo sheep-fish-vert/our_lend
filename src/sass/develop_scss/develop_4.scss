@@ -145,8 +145,8 @@ body.pink{
         span{border-color: inherit !important;}
     }
 }
-.slick-prev {left: 43%;}
-.slick-next {right: 43%;
+.slick-prev {left: calc(50% - 83px);}
+.slick-next {right: calc(50% - 83px);
     span{transform: rotate(45deg) translate(-50%,-50%);border: 3px solid #d1d1d1 !important;border-left: none !important;border-bottom: none !important;left: auto;right: 42%;}
 }
 /*/reviews*/

@@ -44,21 +44,26 @@ function oneHeightItems(){
 function goTo(){
     $(document).on('click','header nav li a', function(event){
 
-        var href = $(this).attr('href');
-        var dist = 140;
-        if (href == '#top-block') {
-            dist = 170;
-        };
+        if(!$(this).parent('li').hasClass('active')){
+            $(this).parent('li').toggleClass('active');
+            var href = $(this).attr('data-href');
+            var dist = 140;
+            if (href == '#top-block') {
+                dist = 170;
+            };
 
-        var target = $(href).offset().top - dist;
+            var target = $(href).offset().top - dist;
 
-        $(scroller).stop().animate({ scrollTop: target}, 500);
+            $(scroller).stop().animate({ scrollTop: target}, 500);
 
-        $('.hum-menu').css('display', 'none');
-        $('.asked').css('display', 'block');
-        $('.butterbrod').removeClass('active');
-        $('body').removeClass('overflover');
-        //event.preventDefault();
+            $('.hum-menu').css('display', 'none');
+            $('.asked').css('display', 'block');
+            $('.butterbrod').removeClass('active');
+            $('body').removeClass('overflover');
+            //event.preventDefault();
+
+        }
+        return false;
     });
 }
 

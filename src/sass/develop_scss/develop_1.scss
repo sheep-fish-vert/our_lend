@@ -37,7 +37,7 @@
                             }
                             &:last-child{border-right: none;}
                             &:hover,&.active{
-                                a{
+                                a{/* pointer-events:none; */
                                     span{position: absolute; left: -5px; right: -5px; bottom: -3px; opacity: 1;}
                                 }
                             }
