@@ -104,13 +104,13 @@
 
 /*reviews*/
 
-    .mega-arrow{display: flex;flex-direction:column;justify-content:flex-start;align-items:center;min-height: 80px;
-        .mega-arrow-wrap{position: relative;width: 35px;height: 63px;animation-name: topBottomMovingtwo;    animation-duration: .5s;animation-iteration-count: infinite;animation-direction: alternate;    animation-timing-function: linear;
-            span.item-1{width: 45px;height: 4px;position: absolute;bottom: 19;right: -13px;transform: rotate(-67deg);bottom: 19px;border-radius: 2px;}
-            span.item-2{width: 45px;height: 4px;position: absolute;bottom: 19;left: -13px;transform: rotate(67deg);bottom: 19px;border-radius: 2px;}
-            span.item-3{width: 19px;height: 4px;position: absolute;top: 24px;right: -1px;transform: rotate(-28deg);border-radius: 2px;border-bottom-left-radius: 1px;}
-            span.item-4{width: 12px;height: 4px;position: absolute;top: 23px;left: -1px;transform: rotate(31deg);border-radius: 2px;}
-            span.item-5{width: 30px;height: 4px;position: absolute;top: 15px;left: 2px;transform: rotate(90deg);border-radius: 2px;border-top-right-radius: 0px;}
+    .mega-arrow{display: flex;flex-direction:column;justify-content:flex-start;align-items:center;min-height: 80px;backface-visibility:hidden;
+        .mega-arrow-wrap{position: relative;width: 35px;height: 63px;backface-visibility:hidden;animation-name: topBottomMovingtwo;    animation-duration: .5s;animation-iteration-count: infinite;animation-direction: alternate;    animation-timing-function: linear;
+            span.item-1{width: 45px;height: 4px;position: absolute;bottom: 19;right: -13px;transform: rotate(-67deg);bottom: 19px;border-radius: 2px;backface-visibility:hidden;}
+            span.item-2{width: 45px;height: 4px;position: absolute;bottom: 19;left: -13px;transform: rotate(67deg);bottom: 19px;border-radius: 2px;backface-visibility:hidden;}
+            span.item-3{width: 19px;height: 4px;position: absolute;top: 24px;right: -1px;transform: rotate(-28deg);border-radius: 2px;border-bottom-left-radius: 1px;backface-visibility:hidden;}
+            span.item-4{width: 12px;height: 4px;position: absolute;top: 23px;left: -1px;transform: rotate(31deg);border-radius: 2px;backface-visibility:hidden;}
+            span.item-5{width: 30px;height: 4px;position: absolute;top: 15px;left: 2px;transform: rotate(90deg);border-radius: 2px;border-top-right-radius: 0px;backface-visibility:hidden;}
         }
         @keyframes topBottomMovingtwo{
             0%{margin-top: 0px;}
