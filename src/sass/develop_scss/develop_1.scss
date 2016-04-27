@@ -88,7 +88,6 @@
         .convert{width: 100%; text-align: center;}
     }
 
-
 /* /header */
 
 /* top-block */
@@ -172,7 +171,7 @@
 
 /* services */
 
-    .services{background-image:url(../images/services-bg.jpg);background-repeat: no-repeat;background-position: center top;padding: 300px 0 160px 0;position: relative;background-size:cover;
+    .services{background-image:url(../images/services-bg.jpg);background-repeat: no-repeat;background-position: center top;padding: 180px 0 160px 0;position: relative;background-size:cover;
 
         .title{font-family:"FuturaPT", sans-serif;font-weight: 700;font-size: 30px;color:#fff;text-align: center;padding-bottom:15px;position: relative;margin-bottom: 17px;
             span{display: block;position: absolute;bottom: 0;left: calc(50% - 100px);width: 200px;height: 5px;background-color: #fda961;}
@@ -210,12 +209,13 @@
 /* /services */
 
 /* contacts */
-html.desktop.mac{
-    .contacts{
-        .trianges.center{border-width: 100px 960px 0 960px;}
+
+    html.desktop.mac{
+        .contacts{
+            .trianges.center{border-width: 100px 960px 0 960px;}
+        }
     }
-}
-    .contacts{position: relative;background-image:url(../images/cantacts-background-new.jpg);background-repeat: no-repeat;background-size: cover;background-position: center top;padding: 220px 0 170px 0;
+    .contacts{position: relative;background-image:url(../images/cantacts-background-new.jpg);background-repeat: no-repeat;background-size: cover;background-position: center top;padding: 220px 0 90px 0;
         .contacts-descript{max-width: 720px;width: 100%;margin:0 auto 18px auto;padding: 0  10px 18px 10px;position: relative;font-size: 24px;font-weight: 700;color:#fff;text-align: center;line-height: 28px;
             span{position: absolute;max-width: 480px;width: calc(100% - 20px);height: 5px;background-color: #898989;left:50%;transform:translate(-50%, 0);bottom: 0;}
         }
@@ -276,7 +276,7 @@ html.desktop.mac{
         }
 
         .footer-top-main{position: relative;z-index: 1;}
-        .footer-top{padding: 90px 0 30px 0;position: relative;z-index: 1;}
+        .footer-top{padding: 90px 0 85px 0;position: relative;z-index: 1;}
         .contacts-main-title{text-align: center;font-size: 36px;font-weight: 700;color:#4f4f4f;font-family: 'FuturaPT', sans-serif;position: relative;padding-bottom: 18px;margin-bottom: 40px;
             span{display: block;position: absolute;bottom:0;left:calc(50% - 100px);height: 5px;max-width: 200px;width: 100%;}
         }
@@ -290,7 +290,7 @@ html.desktop.mac{
                         }
                         &:after{content:'';display: block;position: absolute;width: 1px;height: 40px;background-color: #e2e2e2;top:50%;margin-top: -15px;right: 0;}
                     }
-                    a{text-decoration: none;font-family: 'FuturaPT', sans-serif;color:#8d8d8d;font-weight: 700;font-size: 18px;text-transform: uppercase;transition:color 300ms ease;}
+                    a{text-decoration: none;font-family: 'FuturaPT', sans-serif;color:#8d8d8d;font-weight: 700;font-size: 18px;text-transform: uppercase;display:inline-block;transition:color 300ms ease;}
                 }
                 &:last-child{
                     ul{flex-direction:row-reverse;
@@ -326,7 +326,7 @@ html.desktop.mac{
                 svg{fill:#8d8d8d;transition-property:fill;transition-duration:300ms;transition-timing-function:ease;}
             }
         }
-        .footer-bottom{background-image:url(../images/footer-background.jpg);background-repeat: no-repeat;background-position: center top;background-size:cover;padding: 190px 0 30px 0;text-align: center;position: relative;overflow: hidden;
+        .footer-bottom{background-image:url(../images/footer-background-second.jpg);background-repeat: no-repeat;background-position: center top;background-size:cover;padding: 190px 0 30px 0;text-align: center;position: relative;overflow: hidden;
             .footer-bottom-wrap{font-size: 14px;color:#fff;font-family: 'FuturaPT', sans-serif;font-weight: 700;text-transform: uppercase;}
         }
     }
