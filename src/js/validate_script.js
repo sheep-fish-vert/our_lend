@@ -357,7 +357,10 @@ function portfolioShowMore(){
             url : 'js/json/show_more.json', // show_More
             data: {page:page, elementsPrepage:elementsPrepage},
             success : function(data){
-                data.items.forEach(function(item, i, arr){
+
+                var dataParsed = JSON.parse(data);
+
+                dataParsed.items.forEach(function(item, i, arr){
                     $('.portfolio-wrap').append('<div class="item" data-id='+item.item_id+'><a href="#"><div class="item-img"><img src="'+item.item_img+'" alt=""></div><div class="item-text"><div class="item-text-wrap border-spec"><div class="item-type color-spec"><span>'+item.item_top_text+'</span></div><div class="item-name"><h3>'+item.item_name+'</h3><span class="background-spec"></span></div><div class="item-desc"><p>'+item.item_bottom_text+'</p></div></div></div></a></div>');
                     if(i == (arr.length-1)){
                         itemButton.attr('data-page', page+1);
@@ -371,10 +374,12 @@ function portfolioShowMore(){
 
                     }
                 });
+
                 if(data.last){
                     itemButton.removeClass('preload2').addClass('no-more');
                     itemButton.parent().find('.button-show-text p').text('Продолжение следует...');
                 }
+
             }
         });
     });
