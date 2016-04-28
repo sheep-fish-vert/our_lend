@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6555518-7b08-45bf-8c58-05ccd459aa04" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/partials/basic_scripts.js" afterPath="$PROJECT_DIR$/src/js/partials/basic_scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/partials/develop_4.js" afterPath="$PROJECT_DIR$/src/js/partials/develop_4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/contacts.html" afterPath="$PROJECT_DIR$/src/partials/contacts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/top-block.html" afterPath="$PROJECT_DIR$/src/partials/top-block.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/hidden-block.html" afterPath="$PROJECT_DIR$/src/partials/hidden-block.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/develop_scss/develop_4.scss" afterPath="$PROJECT_DIR$/src/sass/develop_scss/develop_4.scss" />
     </list>
     <ignored path="our-lend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,17 +26,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="develop_4.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="develop_4.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/partials/develop_4.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="93" column="47" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="47" />
+            <state relative-caret-position="714">
+              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="basic_scripts.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="basic_scripts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/partials/basic_scripts.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="570">
@@ -60,8 +58,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/partials/contacts.html" />
         <option value="$PROJECT_DIR$/src/partials/top-block.html" />
-        <option value="$PROJECT_DIR$/src/js/partials/develop_4.js" />
         <option value="$PROJECT_DIR$/src/js/partials/basic_scripts.js" />
+        <option value="$PROJECT_DIR$/src/js/partials/develop_4.js" />
       </list>
     </option>
   </component>
@@ -260,12 +258,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1461825443592</updated>
-      <workItem from="1461825444786" duration="3724000" />
+      <workItem from="1461825444786" duration="3844000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3724000" />
+    <option name="totallyTimeSpent" value="3844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1286" extended-state="0" />
@@ -315,14 +313,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/partials/develop_4.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="93" column="47" selection-start-line="93" selection-start-column="4" selection-end-line="93" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/partials/basic_scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -330,6 +320,14 @@
           <folding>
             <marker date="1461837161000" expanded="true" signature="494:530" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/partials/develop_4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

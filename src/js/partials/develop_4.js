@@ -146,6 +146,7 @@ $(document).ready(function(){
     rewievsSlider();
     partnersSlider();
     scrollForActive();
+
     if (navigator.appVersion.indexOf("Mac")!=-1) {
       $('html').addClass('mac');
     }
@@ -153,6 +154,8 @@ $(document).ready(function(){
 
 $(window).load(function(){
   //servicesSlider();
+  rewievsSlider();
+  partnersSlider();
 });
 
 $(window).resize(function(){
