@@ -116,7 +116,7 @@
             100%{margin-top: 10px;}
         }
     }
-    .reviews{min-height: 1095px;background:#fff url('../images/rewiews-bg.png') center top no-repeat;text-align: center;
+    .reviews{min-height: 1095px;background:#fff url('../images/rewiews-bg.png') center top no-repeat;text-align: center;background-size: cover;
         .title-text{padding-top: 10px;
             .title-subtitle{font-size: 24px;font-weight: 600;max-width: 100%;position: relative;padding-bottom: 15px;line-height: 1.2;margin-bottom: 40px;
                 span{max-width: 250px;width: 100%;margin-left: -125px;bottom: -6px;height: 3px;position: absolute;background-color: #dddddd;}
@@ -176,7 +176,7 @@
     html.desktop.mac{
         .partners{padding-top: 20px;}
     }
-    .partners{padding-bottom: 120px;background:#fff url('../images/partners-bg.png') center bottom no-repeat;padding-top: 145px;
+    .partners{padding-bottom: 120px;background:#fff url('../images/partners-bg.png') center bottom no-repeat;padding-top: 145px;background-size: cover;
         .title-text{text-align: center;}
         .title{
             span.background-spec{max-width: 200px;width: 100%;transform: translateX(-50%);bottom: -15px;height: 5px;opacity: .6;position: absolute;}
