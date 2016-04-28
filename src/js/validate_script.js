@@ -455,15 +455,17 @@ function portfolioPop2(){
                         jspApi.destroy();
 
 
-                        mainText = $('.portfolio-pop .description-center-text');
+                        mainText = $('.portfolio-pop.fancybox-opened .description-center-text');
                         mainText.jScrollPane();
                         jspApiText = mainText.data('jsp');
                         jspApiText.destroy();
+
                         setTimeout(function(){
                             $('.preload').removeClass('active');
                             $('.portfolio-pop').addClass('show');
-                            $('.main-img').removeAttr('style');
-                            mainText.removeAttr('style');
+                             $('.portfolio-pop.fancybox-opened .main-img').removeAttr('style');
+                             $('.portfolio-pop.fancybox-opened .description-center-text').removeAttr('style');
+                             console.log('gogggogog');
                         },1000);
                     }
                 }

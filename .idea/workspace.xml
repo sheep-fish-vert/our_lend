@@ -2,105 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e6555518-7b08-45bf-8c58-05ccd459aa04" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/ajax-loader.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/bg-admin.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/blank.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/cantacts-background-new.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/cantacts-background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/description-bottom-icon-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/description-bottom-icon-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/fancybox_loading.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/fancybox_loading@2x.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/fancybox_overlay.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/fancybox_sprite.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/fancybox_sprite@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/favicon_0.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/favicon_0_16x16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/favicon_0_32x32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/favicon_0_96x96.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/favicon_1.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/favicon_1_16x16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/favicon_1_32x32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/favicon_1_96x96.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/favicon_2.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/favicon_2_16x16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/favicon_2_32x32.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/favicon_2_96x96.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/footer-background-second.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/footer-background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/footer-list-fb.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/footer-list-gp.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/footer-list-mail.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/footer-list-phone.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/footer-list-skype.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/footer-list-tw.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/footer-list-vk.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/horn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/ic-mail.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/ic-skype.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-16.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/item-img-9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/logo-admin.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/mouse-parallax-layer1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/mouse-parallax-layer2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/mouse-parallax-layer3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/partners-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/partners-item-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/partners-item-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/partners-item-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/partners-item-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/partners-item-5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/person-img-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/pop-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img-9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/portfolio-pop-img.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/rewiews-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/rewiews-bg.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/secret-1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/secret-2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/secret-3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/services-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/services-img1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/services-img2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/services-img3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/services-img4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/sheep.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/sheep.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/tob-block-smoge.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/top-block-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/images/top-block-flowers-blinks.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/partials/develop_4.js" afterPath="$PROJECT_DIR$/src/js/partials/develop_4.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/partials/hidden-block.html" afterPath="$PROJECT_DIR$/src/partials/hidden-block.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/sass/develop_scss/develop_4.scss" afterPath="$PROJECT_DIR$/src/sass/develop_scss/develop_4.scss" />
     </list>
     <ignored path="our-lend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -125,9 +29,21 @@
       <file leaf-file-name="develop_4.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/partials/develop_4.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="628">
-              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+            <state relative-caret-position="714">
+              <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basic_scripts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/partials/basic_scripts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="570">
+              <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+              <folding>
+                <marker date="1461837161000" expanded="true" signature="494:530" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,6 +52,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/partials/contacts.html" />
+        <option value="$PROJECT_DIR$/src/partials/top-block.html" />
+        <option value="$PROJECT_DIR$/src/js/partials/basic_scripts.js" />
+        <option value="$PROJECT_DIR$/src/js/partials/develop_4.js" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsBuildToolPackageJson" detection-done="true" />
@@ -226,6 +152,42 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="sass" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="our-lend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="our-lend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="partials" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="our-lend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="our-lend" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -260,6 +222,32 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -270,12 +258,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1461825443592</updated>
-      <workItem from="1461825444786" duration="559000" />
+      <workItem from="1461825444786" duration="3844000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="559000" />
+    <option name="totallyTimeSpent" value="3844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1286" extended-state="0" />
@@ -309,10 +297,36 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/partials/top-block.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/partials/contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="45" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/partials/basic_scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+          <folding>
+            <marker date="1461837161000" expanded="true" signature="494:530" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/partials/develop_4.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="628">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        <state relative-caret-position="714">
+          <caret line="144" column="0" selection-start-line="144" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
           <folding />
         </state>
       </provider>
