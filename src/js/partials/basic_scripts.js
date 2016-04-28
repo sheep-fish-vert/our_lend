@@ -43,11 +43,12 @@ function oneHeightItems(){
 /*GO TO href*/
 function goTo(){
     $(document).on('click','header nav li a', function(event){
-
+        var headHeight = $('header').outerHeight();
         if(!$(this).parent('li').hasClass('active')){
+            $('header nav li').removeClass('active');
             $(this).parent('li').toggleClass('active');
             var href = $(this).attr('data-href');
-            var dist = 140;
+            var dist = headHeight;
             if (href == '#top-block') {
                 dist = 170;
             };
