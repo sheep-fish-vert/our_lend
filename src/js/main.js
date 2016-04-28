@@ -8,6 +8,7 @@
 //= partials/plagins/jquery.formstyler.min.js
 //= partials/plagins/jquery.mousewheel.js
 //= partials/plagins/jquery.jscrollpane.min.js
+//= partials/plagins/additional-methods.min.js
 /* partials/plagins/SmoothScroll.js*/
 
 /* /plagins */

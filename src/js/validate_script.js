@@ -19,6 +19,14 @@ function validate(form, options){
             errorClass : 'errorText',
             focusCleanup : true,
             focusInvalid : false,
+            rules: {
+                phone: {
+                  require_from_group: [1, ".mygr"]
+                },
+                email: {
+                  require_from_group: [1, ".mygr"]
+                }
+            },
             invalidHandler: function(event, validator) {
                 if(typeof(setings.errorFunction) === 'function'){
                     setings.errorFunction(form);
@@ -110,7 +118,9 @@ function validationCall1(form) {
         success : function(data){
             if ( data.trim() == 'true') {
                 thisForm.trigger("reset");
-                popNext("#call_success", "call-popup");
+                //popNext("#call_success", "call-popup");
+                document.location = thanks;
+                //window.open(thanks,'_blank');
             }
             else {
                thisForm.trigger('reset');
@@ -132,7 +142,9 @@ function validationCall2(form){
         success : function(data){
             if ( data.trim() == 'true') {
                 thisForm.trigger("reset");
-                popNext("#call_success", "call-popup");
+                //popNext("#call_success", "call-popup");
+                //window.open(thanks,'_blank');
+                document.location = thanks;
             }
             else {
                thisForm.trigger('reset');
@@ -365,7 +377,6 @@ function portfolioPop2(){
             }
             var imgMargin = parseInt($('.main-img').css('margin-top'));
 
-            //console.log('newHeight ' , newHeight);
             $('.portfolio-pop.fancybox-opened .main-img').height(newHeight-imgMargin);
         }
         //вставить имагу
@@ -444,7 +455,6 @@ function portfolioPop2(){
                         }
                         if( !$('.main-img').hasClass('jspScrollable') ){
                             initJscrollMainImg();
-                            console.log('initJscrollMainImg();');
                         }
                         heightSubText();
                     }else{
@@ -465,7 +475,6 @@ function portfolioPop2(){
                             $('.portfolio-pop').addClass('show');
                              $('.portfolio-pop.fancybox-opened .main-img').removeAttr('style');
                              $('.portfolio-pop.fancybox-opened .description-center-text').removeAttr('style');
-                             console.log('gogggogog');
                         },1000);
                     }
                 }
@@ -506,6 +515,7 @@ function portfolioShowMore(){
                     $('.portfolio-wrap').append('<div class="item" data-id='+item.item_id+'><a href="#"><div class="item-img"><img src="'+item.item_img+'" alt=""></div><div class="item-text"><div class="item-text-wrap border-spec"><div class="item-type color-spec"><span>'+item.item_top_text+'</span></div><div class="item-name"><h3>'+item.item_name+'</h3><span class="background-spec"></span></div><div class="item-desc"><p>'+item.item_bottom_text+'</p></div></div></div></a></div>');
                     if(i == (arr.length-1)){
                         itemButton.attr('data-page', page+1);
+                        console.log(page);
                         itemButton.removeClass('preload2');
                         if( $(window).width()>600){
                             setTimeout(function(){

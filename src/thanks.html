@@ -1,0 +1,76 @@
+//= partials/head.html
+
+<div class="global-wrapper">
+    <!-- MAIN -->
+    <div class="main">
+        <!-- add partials here -->
+        //= partials/thanks.html
+    </div>
+    <!-- /MAIN -->
+
+    <div class="secret-erotic">
+        <div class="secret-erotic-wrap"></div>
+    </div>
+    <div class="secret-fon"></div>
+
+</div>
+
+<!-- SCRIPTS -->
+<script>
+
+    var colorScheme = {
+        color:['2196f3', 'e91c63', 'ff9800'],
+        hoverColor:['ff9800', '2196f3', 'e91c63']
+    }
+
+    var textMas = ['Рассчитайте стоимость разработки веб-сайта у специалистов', 'Рассчитайте стоимость', 'Рассчитайте стоимость разработки веб-сайта у специалистов или купите китайской еды нам на офис'];
+
+    var secretMas = ['images/secret-1.gif', 'images/secret-2.gif', 'images/secret-3.gif'];
+
+    window.onload = function() {
+        document.body.classList.add('show');
+      };
+
+    !function(e){"use strict";var n=function(n,t,o){function i(e){return a.body?e():void setTimeout(function(){i(e)})}function r(){l.addEventListener&&l.removeEventListener("load",r),l.media=o||"all"}var d,a=e.document,l=a.createElement("link");if(t)d=t;else{var s=(a.body||a.getElementsByTagName("head")[0]).childNodes;d=s[s.length-1]}var f=a.styleSheets;l.rel="stylesheet",l.href=n,l.media="only x",i(function(){d.parentNode.insertBefore(l,t?d:d.nextSibling)});var u=function(e){for(var n=l.href,t=f.length;t--;)if(f[t].href===n)return e();setTimeout(function(){u(e)})};return l.addEventListener&&l.addEventListener("load",r),l.onloadcssdefined=u,u(r),l};"undefined"!=typeof exports?exports.loadCSS=n:e.loadCSS=n}("undefined"!=typeof global?global:this);
+    loadCSS( "css/style.css" );
+
+</script>
+
+<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script defer type="text/javascript" src="js/main.js" ></script>
+<script defer type="text/javascript" src="js/validate_script.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    var redFlag;
+    var idStrange = 36920950;
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yandexID = new Ya.Metrika({
+                    id:idStrange,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<!-- /Yandex.Metrika counter -->
+<!-- /SCRIPTS -->
+
+</body>
+</html>
+

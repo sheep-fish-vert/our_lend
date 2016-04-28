@@ -88,6 +88,12 @@
     /*portfolio pop*/
     .portfolio-pop .description-bottom-href button{width: 175px;height: 50px;line-height: 40px;}
     /*/portfolio pop*/
+
+    /*thanks*/
+    .thanks{
+        .mouse-parallax{display: none;}
+    }
+    /*/thanks*/
 }
 @media screen and (max-width: 992px){
     /*portfolio pop*/
@@ -188,6 +194,12 @@
         .main-img .main-img-wrap{padding-left: 0;}
     }
     /*/portfolio pop*/
+
+    /*thanks*/
+    .thanks{
+        .thanks-wrap h1{font-size: 34px}
+    }
+    /*/thanks*/
 }
 @media screen and (max-width: 320px){
     /*portfolio*/
@@ -197,4 +209,10 @@
         .trianges.trianges-bottom{bottom: -185px;}
     }
     /*/portfolio*/
+
+    /*thanks*/
+    .thanks{
+        .thanks-wrap h1{font-size: 28px}
+    }
+    /*/thanks*/
 }
