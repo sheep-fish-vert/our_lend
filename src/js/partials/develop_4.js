@@ -120,7 +120,6 @@ function scrollForActive(){
         $('.main section').each(function(index, el) {
             if($(this).offset().top <= scrolltop && $(this).offset().top+$(this).outerHeight()>scrolltop){
                var sectID = $(this).find('.title').attr('id');
-                console.log(sectID);
                 $('header nav li a[data-href="#'+sectID+'"]').parent('li').addClass('active');
                 $('header nav li a:not([data-href="#'+sectID+'"])').parent('li').removeClass('active');
             }
