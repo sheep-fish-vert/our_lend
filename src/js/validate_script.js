@@ -424,8 +424,6 @@ function portfolioPop2(){
             onUpdate:function(){
                 //desctop version
                 if( $(window).width()>992 ){
-
-                    console.log('jspApi ' , jspApi);
                     heightImg();
                     jspApi.reinitialise();
                     if( !$('.main-img').hasClass('jspScrollable') ){
