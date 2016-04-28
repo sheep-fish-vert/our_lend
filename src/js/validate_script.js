@@ -486,44 +486,52 @@ function portfolioPop2(){
 }
 
 function portfolioShowMore(){
-    $(document).on('click','.button-show-more button:not(.preload2, .no-more)',function(event){
 
-        var itemButton = $(this);
-        var id = $(this).data('button-id');
-        var page = parseInt($(this).data('page'));
-        var elementsPrepage = $(this).data('prepage');
-        itemButton.addClass('preload2');
+    var page = $('.button-show-more button').data('page');
 
-        $.ajax({
-            url : 'js/json/show_more.json', // show_More
-            data: {page:page, elementsPrepage:elementsPrepage},
-            success : function(data){
+    $(document).on('click','.button-show-more button:not(.preload2)',function(event){
 
-                var dataParsed = data;
-                //var dataParsed = JSON.parse(data);
+        if(!$(this).is('.no-more')){
 
-                dataParsed.items.forEach(function(item, i, arr){
-                    $('.portfolio-wrap').append('<div class="item" data-id='+item.item_id+'><a href="#"><div class="item-img"><img src="'+item.item_img+'" alt=""></div><div class="item-text"><div class="item-text-wrap border-spec"><div class="item-type color-spec"><span>'+item.item_top_text+'</span></div><div class="item-name"><h3>'+item.item_name+'</h3><span class="background-spec"></span></div><div class="item-desc"><p>'+item.item_bottom_text+'</p></div></div></div></a></div>');
-                    if(i == (arr.length-1)){
-                        itemButton.attr('data-page', page+1);
-                        itemButton.removeClass('preload2');
-                        if( $(window).width()>600){
-                            setTimeout(function(){
-                                var bottom = $('.portfolio')[0].scrollHeight;
-                                $('html,body').animate({scrollTop:bottom},300);
-                            },200);
+            var itemButton = $(this);
+            var id = $(this).data('button-id');
+            var elementsPrepage = $(this).data('prepage');
+            itemButton.addClass('preload2');
+
+            $.ajax({
+                url : 'js/json/show_more.json', // show_More
+                data: {page:page, elementsPrepage:elementsPrepage},
+                success : function(data){
+
+                    var dataParsed = data;
+                    //var dataParsed = JSON.parse(data);
+
+                    dataParsed.items.forEach(function(item, i, arr){
+                        $('.portfolio-wrap').append('<div class="item" data-id='+item.item_id+'><a href="#"><div class="item-img"><img src="'+item.item_img+'" alt=""></div><div class="item-text"><div class="item-text-wrap border-spec"><div class="item-type color-spec"><span>'+item.item_top_text+'</span></div><div class="item-name"><h3>'+item.item_name+'</h3><span class="background-spec"></span></div><div class="item-desc"><p>'+item.item_bottom_text+'</p></div></div></div></a></div>');
+                        if(i == (arr.length-1)){
+                            page++;
+
+                            itemButton.removeClass('preload2');
+                            if( $(window).width()>600){
+                                setTimeout(function(){
+                                    var bottom = $('.portfolio')[0].scrollHeight;
+                                    $('html,body').animate({scrollTop:bottom},300);
+                                },200);
+                            }
+
                         }
+                    });
 
+                    if(dataParsed.last){
+                        itemButton.removeClass('preload2').addClass('no-more');
+                        itemButton.find('b').text('Хочу такой же');
                     }
-                });
 
-                if(data.last){
-                    itemButton.removeClass('preload2').addClass('no-more');
-                    itemButton.parent().find('.button-show-text p').text('Продолжение следует...');
                 }
-
-            }
-        });
+            });
+        }else{
+            $.fancybox.open('#call-popup');
+        }
     });
 }
 function reviewsPopUp(){
