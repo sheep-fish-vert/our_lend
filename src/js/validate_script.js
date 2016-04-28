@@ -358,8 +358,13 @@ function portfolioPop2(){
         function heightImg(){
             //var popHeight = $('.portfolio-pop.fancybox-opened').height();
             var popHeight = $('.portfolio-pop.fancybox-opened .fancybox-inner').height();
+            var popDescription = $('.portfolio-pop.fancybox-opened .description').outerHeight();
+            var newHeight = popHeight;
+            if( popDescription>popHeight ){
+                newHeight = popDescription;
+            }
             var imgMargin = parseInt($('.main-img').css('margin-top'));
-            $('.portfolio-pop.fancybox-opened .main-img').height(popHeight-imgMargin);
+            $('.portfolio-pop.fancybox-opened .main-img').height(newHeight-imgMargin);
         }
         //вставить имагу
         function appendImg(){
@@ -381,7 +386,6 @@ function portfolioPop2(){
         }
 
         function initJscrollMainImg(){
-            //проблемаааа
             mainImg = $('.portfolio-pop.fancybox-opened .main-img');
             mainImg.jScrollPane();
             jspApi = mainImg.data('jsp');
@@ -416,8 +420,37 @@ function portfolioPop2(){
                         initJscrollMainImg();
                     },1000);
                 }
+            },
+            onUpdate:function(){
+                //desctop version
+                if( $(window).width()>992 ){
+
+                    console.log('jspApi ' , jspApi);
+                    heightImg();
+                    jspApi.reinitialise();
+                    if( !$('.main-img').hasClass('jspScrollable') ){
+                        initJscrollMainImg();
+                    }
+                    heightSubText();
+                }else{
+                    /*main img*/
+                    mainImg = $('.portfolio-pop.fancybox-opened .main-img');
+                    mainImg.jScrollPane();
+                    jspApi = mainImg.data('jsp');
+                    jspApi.destroy();
 
 
+                    mainText = $('.portfolio-pop .description-center-text');
+                    mainText.jScrollPane();
+                    jspApiText = mainText.data('jsp');
+                    jspApiText.destroy();
+                    setTimeout(function(){
+                        $('.preload').removeClass('active');
+                        $('.portfolio-pop').addClass('show');
+                        $('.main-img').removeAttr('style');
+                        mainText.removeAttr('style');
+                    },1000);
+                }
             }
         });
 
