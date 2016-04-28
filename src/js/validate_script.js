@@ -165,7 +165,6 @@ function popNext(popupId, popupWrap){
 
 }
 
-
 /*маска на инпуте*/
 function Maskedinput(){
     if($('.tel-mask')){
@@ -351,15 +350,20 @@ function portfolioPop2(){
 
         event.preventDefault();
         $('.preload').addClass('active');
-        var id = $(this).data('id'), mainImg, jspApi, mainText, jspApiText = null;
+        var id = $(this).data('id'), mainImg, jspApi = null, mainText, jspApiText = null;
         var autoSize = false;
 
         //размер айфрейма
         function heightImg(){
             //var popHeight = $('.portfolio-pop.fancybox-opened').height();
             var popHeight = $('.portfolio-pop.fancybox-opened .fancybox-inner').height();
+            var popDescription = $('.portfolio-pop.fancybox-opened .description').outerHeight();
+            var newHeight = popHeight;
+            if( popDescription>popHeight ){
+                newHeight = popDescription;
+            }
             var imgMargin = parseInt($('.main-img').css('margin-top'));
-            $('.portfolio-pop.fancybox-opened .main-img').height(popHeight-imgMargin);
+            $('.portfolio-pop.fancybox-opened .main-img').height(newHeight-imgMargin);
         }
         //вставить имагу
         function appendImg(){
@@ -374,14 +378,16 @@ function portfolioPop2(){
                 $('.portfolio-pop.fancybox-opened .description-center-text').height(200);
                 setTimeout(function(){
                     mainText = $('.portfolio-pop.fancybox-opened .description-center-text');
-                    mainText.jScrollPane();
+                    mainText.jScrollPane({
+                        autoReinitialise:true,
+                        autoReinitialiseDelay:500
+                    });
                     jspApiText = mainText.data('jsp');
                 },0)
             }
         }
 
         function initJscrollMainImg(){
-            //проблемаааа
             mainImg = $('.portfolio-pop.fancybox-opened .main-img');
             mainImg.jScrollPane();
             jspApi = mainImg.data('jsp');
@@ -416,8 +422,37 @@ function portfolioPop2(){
                         initJscrollMainImg();
                     },1000);
                 }
+            },
+            onUpdate:function(){
+                //desctop version
+                if( $(window).width()>992 ){
+                    heightImg();
+                    if(jspApi != null){
+                        jspApi.reinitialise();
+                    }
+                    if( !$('.main-img').hasClass('jspScrollable') ){
+                        initJscrollMainImg();
+                    }
+                    heightSubText();
+                }else{
+                    /*main img*/
+                    mainImg = $('.portfolio-pop.fancybox-opened .main-img');
+                    mainImg.jScrollPane();
+                    jspApi = mainImg.data('jsp');
+                    jspApi.destroy();
 
 
+                    mainText = $('.portfolio-pop .description-center-text');
+                    mainText.jScrollPane();
+                    jspApiText = mainText.data('jsp');
+                    jspApiText.destroy();
+                    setTimeout(function(){
+                        $('.preload').removeClass('active');
+                        $('.portfolio-pop').addClass('show');
+                        $('.main-img').removeAttr('style');
+                        mainText.removeAttr('style');
+                    },1000);
+                }
             }
         });
 
@@ -426,17 +461,20 @@ function portfolioPop2(){
 
 function portfolioShowMore(){
     $(document).on('click','.button-show-more button:not(.preload2, .no-more)',function(event){
+
         var itemButton = $(this);
         var id = $(this).data('button-id');
         var page = parseInt($(this).data('page'));
         var elementsPrepage = $(this).data('prepage');
         itemButton.addClass('preload2');
+
         $.ajax({
             url : 'js/json/show_more.json', // show_More
             data: {page:page, elementsPrepage:elementsPrepage},
             success : function(data){
 
-                var dataParsed = JSON.parse(data);
+                var dataParsed = data;
+                //var dataParsed = JSON.parse(data);
 
                 dataParsed.items.forEach(function(item, i, arr){
                     $('.portfolio-wrap').append('<div class="item" data-id='+item.item_id+'><a href="#"><div class="item-img"><img src="'+item.item_img+'" alt=""></div><div class="item-text"><div class="item-text-wrap border-spec"><div class="item-type color-spec"><span>'+item.item_top_text+'</span></div><div class="item-name"><h3>'+item.item_name+'</h3><span class="background-spec"></span></div><div class="item-desc"><p>'+item.item_bottom_text+'</p></div></div></div></a></div>');
