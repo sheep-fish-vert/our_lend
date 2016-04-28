@@ -18,7 +18,7 @@
 
                 var imgHeight = $(this).find('img').height()+20;
 
-                var imageSrc = './'+$(this).find('img').attr('src');
+                var imageSrc = $(this).find('img').attr('src');
                 $(this).css({'height':imgHeight+'px'});
                 $(this).find('span').css({'height':imgHeight+'px', 'background-image':'url('+imageSrc+')'});
 
@@ -363,11 +363,46 @@
 
 /* /change text top block by inteval */
 
+/* triagles script */
+
+    function trianglesScript(){
+
+        function trianglesWidth(){
+
+            var borderWidth = Math.round($(window).width()/2);
+
+
+            $('.trianges').each(function(){
+
+                $(this).css({'border-width':'100px ' + borderWidth + 'px 0 ' + borderWidth + 'px', 'margin-left':'-' + borderWidth + 'px'});
+
+                if($(this).is('.not-center')){
+                    $(this).css({'border-color':'transparent #fff'});
+                }else if($(this).is('.center')){
+                    $(this).css({'border-color':'#fff transparent'});
+                }
+
+            });
+
+        }
+
+        trianglesWidth();
+
+        $(window).resize(function(){
+
+            trianglesWidth();
+
+        });
+
+    };
+
+/* /triangles script */
 
 $(document).ready(function(){
 
     randomColors();
     topBlockTextHover();
+    trianglesScript();
 
 });
 

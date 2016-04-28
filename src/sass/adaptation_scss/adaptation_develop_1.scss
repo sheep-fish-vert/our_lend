@@ -35,6 +35,21 @@
     /* /header */
 
 }
+@media screen and (max-width: 1170px){
+
+    /* services */
+
+        .services{
+            .services-items-wrap{
+                .services-item{width: 24%;
+                    .services-title{font-size: 20px;min-height: 40px;}
+                }
+            }
+        }
+
+    /* /services */
+
+}
 @media screen and (max-width: 1024px){
 
     /*services*/
@@ -102,7 +117,7 @@
 
         .footer{
             .mouse-parallax{top:50%;transform:translate(0, -50%);}
-            .footer-top{margin-bottom:-100px;padding-top: 30px;
+            .footer-top{margin-bottom:-60px;padding-top: 30px;
                 .footer-list{width: 100%;margin-bottom: 40px;
                     &:last-child{width: 100%;
                         ul{
