@@ -357,24 +357,30 @@ function portfolioPop2(){
         function heightImg(){
             //var popHeight = $('.portfolio-pop.fancybox-opened').height();
             var popHeight = $('.portfolio-pop.fancybox-opened .fancybox-inner').height();
-            var popDescription = $('.portfolio-pop.fancybox-opened .description').outerHeight();
-            var newHeight = popHeight;
-            if( popDescription>popHeight ){
-                newHeight = popDescription;
+            var popDescription = parseInt($('.portfolio-pop.fancybox-opened .description .description-top').outerHeight()+$('.portfolio-pop.fancybox-opened .description .description-center').outerHeight()+$('.portfolio-pop.fancybox-opened .description .description-bottom').outerHeight());
+
+            var newHeight = popDescription;
+            if( popHeight>popDescription ){
+                newHeight = popHeight;
             }
             var imgMargin = parseInt($('.main-img').css('margin-top'));
+
+            //console.log('newHeight ' , newHeight);
             $('.portfolio-pop.fancybox-opened .main-img').height(newHeight-imgMargin);
         }
         //вставить имагу
         function appendImg(){
-            var imgSrc = $('.portfolio-pop.fancybox-opened .main-img-wrap').data('img');
-            var img = '<img src="'+imgSrc+'" alt="" />';
-            $('.portfolio-pop.fancybox-opened .main-img-wrap').append(img);
+            if( !$('.portfolio-pop.fancybox-opened .main-img-wrap img').length>0 ){
+                var imgSrc = $('.portfolio-pop.fancybox-opened .main-img-wrap').data('img');
+                var img = '<img src="'+imgSrc+'" alt="" />';
+                $('.portfolio-pop.fancybox-opened .main-img-wrap').append(img);
+            }
         }
 
         //недефолтный скролл на текст если >200px
         function heightSubText(){
-            if( $('.portfolio-pop.fancybox-opened .description-center-text').outerHeight()>200){
+            if( $('.portfolio-pop.fancybox-opened .description-center-text').outerHeight()>=200){
+                console.log('heightSubText()');
                 $('.portfolio-pop.fancybox-opened .description-center-text').height(200);
                 setTimeout(function(){
                     mainText = $('.portfolio-pop.fancybox-opened .description-center-text');
@@ -407,55 +413,75 @@ function portfolioPop2(){
             tpl: {
                 closeBtn: '<a title="Закрыть" class="fancybox-item fancybox-close myClose" href="javascript:;"><span class="background-spec"></span><span class="background-spec"></span></a>'
             },
-            afterShow:function(){
-                console.log('afterShow');
+            onUpdate:function(){
+                console.log('onUpdate');
 
                 appendImg();
                 if( $(window).width()>992 ){
                     heightImg();
                     heightSubText();
                     /*main img*/
-
-                    setTimeout(function(){
-                        $('.preload').removeClass('active');
-                        $('.portfolio-pop').addClass('show');
-                        initJscrollMainImg();
-                    },1000);
-                }
-            },
-            onUpdate:function(){
-                //desctop version
-                if( $(window).width()>992 ){
-                    heightImg();
                     if(jspApi != null){
                         jspApi.reinitialise();
                     }
                     if( !$('.main-img').hasClass('jspScrollable') ){
                         initJscrollMainImg();
                     }
-                    heightSubText();
-                }else{
-                    /*main img*/
-                    mainImg = $('.portfolio-pop.fancybox-opened .main-img');
-                    mainImg.jScrollPane();
-                    jspApi = mainImg.data('jsp');
-                    jspApi.destroy();
 
 
-                    mainText = $('.portfolio-pop .description-center-text');
-                    mainText.jScrollPane();
-                    jspApiText = mainText.data('jsp');
-                    jspApiText.destroy();
                     setTimeout(function(){
                         $('.preload').removeClass('active');
                         $('.portfolio-pop').addClass('show');
-                        $('.main-img').removeAttr('style');
-                        mainText.removeAttr('style');
+                        initJscrollMainImg();
                     },1000);
+                }else{
+                    //desctop version
+                    if( $(window).width()>992 ){
+                        heightImg();
+                        if(jspApi != null){
+                            jspApi.reinitialise();
+                            console.log('jspApi.reinitialise();');
+                        }
+                        if( !$('.main-img').hasClass('jspScrollable') ){
+                            initJscrollMainImg();
+                            console.log('initJscrollMainImg();');
+                        }
+                        heightSubText();
+                    }else{
+                        /*main img*/
+                        mainImg = $('.portfolio-pop.fancybox-opened .main-img');
+                        mainImg.jScrollPane();
+                        jspApi = mainImg.data('jsp');
+                        jspApi.destroy();
+
+
+                        mainText = $('.portfolio-pop.fancybox-opened .description-center-text');
+                        mainText.jScrollPane();
+                        jspApiText = mainText.data('jsp');
+                        jspApiText.destroy();
+
+                        setTimeout(function(){
+                            $('.preload').removeClass('active');
+                            $('.portfolio-pop').addClass('show');
+                             $('.portfolio-pop.fancybox-opened .main-img').removeAttr('style');
+                             $('.portfolio-pop.fancybox-opened .description-center-text').removeAttr('style');
+                             console.log('gogggogog');
+                        },1000);
+                    }
                 }
             }
         });
 
+    });
+    $(document).on('click','.portfolio-pop .myClose', function(event) {
+        $.fancybox.close();
+    });
+
+    $(document).on('click', '.description-bottom-href button', function(event) {
+        event.preventDefault();
+        $.fancybox.close();
+        $('html,body').animate({scrollTop:$('.contacts-main-title').offset().top},800);
+        $('.contacts-form-wrap-main').find('input[name=your_name]').focus();
     });
 }
 
