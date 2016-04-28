@@ -165,7 +165,6 @@ function popNext(popupId, popupWrap){
 
 }
 
-
 /*маска на инпуте*/
 function Maskedinput(){
     if($('.tel-mask')){
@@ -351,7 +350,7 @@ function portfolioPop2(){
 
         event.preventDefault();
         $('.preload').addClass('active');
-        var id = $(this).data('id'), mainImg, jspApi, mainText, jspApiText = null;
+        var id = $(this).data('id'), mainImg, jspApi = null, mainText, jspApiText = null;
         var autoSize = false;
 
         //размер айфрейма
@@ -379,7 +378,10 @@ function portfolioPop2(){
                 $('.portfolio-pop.fancybox-opened .description-center-text').height(200);
                 setTimeout(function(){
                     mainText = $('.portfolio-pop.fancybox-opened .description-center-text');
-                    mainText.jScrollPane();
+                    mainText.jScrollPane({
+                        autoReinitialise:true,
+                        autoReinitialiseDelay:500
+                    });
                     jspApiText = mainText.data('jsp');
                 },0)
             }
@@ -427,7 +429,9 @@ function portfolioPop2(){
 
                     console.log('jspApi ' , jspApi);
                     heightImg();
-                    jspApi.reinitialise();
+                    if(jspApi != null){
+                        jspApi.reinitialise();
+                    }
                     if( !$('.main-img').hasClass('jspScrollable') ){
                         initJscrollMainImg();
                     }
