@@ -357,7 +357,10 @@ function portfolioPop2(){
         function heightImg(){
             //var popHeight = $('.portfolio-pop.fancybox-opened').height();
             var popHeight = $('.portfolio-pop.fancybox-opened .fancybox-inner').height();
-            var popDescription = $('.portfolio-pop.fancybox-opened .description').outerHeight();
+            var popDescription = parseInt($('.portfolio-pop.fancybox-opened .description .description-top').outerHeight()+$('.portfolio-pop.fancybox-opened .description .description-center').outerHeight()+$('.portfolio-pop.fancybox-opened .description .description-bottom'));
+
+            console.log('popHeight ' , popHeight);
+            console.log('popDescription ' , popDescription);
             var newHeight = popHeight;
             if( popDescription>popHeight ){
                 newHeight = popDescription;
