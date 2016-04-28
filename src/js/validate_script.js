@@ -530,7 +530,18 @@ function portfolioShowMore(){
                 }
             });
         }else{
-            $.fancybox.open('#call-popup');
+            $.fancybox.open('#call-popup', {
+                openEffect  : 'fade',
+                closeEffect: 'fade',
+                autoResize:true,
+                wrapCSS:'fancybox-form',
+                'closeBtn' : true,
+                fitToView:true,
+                padding:'0',
+                tpl: {
+                    closeBtn: '<a title="Закрыть" class="fancybox-item fancybox-close myClose" href="javascript:;"><span class="background-spec"></span><span class="background-spec"></span></a>'
+                }
+            });
         }
     });
 }
