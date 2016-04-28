@@ -209,10 +209,11 @@ html.desktop.mac{
     &.show{opacity: 1;transform: translateY(0%);}
     .fancybox-skin{background:#f5f5f5;}
     .portfolio-pop-wrap{display: flex;flex-wrap: nowrap;justify-content: flex-start;align-items:stretch;}
-    .main-img{width: calc(60% - 20px);overflow: hidden;margin-top: 20px;
+    .main-img{width: calc(60% - 10px);overflow: hidden;margin-top: 20px;
         .main-img-wrap{padding-left: 20px;}
+        iframe{width: 100%;}
     }
-    .description{width: calc(40% + 25px);padding: 20px;display: flex;flex-direction: column;flex-wrap: nowrap;justify-content: space-between;align-content: stretch;}
+    .description{width: calc(40% + 10px);padding: 20px;display: flex;flex-direction: column;flex-wrap: nowrap;justify-content: space-between;align-content: stretch;}
     .jspVerticalBar{width: 20px;right: 4px;background:none;}
     .jspTrack{background: linear-gradient(to right, #f2f2f2 1%,#f9f9f9 27%,#ffffff 44%,#ffffff 66%,#e6e6e6 100%);}
     .jspDrag{background-color: #979797;border-radius: 20px;left: 1px;width: 16px;}

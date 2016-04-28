@@ -346,6 +346,98 @@ function portfolioPop(){
     });
 }
 
+function portfolioPop2(){
+    $(document).on('click','.portfolio-wrap .item',function(event) {
+        event.preventDefault();
+        $('.preload').addClass('active');
+        var id = $(this).data('id'),
+            mainImg,jspApi,mainText,jspApiText = null;
+        var autoSize = false;
+
+        //размер айфрейма
+        function heightImg(){
+            //var popHeight = $('.portfolio-pop.fancybox-opened').height();
+            var popHeight = $('.portfolio-pop.fancybox-opened .fancybox-inner').height();
+            var imgMargin = parseInt($('.main-img').css('margin-top'));
+            $('.portfolio-pop.fancybox-opened .main-img').height(popHeight-imgMargin);
+        }
+        //вставить имагу
+        function appendImg(){
+            var imgSrc = $('.portfolio-pop.fancybox-opened .main-img-wrap').data('img');
+            var img = '<img src="'+imgSrc+'" alt="" />';
+            $('.portfolio-pop.fancybox-opened .main-img-wrap').append(img);
+        }
+
+        //недефолтный скролл на текст если >200px
+        function heightSubText(){
+            if( $('.portfolio-pop.fancybox-opened .description-center-text').outerHeight()>200){
+                $('.portfolio-pop.fancybox-opened .description-center-text').height(200);
+                setTimeout(function(){
+                    mainText = $('.portfolio-pop.fancybox-opened .description-center-text');
+                    mainText.jScrollPane();
+                    jspApiText = mainText.data('jsp');
+                },0)
+            }
+        }
+        function initJscrollMainImg(){
+            //проблемаааа
+            mainImg = $('.portfolio-pop.fancybox-opened .main-img');
+            mainImg.jScrollPane();
+            jspApi = mainImg.data('jsp');
+        }
+
+        $.fancybox.open('#portfolio-'+id+'',{
+            openEffect  : 'fade',
+            closeEffect : 'fade',
+            wrapCSS:'portfolio-pop',
+            'closeBtn' : true,
+            height:815,
+            width:1580,
+            autoSize:autoSize,
+            'autoDimensions':false,
+            padding:'0',
+            'closeBtn' : false,
+            tpl: {
+                closeBtn: '<a title="Закрыть" class="fancybox-item fancybox-close myClose" href="javascript:;"><span class="background-spec"></span><span class="background-spec"></span></a>'
+            },
+            afterShow:function(){
+                console.log('afterShow');
+
+                appendImg();
+                if( $(window).width()>992 ){
+                    heightImg();
+                    heightSubText();
+                    /*main img*/
+
+
+                    initJscrollMainImg();
+
+                    $('.portfolio-pop.fancybox-opened .main-img').bind('jsp-initialised', function(event, isScrollable){
+                            console.log('Handle jsp-initialised', this,
+                                        'isScrollable=', isScrollable);
+                        });
+
+
+
+
+                     console.log('mainImg ' , mainImg);
+                     setTimeout(function(){
+                         $('.preload').removeClass('active');
+                         $('.portfolio-pop').addClass('show');
+                     },1000);
+                }
+
+
+            }
+        });
+
+    });
+}
+
+
+
+
+
 function portfolioShowMore(){
     $(document).on('click','.button-show-more button:not(.preload2, .no-more)',function(event){
         var itemButton = $(this);
@@ -420,7 +512,8 @@ function reviewsPopUp(){
     });
 }
 $(document).ready(function(){
-    portfolioPop();
+    portfolioPop2();
+    //portfolioPop();
     reviewsPopUp();
     portfolioShowMore();
     validate('#call-popup .contact-form', {submitFunction:validationCall1});
