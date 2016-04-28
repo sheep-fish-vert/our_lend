@@ -89,7 +89,7 @@ function servicesSlider(){
       sliker();
     }
 }
-function navigationScroll(){
+/*function navigationScroll(){
 
     var headHeight = $('header').outerHeight();
 
@@ -101,26 +101,32 @@ function navigationScroll(){
         $('.main section').each(function(index, el) {
 
             if(scrolltop >= $(this).offset().top-headHeight && ($(this).offset().top + $(this).outerHeight()-headHeight) >= scrolltop && !$(this).is('.on-scroll')){
-
                 point = index;
-
                 $('.main section').removeClass('on-scroll');
                 $(this).addClass('on-scroll');
                 $('header .conteiner .mbox2 nav ul li').removeClass('active');
                 $('header .conteiner .mbox2 nav ul li').eq(point).addClass('active');
-
-                window.history.pushState('', '', $('header .conteiner .mbox2 nav ul li').eq(point).find('a').attr('href'));
-
                 return false;
-
             }
-
         });
-
     });
 
-}
+}*/
+function scrollForActive(){
+    $(window).scroll(function(event) {
 
+        var scrolltop = $(window).scrollTop()+$('header').outerHeight();
+
+        $('.main section').each(function(index, el) {
+            if($(this).offset().top <= scrolltop && $(this).offset().top+$(this).outerHeight()>scrolltop){
+               var sectID = $(this).find('.title').attr('id');
+                console.log(sectID);
+                $('header nav li a[data-href="#'+sectID+'"]').parent('li').addClass('active');
+                $('header nav li a:not([data-href="#'+sectID+'"])').parent('li').removeClass('active');
+            }
+        });
+    });
+}
 function preventKeyDown(){
   $(document).keydown(function(event) {
     if( event.keyCode == 123 ){
@@ -136,9 +142,10 @@ function preventKeyDown(){
 
 $(document).ready(function(){
     //preventKeyDown();
-    navigationScroll();
+    //navigationScroll();
     rewievsSlider();
     partnersSlider();
+    scrollForActive();
     if (navigator.appVersion.indexOf("Mac")!=-1) {
       $('html').addClass('mac');
     }
