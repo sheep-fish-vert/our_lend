@@ -348,10 +348,10 @@ function portfolioPop(){
 
 function portfolioPop2(){
     $(document).on('click','.portfolio-wrap .item',function(event) {
+
         event.preventDefault();
         $('.preload').addClass('active');
-        var id = $(this).data('id'),
-            mainImg,jspApi,mainText,jspApiText = null;
+        var id = $(this).data('id'), mainImg, jspApi, mainText, jspApiText = null;
         var autoSize = false;
 
         //размер айфрейма
@@ -379,6 +379,7 @@ function portfolioPop2(){
                 },0)
             }
         }
+
         function initJscrollMainImg(){
             //проблемаааа
             mainImg = $('.portfolio-pop.fancybox-opened .main-img');
@@ -409,22 +410,11 @@ function portfolioPop2(){
                     heightSubText();
                     /*main img*/
 
-
-                    initJscrollMainImg();
-
-                    $('.portfolio-pop.fancybox-opened .main-img').bind('jsp-initialised', function(event, isScrollable){
-                            console.log('Handle jsp-initialised', this,
-                                        'isScrollable=', isScrollable);
-                        });
-
-
-
-
-                     console.log('mainImg ' , mainImg);
-                     setTimeout(function(){
-                         $('.preload').removeClass('active');
-                         $('.portfolio-pop').addClass('show');
-                     },1000);
+                    setTimeout(function(){
+                        $('.preload').removeClass('active');
+                        $('.portfolio-pop').addClass('show');
+                        initJscrollMainImg();
+                    },1000);
                 }
 
 
@@ -433,10 +423,6 @@ function portfolioPop2(){
 
     });
 }
-
-
-
-
 
 function portfolioShowMore(){
     $(document).on('click','.button-show-more button:not(.preload2, .no-more)',function(event){
