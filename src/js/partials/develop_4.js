@@ -143,8 +143,8 @@ function preventKeyDown(){
 $(document).ready(function(){
     //preventKeyDown();
     //navigationScroll();
-    rewievsSlider();
-    partnersSlider();
+    // rewievsSlider();
+    // partnersSlider();
     scrollForActive();
 
     if (navigator.appVersion.indexOf("Mac")!=-1) {
