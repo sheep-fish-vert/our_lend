@@ -19,6 +19,14 @@ function validate(form, options){
             errorClass : 'errorText',
             focusCleanup : true,
             focusInvalid : false,
+            rules: {
+                phone: {
+                  require_from_group: [1, ".mygr"]
+                },
+                email: {
+                  require_from_group: [1, ".mygr"]
+                }
+            },
             invalidHandler: function(event, validator) {
                 if(typeof(setings.errorFunction) === 'function'){
                     setings.errorFunction(form);
@@ -110,7 +118,9 @@ function validationCall1(form) {
         success : function(data){
             if ( data.trim() == 'true') {
                 thisForm.trigger("reset");
-                popNext("#call_success", "call-popup");
+                //popNext("#call_success", "call-popup");
+                document.location = thanks;
+                //window.open(thanks,'_blank');
             }
             else {
                thisForm.trigger('reset');
@@ -132,7 +142,9 @@ function validationCall2(form){
         success : function(data){
             if ( data.trim() == 'true') {
                 thisForm.trigger("reset");
-                popNext("#call_success", "call-popup");
+                //popNext("#call_success", "call-popup");
+                //window.open(thanks,'_blank');
+                document.location = thanks;
             }
             else {
                thisForm.trigger('reset');
@@ -365,7 +377,6 @@ function portfolioPop2(){
             }
             var imgMargin = parseInt($('.main-img').css('margin-top'));
 
-            //console.log('newHeight ' , newHeight);
             $('.portfolio-pop.fancybox-opened .main-img').height(newHeight-imgMargin);
         }
         //вставить имагу
@@ -444,7 +455,6 @@ function portfolioPop2(){
                         }
                         if( !$('.main-img').hasClass('jspScrollable') ){
                             initJscrollMainImg();
-                            console.log('initJscrollMainImg();');
                         }
                         heightSubText();
                     }else{
@@ -465,7 +475,6 @@ function portfolioPop2(){
                             $('.portfolio-pop').addClass('show');
                              $('.portfolio-pop.fancybox-opened .main-img').removeAttr('style');
                              $('.portfolio-pop.fancybox-opened .description-center-text').removeAttr('style');
-                             console.log('gogggogog');
                         },1000);
                     }
                 }
@@ -518,9 +527,9 @@ function portfolioShowMore(){
                                     $('html,body').animate({scrollTop:bottom},300);
                                 },200);
                             }
-
                         }
                     });
+
 
                     if(dataParsed.last){
                         itemButton.removeClass('preload2').addClass('no-more');
@@ -530,7 +539,18 @@ function portfolioShowMore(){
                 }
             });
         }else{
-            $.fancybox.open('#call-popup');
+            $.fancybox.open('#call-popup', {
+                openEffect  : 'fade',
+                closeEffect: 'fade',
+                autoResize:true,
+                wrapCSS:'fancybox-form',
+                'closeBtn' : true,
+                fitToView:true,
+                padding:'0',
+                tpl: {
+                    closeBtn: '<a title="Закрыть" class="fancybox-item fancybox-close myClose" href="javascript:;"><span class="background-spec"></span><span class="background-spec"></span></a>'
+                }
+            });
         }
     });
 }
