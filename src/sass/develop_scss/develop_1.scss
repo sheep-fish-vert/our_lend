@@ -1,5 +1,10 @@
 /* header */
-
+    html.desktop.landscape{
+        &.fancybox-margin{margin-right: 17px;}
+    }
+    html.desktop.landscape.mac{
+        &.fancybox-margin{margin-right: 15px;}
+    }
     .st0{fill:transparent;}
     .st1{fill: white; transition-property: fill;  transition-duration: 0.3s;}
 
@@ -17,7 +22,8 @@
     //     .fancybox-overlay-fixed{height: 100vh !important; overflow: hidden;}
     // }
 
-    .fancybox-margin header {padding-right: 16px;}
+    .fancybox-margin header {padding-right: 17px;}
+    html.desktop.landscape.mac header.fancybox-margin {padding-right: 15px !important;}
     .mobile.fancybox-margin header {padding-right: 0px;}
     header{position: fixed; z-index: 150; top: 0; width: 100%; background-color: rgba(0, 0, 0, 0.5); backface-visibility: hidden;
         .conteiner{ padding: 0 15px;
