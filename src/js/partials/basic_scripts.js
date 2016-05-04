@@ -91,6 +91,12 @@ function headeButer(menuMobile,toggleMenu){
             if($(window).width()<1024-$.scrollbarWidth()){
                 $(this).toggleClass('active');
                 toggleMenu.stop().slideToggle();
+                
+                menuMobile.css('pointer-events', 'none');                
+                setTimeout(function(){     
+                    menuMobile.css('pointer-events', 'auto');
+                }, 300)
+                
             }
             if ($(this).hasClass('active')) {
                 $('body').addClass("overflover");
@@ -105,7 +111,14 @@ function headeButer(menuMobile,toggleMenu){
                 if (!div.is(event.target) && div.has(event.target).length === 0 && !menuMobile.is(event.target) && menuMobile.has(event.target).length === 0)
                     {
                         toggleMenu.slideUp();
+                        
                         menuMobile.removeClass('active');
+                        
+                        menuMobile.css('pointer-events', 'none');                
+                        setTimeout(function(){     
+                            menuMobile.css('pointer-events', 'auto');
+                        }, 300);
+                        
                         if (menuMobile.hasClass('active')) {
                             $('body').addClass("overflover");
                         } else {
