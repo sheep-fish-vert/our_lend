@@ -286,7 +286,7 @@
     /* /header */
 
     /*services*/
-    .services .services-items-wrap .services-item{margin: 0 5px 15px;width: auto;}
+    .services .services-items-wrap .services-item{margin: 0 5px 15px;width: auto; min-width: 300px;}
     .services .services-items-wrap{flex-wrap: nowrap;flex-direction: column;}
     /*/services*/
 }
