@@ -110,20 +110,28 @@ function validationCall1(form) {
 
   var thisForm = $(form);
   var formSur = thisForm.serialize();
+  $('.preload').addClass('active');
 
     $.ajax({
         url : ajaxUrl,
         data: formSur,
         method:'POST',
+        beforeSend:function(){
+            $.fancybox.close();
+            $('.preload').addClass('active');
+        },
         success : function(data){
             if ( data.trim() == 'true') {
+                $('.preload').removeClass('active');
                 thisForm.trigger("reset");
                 //popNext("#call_success", "call-popup");
                 document.location = thanks;
                 //window.open(thanks,'_blank');
             }
             else {
-               thisForm.trigger('reset');
+                thisForm.trigger('reset');
+                $.fancybox.close();
+                $('.preload').addClass('active');
             }
 
         }
@@ -134,13 +142,18 @@ function validationCall2(form){
     console.log('contacts-form');
   var thisForm = $(form);
   var formSur = thisForm.serialize();
-
+  $('.preload').addClass('active');
     $.ajax({
         url : ajaxUrl,
         data: formSur,
         method:'POST',
+        beforeSend:function(){
+            $.fancybox.close();
+            $('.preload').addClass('active');
+        },
         success : function(data){
             if ( data.trim() == 'true') {
+                $('.preload').removeClass('active');
                 thisForm.trigger("reset");
                 //popNext("#call_success", "call-popup");
                 //window.open(thanks,'_blank');
@@ -148,6 +161,8 @@ function validationCall2(form){
             }
             else {
                thisForm.trigger('reset');
+               $.fancybox.close();
+               $('.preload').addClass('active');
             }
 
         }
