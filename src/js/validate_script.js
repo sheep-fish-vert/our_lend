@@ -614,6 +614,8 @@ function reviewsPopUp(){
     });
 }
 $(document).ready(function(){
+    
+    
     portfolioPop2();
     //portfolioPop();
     reviewsPopUp();
