@@ -146,7 +146,7 @@
     /* /footer */
 
     /*services*/
-    .services{padding: 300px 0 90px 0;}
+    .services{padding: 150px 0 90px 0;}
     .services .services-items-wrap .services-item{margin: 0 5px 15px;width: 48%;}
     .services .services-items-wrap{flex-wrap: wrap;flex-direction: row;align-items: center;}
     /*/services*/
@@ -286,6 +286,7 @@
     /* /header */
 
     /*services*/
+    .services{background-size: auto;}
     .services .services-items-wrap .services-item{margin: 0 5px 15px;width: auto; min-width: 300px;}
     .services .services-items-wrap{flex-wrap: nowrap;flex-direction: column;}
     /*/services*/
