@@ -48,6 +48,12 @@ $(document).ready(function () {
     
 /* yandex metrika */
 
+$('.fancybox-form').click(function(){
+    console.log($.scrollbarWidth());
+    $('html').css('margin-right', $.scrollbarWidth());
+})
+
+
 });
 
 $(window).load(function(){

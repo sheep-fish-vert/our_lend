@@ -170,7 +170,7 @@ function validationCall2(form){
 }
 
 function popNext(popupId, popupWrap){
-
+    $('html').css('margin-right', $.scrollbarWidth());
     $.fancybox.open(popupId,{
         padding:0,
         fitToView:false,
@@ -180,6 +180,7 @@ function popNext(popupId, popupWrap){
         afterClose: function(){
             $('form').trigger("reset");
             clearTimeout(timer);
+            $('html').css('margin-right', 0);
         }
     });
 
@@ -209,6 +210,9 @@ function fancyboxForm(){
     'closeBtn' : true,
     fitToView:true,
     padding:'0',
+    afterClose: function () {
+       $('html').css('margin-right', 0);     
+    },
     tpl: {
         closeBtn: '<a title="Закрыть" class="fancybox-item fancybox-close myClose" href="javascript:;"><span class="background-spec"></span><span class="background-spec"></span></a>'
     }
