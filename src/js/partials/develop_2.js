@@ -1,6 +1,4 @@
 
-
-
 $(document).ready(function () {
 
     $('.butterbrod').hover(
@@ -22,20 +20,20 @@ $(document).ready(function () {
         redFlag += $(this).attr("data-id");
     });
 
-   $(document).on('click', '.description-bottom-href button', function () { 
+   $(document).on('click', '.description-bottom-href button', function () {
         yandexID.reachGoal('want' + redFlag);
         console.log('want' + redFlag);
     });
 
     $('.services-item .fancybox-form').click(function () {
-        redFlag = 'uslugi'+ $(this).closest('.services-item').index();      
+        redFlag = 'uslugi'+ $(this).closest('.services-item').index();
     });
-    
+
 
     $('.top-block-wrap .fancybox-form').click(function () {
         redFlag = 'top-big';
     });
-    $('header .fancybox-form').click(function () { 
+    $('header .fancybox-form').click(function () {
         redFlag = 'header';
     });
 
@@ -45,14 +43,15 @@ $(document).ready(function () {
         yandexID.reachGoal('man' + redFlag);
         console.log('man' + redFlag);
     });
-    
-/* yandex metrika */
 
+/* yandex metrika */
+/*
+// artem scripts for fancybox
 $('.fancybox-form').click(function(){
     console.log($.scrollbarWidth());
     $('html').css('margin-right', $.scrollbarWidth());
 })
-
+*/
 
 });
 

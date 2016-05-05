@@ -170,7 +170,7 @@ function validationCall2(form){
 }
 
 function popNext(popupId, popupWrap){
-    $('html').css('margin-right', $.scrollbarWidth());
+    //$('html').css('margin-right', $.scrollbarWidth());
     $.fancybox.open(popupId,{
         padding:0,
         fitToView:false,
@@ -179,8 +179,11 @@ function popNext(popupId, popupWrap){
         autoSize:true,
         afterClose: function(){
             $('form').trigger("reset");
+            /*
+            // artem scripts for fancybox
             clearTimeout(timer);
             $('html').css('margin-right', 0);
+            */
         }
     });
 
@@ -211,7 +214,7 @@ function fancyboxForm(){
     fitToView:true,
     padding:'0',
     afterClose: function () {
-       $('html').css('margin-right', 0);     
+       $('html').css('margin-right', 0);
     },
     tpl: {
         closeBtn: '<a title="Закрыть" class="fancybox-item fancybox-close myClose" href="javascript:;"><span class="background-spec"></span><span class="background-spec"></span></a>'
@@ -614,8 +617,8 @@ function reviewsPopUp(){
     });
 }
 $(document).ready(function(){
-    
-    
+
+
     portfolioPop2();
     //portfolioPop();
     reviewsPopUp();
