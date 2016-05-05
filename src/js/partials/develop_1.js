@@ -402,7 +402,7 @@
 /* html margin right fancy */
 
     function fancyboxHtmlMargin(){
-        $('head').append('<style>.fancybox-margin{margin-right:'+$.scrollbarWidth()+'px!important;}</style>');
+        $('head').append('<style>.fancybox-margin{margin-right:'+$.scrollbarWidth()+'px!important;}.fancybox-margin header{padding-right:'+$.scrollbarWidth()+'px!important;}</style>');
     }
 
 /* /html margin right fancy */

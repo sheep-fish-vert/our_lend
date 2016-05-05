@@ -38,6 +38,26 @@ function oneHeightItems(){
 
     oneHeight($('.oneHeight'));
 
+    oneHeight($('.person-subname'));
+
+    oneHeight($('.item-wrap .description'));
+
+    $(window).load(function(){
+
+        oneHeight($('.person-subname'));
+
+        oneHeight($('.item-wrap .description'));
+
+    });
+
+    $(window).resize(function(){
+
+        oneHeight($('.person-subname'));
+
+        oneHeight($('.item-wrap .description'));
+
+    });
+
 }
 
 /*GO TO href*/
@@ -91,12 +111,12 @@ function headeButer(menuMobile,toggleMenu){
             if($(window).width()<1024-$.scrollbarWidth()){
                 $(this).toggleClass('active');
                 toggleMenu.stop().slideToggle();
-                
-                menuMobile.css('pointer-events', 'none');                
-                setTimeout(function(){     
+
+                menuMobile.css('pointer-events', 'none');
+                setTimeout(function(){
                     menuMobile.css('pointer-events', 'auto');
                 }, 300)
-                
+
             }
             if ($(this).hasClass('active')) {
                 $('body').addClass("overflover");
@@ -111,14 +131,14 @@ function headeButer(menuMobile,toggleMenu){
                 if (!div.is(event.target) && div.has(event.target).length === 0 && !menuMobile.is(event.target) && menuMobile.has(event.target).length === 0)
                     {
                         toggleMenu.slideUp();
-                        
+
                         menuMobile.removeClass('active');
-                        
-                        menuMobile.css('pointer-events', 'none');                
-                        setTimeout(function(){     
+
+                        menuMobile.css('pointer-events', 'none');
+                        setTimeout(function(){
                             menuMobile.css('pointer-events', 'auto');
                         }, 300);
-                        
+
                         if (menuMobile.hasClass('active')) {
                             $('body').addClass("overflover");
                         } else {
@@ -153,7 +173,6 @@ function headerResizeFunc(){
 
 /* DOCUMENT READY  */
 $(document).ready(function() {
-    //oneHeightItems();
 
     headeButer($('.butterbrod'), $('.hum-menu'));
     scrollUp('.top-block-bottom-arrow, .top-block-footer .color-spec', '.portfolio');
@@ -163,6 +182,8 @@ $(document).ready(function() {
     cutText();
 
     headerResizeFunc();
+
+    oneHeightItems();
 
 });
 
