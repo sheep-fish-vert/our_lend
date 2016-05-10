@@ -192,6 +192,7 @@ html.desktop.landscape.mac.fancybox-margin {
         .partners_slider{max-width: 1200px;margin: 0 auto;padding-top: 52px;}
         .item{text-align: center;overflow: hidden;box-shadow: 0px 0px 8.3px 1.7px rgba(78, 78, 78, 0.08);    margin: 10px 5px;background-color: #fff;transition:all ease .2s;
             &:hover{box-shadow: 0px 0px 8.3px 1.7px rgba(78, 78, 78, 0.25);}
+            .item-wrap{padding: 10px;}
         }
         a{margin:0 auto;height: 190px;display: flex;flex-direction:column;justify-content:center;align-items:center;
             img{display: inline;}
