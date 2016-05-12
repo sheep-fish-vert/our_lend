@@ -49,7 +49,7 @@ html.desktop.landscape.mac.fancybox-margin {
                 .item-text-wrap{height: 100%;width: 100%;display: flex;flex-direction:column;justify-content:center;align-items:center;border:3px solid transparent;padding: 10px;position: relative;}
                 .item-name{font-weight: bold;font-size: 30px;padding-bottom: 15px;position: relative;margin-bottom: 17px;transition: all 0.3s ease-in-out 0.1s;transform: /*scale(10)*/ translateZ(0px);/*opacity: 0;*/backface-visibility: hidden;color: #4e4e4e;
                     span{bottom: 0;left: 50%;transform: translateX(-50%) translateZ(0px);width: 150px;height: 5px;position: absolute;}
-                    b{display: block;font-size: 14px;color: #4e4e4e;}
+                    b{display: block;font-size: 14px;color: #4e4e4e;padding-top: 5px;}
                 }
                 .item-desc{transition: all 0.3s ease-in-out 0.1s;transform: /*translateY(100px)*/ translateZ(0px);/*opacity: 0;*/max-width: 300px;margin:0 auto;padding:0 10px;backface-visibility: hidden;font-weight: bold;font-size: 18px;}
                 .item-type{position: absolute;top:20px;width: 100%;transition: transform 0.3s ease-in-out 0.1s,opacity 0.3s ease-in-out 0.1s;transform: /*translateY(-100px)*/ translateZ(0px);/*opacity: 0;*/left: 0;backface-visibility: hidden;font-size: 18px;}
@@ -240,13 +240,13 @@ html.desktop.landscape.mac.fancybox-margin {
         .description>div{padding: 32px 35px;background-color: #fff;box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.22);
             &:last-child{margin-bottom: 0px;padding: 28px;max-height: 211px;overflow: hidden;}
         }
-        .description-name{color: #4e4e4e;font-size: 48px;font-weight: bold;max-width: calc(100% - 50px);
+        .description-name{color: #4e4e4e;font-size: 45px;font-weight: bold;max-width: calc(100% - 18px);
             h5{position: relative;display: inline-block;
                 &:after{position: absolute;bottom: -12px;left: 0;background-color: #e7e7e7;height: 2px;width: calc(100% + 30px);content: '';}
             }
         }
         .description-type{margin-bottom: 10px;}
-        .description-desc{color: #919191;font-size: 18px;padding-top: 29px;}
+        .description-desc{color: #919191;font-size: 18px;padding-top: 25px;padding-bottom: 4px;}
         .description-top{max-height: 207px;position: relative;
             .fancybox-close{top: 5px;right: 5px;}
         }
