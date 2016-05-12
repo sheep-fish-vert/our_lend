@@ -306,13 +306,44 @@
             .footer-list{width: 50%;
                 ul{display: flex;justify-content:space-around;align-items:center;flex-wrap:wrap;
                     li{position: relative;width: 33.33%;
+                        &:hover{
+                            .skype{
+                                svg{fill:#8ecdf6 !important;}
+                                &+.footer-list-text{color: #8ecdf6 !important;}
+                            }
+                            .mail{
+                                svg{fill:#F18F3D !important;}
+                                &+.footer-list-text{color: #F18F3D !important;}
+                            }
+                            .telefone{
+                                svg{fill:tomato !important;}
+                                &+.footer-list-text{color: tomato !important;}
+                            }
+                            .vk{
+                                svg{fill:#2C87D0 !important;}
+                                &+.footer-list-text{color: #2C87D0 !important;}
+                            }
+                            .tw{
+                                svg{fill:#1da1f2 !important;}
+                                &+.footer-list-text{color: #1da1f2 !important;}
+                            }
+                            .gp{
+                                svg{fill:red !important;}
+                                &+.footer-list-text{color: red !important;}
+                            }
+                        }
+
+
+
                         &:first-child{top: -50px;}
                         &:last-child{top: 50px;
                             &:after{display: none;}
                         }
                         &:after{content:'';display: block;position: absolute;width: 1px;height: 40px;background-color: #e2e2e2;top:50%;margin-top: -15px;right: 0;}
                     }
-                    a{text-decoration: none;font-family: 'FuturaPT', sans-serif;color:#8d8d8d;font-weight: 700;font-size: 18px;text-transform: uppercase;display:inline-block;transition:color 300ms ease;}
+                    a{text-decoration: none;font-family: 'FuturaPT', sans-serif;color:#8d8d8d;font-weight: 700;font-size: 18px;text-transform: uppercase;display:inline-block;transition:color 300ms ease;
+                        .footer-list-text{transition-duration:300ms;}
+                    }
                 }
                 &:last-child{
                     ul{flex-direction:row-reverse;
