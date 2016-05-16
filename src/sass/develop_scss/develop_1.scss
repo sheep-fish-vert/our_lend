@@ -81,7 +81,7 @@
     #call-popup{ border-radius: 12px; background-color: white; width: 655px; padding: 65px 0;
         form{ max-width: 300px; margin: 0 auto;
             .contact-form-title{ width: 100%;
-                .convert{ text-align: center; }
+                .convert{ text-align: center;}
                 h5{ padding: 30px 0; font-size: 24px; font-family: "Roboto", sans-serif; color: rgb(79, 79, 79); font-weight: 700; text-transform: uppercase; line-height: 1.2; text-align: center; position: relative;
                     span{content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 5px; border: 2px solid #fa8d3c; background-color: transparent; border-radius: 3px; }
                 }
