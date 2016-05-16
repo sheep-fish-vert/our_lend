@@ -19,6 +19,11 @@
 
     /* /secret */
 
+    // call popup fix
+    #call-popup form .contact-form-row .contact-form-item{padding: 16px 0;}
+    #call-popup form .contact-form-title h5{padding: 10px 0 23px;}
+    #call-popup{padding: 15px 0;}
+    // /call popup fix
 }
 @media screen and (max-width: 1280px){
 

@@ -49,6 +49,9 @@ html.desktop.landscape.mac.fancybox-margin {
                 }
             }
 
+            .item-row{display: flex;flex-direction:row;justify-content:flex-start;align-items:center;flex-wrap: wrap;position: relative;z-index: 3;width: 100%;display: none;
+                &.active{display: flex;}
+            }
             .item-img{height: 300px;display: flex;flex-direction:column;justify-content:center;align-items:center;background: linear-gradient(135deg, #d7d4d7 0%,#d7d4d7 10%,#fafafd 30%,#fafafd 46%,#fafafd 70%,#fafafd 70%,#d7d4d7 90%,#d7d4d7 100%);transition:background ease-out .3s;}
             .item-text{position: absolute;overflow: hidden;top: 0;left: 0;transition: all 0.3s ease-out/* 0.4s*/;background-color: rgba(255, 255, 255, 0.85);height: 100%;width: 100%;padding: 15px;opacity: 0;backface-visibility: hidden;transform:translateZ(0px);
                 .item-text-wrap{height: 100%;width: 100%;display: flex;flex-direction:column;justify-content:center;align-items:center;border:3px solid transparent;padding: 10px;position: relative;}
