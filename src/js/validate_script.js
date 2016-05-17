@@ -576,6 +576,42 @@ function portfolioShowMore(){
         }
     });
 }
+
+function portfolioShowMoreNew(){
+    var point = 1;
+    $(document).on('click','.button-show-more button:not(.preload2)',function(event){
+        if(!$(this).is('.no-more')){
+            var itemButton = $(this);
+
+            $('.portfolio .portfolio-wrap .item-row').eq(point+1).addClass('active');
+            point++;
+            if( $(window).width()>600){
+                setTimeout(function(){
+                    var bottom = $('.portfolio')[0].scrollHeight;
+                    $('html,body').animate({scrollTop:bottom},300);
+                },200);
+            }
+            if( $('.portfolio .portfolio-wrap .item-row').length-1 == point ){
+                itemButton.addClass('no-more');
+                itemButton.find('b').text('Хочу такой же');
+            }
+
+        }else{
+            $.fancybox.open('#call-popup', {
+                openEffect  : 'fade',
+                closeEffect: 'fade',
+                autoResize:true,
+                wrapCSS:'fancybox-form',
+                'closeBtn' : true,
+                fitToView:true,
+                padding:'0',
+                tpl: {
+                    closeBtn: '<a title="Закрыть" class="fancybox-item fancybox-close myClose" href="javascript:;"><span class="background-spec"></span><span class="background-spec"></span></a>'
+                }
+            });
+        }
+    });
+}
 function reviewsPopUp(){
     $(document).on('click','.reviews-slider .social-button button,.reviews-slider .person-img',function(event){
         var id = $(this).data('id');
@@ -622,7 +658,8 @@ $(document).ready(function(){
     portfolioPop2();
     //portfolioPop();
     reviewsPopUp();
-    portfolioShowMore();
+    //portfolioShowMore();
+    portfolioShowMoreNew();
     validate('#call-popup .contact-form', {submitFunction:validationCall1});
     Maskedinput();
     fancyboxForm();

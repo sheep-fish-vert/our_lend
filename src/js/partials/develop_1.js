@@ -253,7 +253,7 @@
 
         specHover('.services-item', '.button', { borderHover: colorsMassiveHover[color] });
         specHover('.services-item', '.services-circle', {backgroundHover:colorsMassiveHover[color]});
-        specHover('.footer-list a', '.footer-svg', {fillHover:colorsMassiveHover[color]});
+        //specHover('.footer-list a', '.footer-svg', {fillHover:colorsMassiveHover[color]});
 
         /* secret */
 
